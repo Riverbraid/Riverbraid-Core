@@ -1,0 +1,87 @@
+{
+  "project": {
+    "name": "Riverbraid-Core",
+    "artifact_type": "governed_numeric_substrate",
+    "version": "0.1.3",
+    "status": "frozen_pre_canonical",
+    "intent": "Provide a minimal, deterministic, auditable numeric control substrate governed by explicit institutional rules."
+  },
+  "technical_spec": {
+    "language": "python",
+    "python_version": ">=3.10",
+    "determinism": {
+      "floating_point": "IEEE_754_binary64",
+      "randomness": "forbidden",
+      "time_access": "forbidden",
+      "environment_access": "forbidden",
+      "io": "forbidden",
+      "network": "forbidden",
+      "state": "forbidden",
+      "parallelism": "forbidden",
+      "iteration_order_dependence": "forbidden"
+    },
+    "complexity": {
+      "time": "O(1)",
+      "space": "O(1)"
+    },
+    "entrypoint": "riverbraid.core.metrics.compute_metrics"
+  },
+  "inputs": {
+    "metrics": {
+      "coherence": {"type": "float", "range": "[0.0, 1.0]", "default_on_missing": 0.0},
+      "novelty": {"type": "float", "range": "[0.0, 1.0]", "default_on_missing": 0.0},
+      "fragility": {"type": "float", "range": "[0.0, 1.0]", "default_on_missing": 0.0},
+      "latency": {"type": "float", "range": "[0.0, 1.0]", "default_on_missing": 0.0}
+    }
+  },
+  "clamping_rules": {
+    "nan": 0.0,
+    "positive_infinity": 1.0,
+    "negative_infinity": 0.0,
+    "below_zero": 0.0,
+    "above_one": 1.0
+  },
+  "derived_metrics": {
+    "systemic_load": "(fragility + latency) / 2",
+    "pattern_disruption": "novelty * (1 - coherence)",
+    "interaction_variance": "max(systemic_load, pattern_disruption)",
+    "coherence_confidence": "coherence * (1 - interaction_variance)"
+  },
+  "mode_selection": {
+    "capacity_override": {
+      "condition": "systemic_load >= 0.85",
+      "mode": "rest",
+      "precedence": "absolute"
+    },
+    "thresholds": {
+      "rest": {"condition": "coherence_confidence < 0.30"},
+      "soften": {"condition": "0.30 <= coherence_confidence < 0.65"},
+      "engage": {"condition": "coherence_confidence >= 0.65"}
+    },
+    "boundary_rule": "inclusive_lower_exclusive_upper"
+  },
+  "outputs": {
+    "mode": {"type": "enum", "values": ["rest", "soften", "engage"]},
+    "metrics": {
+      "systemic_load": "float",
+      "pattern_disruption": "float",
+      "interaction_variance": "float",
+      "coherence_confidence": "float"
+    },
+    "validation_warning": {"type": "boolean", "definition": "true if any input was missing, NaN, infinite, or clamped"}
+  },
+  "prohibitions": {
+    "semantic_interpretation": "forbidden",
+    "learning": "forbidden",
+    "feedback_loops": "forbidden",
+    "adaptation": "forbidden",
+    "user_profiling": "forbidden",
+    "personalization": "forbidden"
+  },
+  "audit": {
+    "audit_hash_field": "AUDIT_HASH",
+    "hash_algorithm": "SHA-256",
+    "canonicalization": "json_sorted_keys_no_whitespace",
+    "enforcement": "runtime_assertion_and_test_gate"
+  }
+}

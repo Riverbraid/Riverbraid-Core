@@ -59,6 +59,10 @@ Setting or clamping any input sets `validation_warning = true`.
 
 See `spec/governance-1.0.0.json`. Governance prohibits semantic interpretation, learning, feedback loops, adaptation, user profiling, and personalization. Wrapper constraints allow input validation, type enforcement, and logging, and forbid state retention, external calls, adaptive logic, and result modification. Certification is required for official use.
 
+Governance Rule — Breaking Changes
+
+If any formula, threshold, or mode-selection logic changes, this constitutes a breaking change and requires a new version and a new audit hash.
+
 ## Usage
 
 from src.riverbraid.core.metrics import compute_metrics

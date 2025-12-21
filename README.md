@@ -1,78 +1,140 @@
-Riverbraid-Core (v0.1.3)
+# Riverbraid-Core (v0.1.3)
 
-A minimal, deterministic, governance-locked numeric capacity control substrate for AI and automation systems. It does not include metric computation, mode enactment, or adaptive logic. This is not missing functionality—it is boundary discipline. The core provides deterministic capacity control. Everything else is intentionally external so that multiple domains can share the same governed spine without fragmenting auditability.
+A minimal, deterministic, governance-locked numeric **capacity control substrate** for AI and automation systems.
+
+Riverbraid-Core does **not** include metric computation, mode enactment, semantic interpretation, or adaptive logic.  
+This is not missing functionality — it is **boundary discipline**.
+
+The core provides a deterministic capacity decision that can be shared across domains without fragmenting auditability or governance.
 
 Riverbraid-Core does not generate content, make predictions, or interpret meaning.
-It exists to answer one narrow question:
 
-Given current system conditions, should this system rest, soften, or engage?
+**It exists to answer one narrow question:**
+
+> Given current system conditions, what capacity mode should the system be in right now:  
+> **rest**, **soften**, or **engage**?
 
 This repository is intentionally small, frozen, and auditable.
 
+---
 
-What Problem This Solves
+## What Problem This Solves
 
-Modern AI systems often fail not because they lack intelligence, but because they lack capacity awareness.
+Modern AI systems often fail not because they lack intelligence, but because they lack **capacity awareness**.
 
-Common failure modes:
-	•	Over-engagement under high load
-	•	Brittle behavior during novelty spikes
-	•	Escalation when fragility or latency is already elevated
-	•	Guardrails that mix semantics, policy, and control logic
+Common failure modes include:
+- Over-engagement under high load
+- Brittle behavior during novelty spikes
+- Escalation when fragility or latency is already elevated
+- Guardrails that mix semantics, policy, and control logic
+- Adaptive systems that drift and become unauditable
 
-Riverbraid-Core separates capacity control from intelligence.
+Riverbraid-Core separates **capacity control** from **intelligence**.
 
 It provides a deterministic numeric gate that:
-	•	Evaluates system stress and coherence
-	•	Selects a capacity mode (rest | soften | engage)
-	•	Makes no semantic or adaptive decisions
-	•	Can be audited, reasoned about, and governed independently
+- Evaluates system stress and coherence
+- Selects a capacity mode (`rest | soften | engage`)
+- Makes no semantic, policy, or adaptive decisions
+- Can be audited, reasoned about, and governed independently
 
+---
 
-Who Should Use This
+## What This Is (And Is Not)
 
-Riverbraid-Core is intended for:
-	•	AI platform teams needing a deterministic capacity gate
-	•	RAG or agent systems that must pause or de-escalate safely
-	•	Research or institutional systems requiring auditability
-	•	Engineers who want control logic without embedded policy
-	•	Systems that prevent failure upstream, not via downstream policing
+### Riverbraid-Core **IS**:
+- A pure control primitive
+- Deterministic and stateless
+- Governance-first
+- Domain-agnostic
+- Auditable and stable
 
-It is not intended for:
-	•	End-user applications without an engineering wrapper
-	•	Adaptive or learning control layers
-	•	Systems requiring semantic interpretation
-	•	Personalized or stateful decision engines
+### Riverbraid-Core **IS NOT**:
+- A framework
+- A model
+- A guardrail system
+- An agent
+- A learning or adaptive layer
+- A turnkey solution
 
+If you are looking for intelligence, interpretation, or policy, those belong **outside** the core.
 
-Design Philosophy
+---
+
+## Who Should Use This
+
+### Intended for:
+- AI platform and infrastructure teams
+- RAG or agent systems that must pause or de-escalate safely
+- Research or institutional systems requiring auditability
+- Engineers who want control logic without embedded policy
+- Systems that prevent failure upstream rather than policing downstream
+
+### Not intended for:
+- End-user applications without an engineering wrapper
+- Adaptive or learning control layers
+- Systems requiring semantic interpretation
+- Personalized or stateful decision engines
+
+---
+
+## Architectural Overview
+
+┌─────────────────────────────────────────────────┐
+│  Application / Wrapper Layer (owned by you)     │
+│  • Metric computation (domain-specific)         │
+│  • Mode enactment (stack-specific)              │
+│  • Optional logging / telemetry                 │
+└─────────────────┬───────────────────────────────┘
+│
+│ [0.0 – 1.0] scalar inputs
+▼
+┌─────────────────────────────────────────────────┐
+│  Riverbraid-Core (governance-locked)            │
+│  • Deterministic capacity logic                 │
+│  • Fixed formulas and thresholds                │
+│  • No semantics, no learning, no state           │
+│  • Returns: mode + metrics + warnings            │
+└─────────────────────────────────────────────────┘
+
+**The boundary is the product.**
+
+---
+
+## Design Philosophy
 
 Riverbraid-Core is deliberately:
-	•	Boring
-	•	Deterministic
-	•	Non-adaptive
-	•	Governance-first
+- **Boring**
+- **Deterministic**
+- **Non-adaptive**
+- **Governance-first**
 
 All intelligence, interpretation, and policy live outside the core.
 
+This separation is a **hard architectural boundary**, not a recommendation.
 
-Status
+---
 
-Frozen (pre-canonical).
-Changes require governance approval per spec/governance-1.0.0.json.
+## Status
 
+**Frozen (pre-canonical).**  
+Changes require governance approval per `spec/governance-1.0.0.json`.
 
-Properties
-	•	Deterministic: no randomness, time, environment, IO, network, or retained state
-	•	Complexity: O(1) time and O(1) space
-	•	Language: Python ≥ 3.10
-	•	Entrypoint: riverbraid.core.metrics.compute_metrics
+---
 
+## Properties
 
-Installation
+- **Deterministic**: no randomness, time, environment, IO, network, or retained state
+- **Complexity**: O(1) time and O(1) space
+- **Language**: Python ≥ 3.10
+- **Entrypoint**: `riverbraid.core.metrics.compute_metrics`
+
+---
+
+## Installation
 
 Editable install (recommended for development and testing):
 
+```bash
 pip install -e .
 
 This repository uses a src/ layout and must be installed for imports to resolve correctly.
@@ -93,6 +155,7 @@ Important:
 Riverbraid-Core does not define how these metrics are computed.
 That responsibility belongs entirely to the wrapper system.
 
+⸻
 
 Defaults and Clamping
 
@@ -103,20 +166,23 @@ Clamping rules:
 	•	+∞ → 1.0
 	•	−∞ → 0.0
 	•	< 0.0 → 0.0
-	•	> 1.0 → 1.0
+	•	1.0 → 1.0
 
 Any clamping sets validation_warning = true.
 
+⸻
 
 Derived Metrics
+
+All formulas are fixed and auditable:
 
 systemic_load        = (fragility + latency) / 2
 pattern_disruption   = novelty * (1 - coherence)
 interaction_variance = max(systemic_load, pattern_disruption)
 coherence_confidence = coherence * (1 - interaction_variance)
 
-All formulas are fixed and auditable.
 
+⸻
 
 Mode Selection
 
@@ -132,7 +198,7 @@ mode = "rest"
 
 Threshold-Based Selection
 
-Inclusive lower, exclusive upper bounds:
+(Inclusive lower, exclusive upper bounds)
 
 Mode	Condition
 rest	coherence_confidence < 0.30
@@ -140,6 +206,7 @@ soften	0.30 ≤ coherence_confidence < 0.65
 engage	coherence_confidence ≥ 0.65
 
 
+⸻
 
 Outputs
 
@@ -156,6 +223,7 @@ Outputs
 }
 
 
+⸻
 
 Intended Usage Pattern
 
@@ -174,8 +242,9 @@ Wrappers must not:
 	•	Perform external calls from within the core
 	•	Embed semantic interpretation
 
-This separation is intentional.
+This separation is intentional and enforced by governance.
 
+⸻
 
 Governance
 
@@ -189,19 +258,21 @@ Governance explicitly prohibits:
 
 Certification is required for official or institutional use.
 
+⸻
 
 Breaking Changes
 
 Any change to:
-	•	formulas
-	•	thresholds
-	•	mode-selection logic
+	•	Formulas
+	•	Thresholds
+	•	Mode-selection logic
 
-is a breaking change and requires:
-	•	a new version
-	•	a new audit hash
-	•	governance approval
+constitutes a breaking change and requires:
+	•	A new version
+	•	A new audit hash
+	•	Governance approval
 
+⸻
 
 Usage Example
 
@@ -217,14 +288,18 @@ result = compute_metrics({
 print(result)
 
 
+⸻
+
 Change Control
 
 Any policy change requires:
-	•	an RFC
-	•	an impact statement
-	•	dual-signature approval
-	•	a new major version
-	•	a new audit hash
+	•	An RFC
+	•	An impact statement
+	•	Dual-signature approval
+	•	A new major version
+	•	A new audit hash
+
+⸻
 
 Final Note
 

@@ -1,6 +1,6 @@
 Riverbraidr-Core (v0.1.3)
 
-A minimal, deterministic, governance-locked numeric capacity control substrate for AI and automation systems.
+A minimal, deterministic, governance-locked numeric capacity control substrate for AI and automation systems. It does not include metric computation, mode enactment, or adaptive logic. This is not missing functionality—it is boundary discipline. The core provides deterministic capacity control. Everything else is intentionally external so that multiple domains can share the same governed spine without fragmenting auditability.
 
 Riverbraid-Core does not generate content, make predictions, or interpret meaning.
 It exists to answer one narrow question:

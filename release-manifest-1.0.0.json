@@ -1,0 +1,7 @@
+{
+  "name": "riverbraid-core",
+  "version": "1.0.0",
+  "stability": "STABLE",
+  "math_lock": "0.4s + 0.3p + 0.2v + 0.1(1-c)",
+  "secret_policy": "RIVERBRAID_SECRET required"
+}

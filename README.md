@@ -1,4 +1,4 @@
-# Riverbraid Standard v1.0.0
+# Riverbraid-Core Standard v1.0.0
 
 Canonical reference implementation of a deterministic capacity gate and cryptographic reflection ledger.
 

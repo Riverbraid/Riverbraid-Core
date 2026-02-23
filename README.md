@@ -1,19 +1,17 @@
-# Riverbraid-Core Standard v1.0.0
+# Riverbraid-Core
 
-Canonical reference implementation of a deterministic capacity gate and cryptographic reflection ledger.
+**Signal:** FROZEN_CORE  
+**Role:** Authority logic anchor for the Riverbraid cluster
 
-## Layers
+## Purpose
+Core serves as the foundational invariant layer that all other Gold petals must respect. It is dependency-free by design, ensuring it remains the root of the trust chain.
 
-1. Frozen Core — deterministic math only
-2. Anchor Sentinel — owns time and identity
-3. Reflection Ledger — owns persistence and cryptography
-
-## Secret Policy
-
-RIVERBRAID_SECRET is mandatory.
-Missing or empty secret aborts execution.
+## Core Invariants
+1. **DETERMINISTIC_REPRODUCIBILITY** - Identical inputs → Identical outputs.
+2. **ZERO_EXTERNAL_DEPENDENCIES** - Core imports nothing.
+3. **ASCII_FLOOR** - 7-bit ASCII only with LF line endings.
 
 ## Verification
-
-npm run test  
-RIVERBRAID_SECRET=dev_only npm run audit
+\`\`\`bash
+node src/index.js     # Self-test logic
+\`\`\`

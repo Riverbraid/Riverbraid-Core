@@ -1,0 +1,19 @@
+{
+  "contract_class": "IDENTITY_CONTRACT",
+  "version": "1.0.0",
+  "repo_name": "Riverbraid-Core",
+  "repo_role": "FROZEN_CORE",
+  "expected_ref": "STATIONARY_FINALITY_V1_1",
+  "expected_head_sha": "",
+  "governed_files": [
+    "README.md",
+    "package.json",
+    "src/index.js",
+    ".gitattributes"
+  ],
+  "invariants": {
+    "entropy_ban": true,
+    "ascii_only": true,
+    "no_crlf": true
+  }
+}

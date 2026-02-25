@@ -9,6 +9,6 @@
   },
   "license": "MIT",
   "scripts": {
-    "test": "node verify.mjs"
+    "test": "node --test tests/"
   }
 }

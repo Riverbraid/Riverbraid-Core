@@ -28,5 +28,5 @@ for (const file of identity.governed_files) {
   }
 }
 
-console.log('PASS:CORE_INVARIANTS');
+console.log('PASS:_INVARIANTS');
 process.exit(0);

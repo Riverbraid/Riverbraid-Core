@@ -1,21 +1,26 @@
-# Riverbraid-Core: The Frozen Anchor
+# ⚓ Riverbraid-Core
 
-## Overview
-Riverbraid-Core provides the foundational invariant validation functions that all other Gold repositories depend on. It is the root of the trust chain, designed with zero external dependencies to ensure absolute determinism.
+## 📜 Overview
+**Riverbraid-Core** is the foundational logic and deterministic primitives for the Riverbraid system. 
 
-## Core Principles
-1. **Deterministic Reproducibility**: Every function is pure; same input always produces the same output.
-2. **ASCII Enforcement**: Prevents hidden Unicode attacks or "ghost" characters.
-3. **Fail-Closed Semantics**: Any violation results in immediate system halt.
+It operates within the **Riverbraid Gold Cluster** under a **Fail-Closed** discipline: if any part of the system deviates from its anchored frequency (commit hash), the cluster halts to prevent entropy leakage.
 
-## API Reference
-### `isSafeASCII(input)`
-Validates that a string contains only safe ASCII characters.
-### `enforceInvariant(condition, message)`
-The primary "Gatekeeper" function for the cluster.
+## 🗝️ Core Functions
+* Deterministic Primitives
+* Logic Purity
+* Entropy Suppression
+* **Institutional Alignment:** Fully compliant with the v1.1.0 stationary mandate.
 
-## Verification
-`npm test
+## 🧬 Stationary State Invariant
+The system is anchored in the principle of $dS/dt = 0$ (Zero Entropy Growth).
+> "A system is secure if and only if it is in a secure state and all state transitions preserve security." — McLean (1994)
 
-## Philosophical Anchor
-Stationary State from one axiom: σ = 1/(1 + σ). See [McLean (2026)](https://zenodo.org/records/18742684) in [Golds/ARCHITECTURE.md](https://github.com/Riverbraid/Riverbraid-Golds/blob/main/ARCHITECTURE.md).
+## 🛡️ Governance
+This petal is a part of the **Riverbraid Gold v1.1.0** release.
+* **Merkle Root:** `de2062`
+* **Fingerprint:** `D9475D6B717D0E6C8EC84F6D8F86D9F4F2B083A4`
+* **Status:** STATIONARY_STATE_ACTIVE
+* **License:** MIT
+
+---
+*Signed by the Honest Advisor Protocol.*

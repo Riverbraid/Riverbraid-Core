@@ -1,15 +1,14 @@
-/**
- * Riverbraid Core: ASCII Enforcement
- * Ensures all processed strings are within the safe institutional range (32-126).
- */
-export function enforceASCII(input) {
-  if (typeof input !== 'string') throw new Error('SIGNAL_DISTORTION: Input must be string');
-  
-  for (let i = 0; i < input.length; i++) {
-    const charCode = input.charCodeAt(i);
-    if (charCode < 32 || charCode > 126) {
-      throw new Error(`ENTROPY_DETECTED: Character ${input[i]} (code ${charCode}) is non-stationary`);
-    }
+export function enforceAscii(text) {
+  if (typeof text !== 'string') throw new TypeError('Input must be a string');
+  const nonAsciiMatch = text.match(/[^\x00-\x7F]/);
+  if (nonAsciiMatch) {
+    const char = nonAsciiMatch[0];
+    const codePoint = char.codePointAt(0).toString(16).toUpperCase();
+    throw new Error(`NON_ASCII_DETECTED: Character '${char}' (U+${codePoint})`);
   }
+  return text;
+}
+export function validateLineEndings(text) {
+  if (text.includes('\r\n') || text.includes('\r')) return false;
   return true;
 }

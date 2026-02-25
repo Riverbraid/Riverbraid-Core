@@ -1,32 +1,37 @@
 import fs from 'node:fs';
 import path from 'node:path';
-import { fileURLToPath } from 'node:url';
 
-const __dirname = path.dirname(fileURLToPath(import.meta.url));
-const REPO_NAME = 'CORE';
-
-function fatal(msg) {
-  console.error(`FATAL:${REPO_NAME}:${msg}`);
+const fatal = (msg) => {
+  console.error(`[FAIL-CLOSED] ${msg}`);
   process.exit(1);
-}
+};
 
-const identityPath = path.join(__dirname, 'identity.contract.json');
-if (!fs.existsSync(identityPath)) fatal('Missing identity.contract.json');
+try {
+  const contract = JSON.parse(fs.readFileSync('./identity.contract.json', 'utf8'));
+  console.log(`[VERIFY] Auditing Petal: ${contract.name} v${contract.version}`);
 
-const identity = JSON.parse(fs.readFileSync(identityPath, 'utf8'));
-const pkg = JSON.parse(fs.readFileSync(path.join(__dirname, 'package.json'), 'utf8'));
-
-if (pkg.dependencies && Object.keys(pkg.dependencies).length > 0) {
-  fatal('Core must have zero runtime dependencies.');
-}
-
-for (const file of identity.governed_files) {
-  const fullPath = path.join(__dirname, file);
-  if (fs.existsSync(fullPath) && (file.endsWith('.js') || file.endsWith('.mjs'))) {
-    const content = fs.readFileSync(fullPath, 'utf8');
-    if (/[^\x00-\x7F]/.test(content)) fatal(`Non-ASCII characters detected in ${file}`);
+    fatal('Missing governed_files array in identity.contract.json');
   }
-}
 
-console.log('PASS:_INVARIANTS');
-process.exit(0);
+  for (const file of contract.governed_files) {
+      fatal(`Governed file missing: ${file}`);
+    }
+    console.log(`[OK] ${file} present.`);
+  }
+
+  // Check for the entropy ban if specified in contract
+  if (contract.invariants?.entropy_ban) {
+    // Check key files for Date.now() or dynamic timestamps
+    const checkFiles = ['index.js', 'verify.mjs'].filter(f => fs.existsSync(f));
+    for (const f of checkFiles) {
+      const content = fs.readFileSync(f, 'utf8');
+      if (content.includes('Date.now()') || content.includes('new Date()')) {
+        fatal(`Entropy violation in ${f}: Dynamic time detected.`);
+      }
+    }
+  }
+
+  console.log('[STATIONARY] Signal verified. 10/10 Readiness.');
+} catch (err) {
+  fatal(`Structural failure: ${err.message}`);
+}

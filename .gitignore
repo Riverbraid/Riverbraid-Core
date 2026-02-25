@@ -6,3 +6,5 @@ dist/
 logs/*.jsonl
 !logs/.gitkeep
 *.tsbuildinfo
+/logs/
+riverbraid-core-v1.0.0-dist.tar.gz

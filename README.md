@@ -5,6 +5,12 @@
 
 It operates within the **Riverbraid Gold Cluster** under a **Fail-Closed** discipline: if any part of the system deviates from its anchored frequency (commit hash), the cluster halts to prevent entropy leakage.
 
+## 🏛️ About and Topics
+Riverbraid-Core
+Description: Deterministic, governance-locked capacity control substrate for AI systems. Returns rest/soften/engage. O(1), stateless, Python ≥ 3.10.
+
+Topics: governance, deterministic, ai-safety, capacity-control, python, riverbraid, audit
+
 ## 🗝️ Core Functions
 * Deterministic Primitives
 * Logic Purity

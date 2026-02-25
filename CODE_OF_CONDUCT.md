@@ -1,8 +1,16 @@
-# Riverbraid Gold Cluster - Code of Conduct
+# Code of Conduct
+
 ## Our Pledge
-We pledge to make participation in the Riverbraid ecosystem a harassment-free experience for everyone, prioritizing coherence, resonance, and groundedness.
+We as members, contributors, and leaders pledge to make participation in our community a harassment-free experience for everyone.
+
 ## Our Standards
-* Use welcoming and inclusive language.
-* Respect differing viewpoints.
-* Gracefully accept constructive criticism.
-* Focus on the Braid: flame, current, reflection.
+* Use welcoming and inclusive language
+* Be respectful of differing viewpoints and experiences
+* Gracefully accept constructive criticism
+* Focus on what is best for the community
+* Show empathy towards other community members
+
+## Enforcement
+Responsibilities of community leaders include clarifying standards and taking appropriate corrective action.
+
+*Signed by the Riverbraid Sovereignty Protocol*

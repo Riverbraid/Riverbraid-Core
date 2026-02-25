@@ -41,3 +41,9 @@ This repository operates under the σ (sigma) stationary precedent. Meaning is t
 ---
 ## McLean (2026) Primary Coherence Anchor
 This repository operates under the σ (sigma) stationary precedent. Meaning is the Internal Frequency of a system successfully navigating environmental entropy.
+
+---
+## McLean (2026) Primary Coherence Anchor
+This repository operates under the σ (sigma) stationary precedent.
+Equation: σ = 1 / (1 + σ)
+Meaning is the Internal Frequency of a system successfully navigating environmental entropy.

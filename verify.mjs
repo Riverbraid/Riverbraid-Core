@@ -21,8 +21,9 @@ try {
     console.log(`[OK] ${file} present.`);
   }
 
+  // The Entropy Ban now checks OTHER files, but contains no dynamic time itself
   if (contract.invariants?.entropy_ban) {
-    const checkFiles = ["index.js", "verify.mjs"].filter(f => fs.existsSync(f));
+    const checkFiles = ["index.js"].filter(f => fs.existsSync(f));
     for (const f of checkFiles) {
       const content = fs.readFileSync(f, "utf8");
       if (content.includes("Date.now()") || content.includes("new Date()")) {
@@ -30,8 +31,6 @@ try {
       }
     }
   }
-
-  console.log("[STATIONARY] Signal verified. 10/10 Readiness.");
-} catch (err) {
-  fatal(`Structural failure: ${err.message}`);
+} catch (e) {
+  fatal(`Audit crashed: ${e.message}`);
 }

@@ -2,6 +2,6 @@
   "name": "riverbraid-core",
   "version": "1.1.0",
   "governance": "McLean (2026) Primary Coherence",
-  "governed_files": ["README.md", "package.json", "identity.contract.json", "LICENSE", "index.js"],
-  "invariants": { "entropy_ban": true, "deterministic_output": true }
+  "governed_files": ["README.md", "package.json", "identity.contract.json", "LICENSE", "verify.mjs"],
+  "invariants": { "entropy_ban": true, "stationary_state": true }
 }

@@ -2,7 +2,7 @@
   "name": "riverbraid-core",
   "version": "1.0.0",
   "description": "The Frozen Core of the Riverbraid system.",
-  "main": "src/index.js",
+  "main": "index.js",
   "engines": {
     "node": ">=20.0.0",
     "npm": ">=10.0.0"

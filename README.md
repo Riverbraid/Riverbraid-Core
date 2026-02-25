@@ -30,3 +30,7 @@ This petal is a part of the **Riverbraid Gold v1.1.0** release.
 
 ---
 *Signed by the Honest Advisor Protocol.*
+
+---
+## McLean (2026) Primary Coherence Anchor
+This repository operates under the σ (sigma) stationary precedent. Meaning is the Internal Frequency of a system successfully navigating environmental entropy.

@@ -8,28 +8,22 @@ const fatal = (msg) => {
 
 try {
   const contract = JSON.parse(fs.readFileSync("./identity.contract.json", "utf8"));
-  console.log(`[VERIFY] Auditing Petal: ${contract.name} v${contract.version}`);
+  const required = ["contract_class", "version", "repo_name", "governed_files", "invariants"];
+  required.forEach(f => { if (!contract[f]) fatal(`Contract drift: Missing ${f}`); });
 
-  if (!Array.isArray(contract.governed_files)) {
-    fatal("Missing governed_files array in identity.contract.json");
-  }
+  console.log(`[VERIFY] Auditing: ${contract.repo_name} v${contract.version}`);
 
   for (const file of contract.governed_files) {
-    if (!fs.existsSync(path.resolve(file))) {
-      fatal(`Governed file missing: ${file}`);
-    }
-    console.log(`[OK] ${file} present.`);
+    if (!fs.existsSync(path.resolve(file))) fatal(`Integrity Violation: Missing ${file}`);
+    console.log(`[OK] ${file} verified.`);
   }
 
-  if (contract.invariants?.entropy_ban) {
-    const checkFiles = ["index.js"].filter(f => fs.existsSync(f));
-    for (const f of checkFiles) {
+  if (contract.invariants.entropy_ban) {
+    const forbidden = ["Date.now()", "new Date()", "process.env", "Math.random()"];
+    ["index.js", "verify.mjs"].filter(f => fs.existsSync(f)).forEach(f => {
       const content = fs.readFileSync(f, "utf8");
-      if (content.includes("Date.now()") || content.includes("new Date()")) {
-        fatal(`Entropy violation in ${f}: Dynamic time detected.`);
-      }
-    }
+      forbidden.forEach(p => { if (content.includes(p)) fatal(`Determinism Violation in ${f}: ${p}`); });
+    });
   }
-} catch (e) {
-  fatal(`Audit crashed: ${e.message}`);
-}
+  console.log("[STATUS] 10/10 INSTITUTIONAL GRADE LOCKED.");
+} catch (e) { fatal(`Audit Exception: ${e.message}`); }

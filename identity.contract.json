@@ -1,7 +1,12 @@
 {
-  "name": "riverbraid-core",
+  "contract_class": "riverbraid-gold-v1.1",
   "version": "1.1.0",
-  "governance": "McLean (2026) Primary Coherence",
-  "governed_files": ["README.md", "package.json", "identity.contract.json", "LICENSE", "verify.mjs"],
-  "invariants": { "entropy_ban": true, "stationary_state": true }
+  "repo_name": "riverbraid-core",
+  "repo_role": "sovereign-reference-petal",
+  "governed_files": ["README.md", "package.json", "identity.contract.json", "LICENSE", "verify.mjs", "index.js"],
+  "invariants": {
+    "entropy_ban": true,
+    "deterministic_verification": true,
+    "stationary_state": true
+  }
 }

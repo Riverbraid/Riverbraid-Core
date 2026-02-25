@@ -21,7 +21,6 @@ try {
     console.log(`[OK] ${file} present.`);
   }
 
-  // The Entropy Ban now checks OTHER files, but contains no dynamic time itself
   if (contract.invariants?.entropy_ban) {
     const checkFiles = ["index.js"].filter(f => fs.existsSync(f));
     for (const f of checkFiles) {

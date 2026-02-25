@@ -3,10 +3,18 @@
   "version": "1.1.0",
   "repo_name": "riverbraid-core",
   "repo_role": "sovereign-reference-petal",
-  "governed_files": ["README.md", "package.json", "identity.contract.json", "LICENSE", "verify.mjs", "index.js"],
+  "governed_files": [
+    "README.md",
+    "package.json",
+    "identity.contract.json",
+    "LICENSE",
+    "verify.mjs",
+    "index.js"
+  ],
   "invariants": {
     "entropy_ban": true,
     "deterministic_verification": true,
     "stationary_state": true
-  }
+  },
+  "aperture_reference": "Riverbraid/riverbraid-cognition"
 }

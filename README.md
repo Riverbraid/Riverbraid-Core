@@ -37,16 +37,4 @@ This repository operates under the σ (sigma) stationary precedent. Meaning is t
 
 ---
 *Anchored in McLean (2026) Primary Coherence + σ stationary precedent.*
-
----
-## McLean (2026) Primary Coherence Anchor
-This repository operates under the σ (sigma) stationary precedent. Meaning is the Internal Frequency of a system successfully navigating environmental entropy.
-
----
-## McLean (2026) Primary Coherence Anchor
-This repository operates under the σ (sigma) stationary precedent.
-Equation: σ = 1 / (1 + σ)
-Meaning is the Internal Frequency of a system successfully navigating environmental entropy.
-
-## Philosophical Anchor
-Stationary State from one axiom: σ = 1/(1 + σ). See [McLean (2026)](https://zenodo.org/records/18742684) in [Golds/ARCHITECTURE.md](https://github.com/Riverbraid/Riverbraid-Golds/blob/main/ARCHITECTURE.md).
+lds/blob/main/ARCHITECTURE.md).

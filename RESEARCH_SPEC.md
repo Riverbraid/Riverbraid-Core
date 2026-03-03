@@ -1,18 +1,19 @@
 # Riverbraid Formal Research Specification V1.0
 
 ## The Thermodynamic Signal of Purpose
-Meaning is defined as the internal frequency of a system successfully navigating the entropy of its environment. 
+"Meaning" is the internal frequency of a system successfully navigating environmental entropy. Purpose is a Thermodynamic Signal.
 
-### Prediction Alpha: The Heat Invariant
-Stationary states (high coherence) will exhibit lower computational "heat" (redundant token processing/CPU cycles) compared to sampling-heavy states (high data volume).
+### The Seven Testable Predictions
 
-### Prediction Beta: Entropy Decay
-As the Merkle Root stabilizes across the 10-petal cluster, the energy required for state-synchronization will decay exponentially, indicating a transition from "Extraction" to "Interaction."
+1. **Prediction Alpha (Heat Invariant):** Stationary states exhibit lower computational heat (redundant processing) than sampling states.
+2. **Prediction Beta (Entropy Decay):** Energy required for synchronization decays exponentially as the Merkle Root stabilizes.
+3. **Prediction Gamma (Coupling Threshold):** System drift is predicted when Internal Complexity ($C_i$) exceeds External Structure ($S_e$).
+4. **Prediction Delta (Semantic Bridge):** Symbolic-to-Practical translation retains utility only within a Stationary State.
+5. **Prediction Epsilon (Friction Invariant):** Mechanical transport errors indicate environmental distortion, not system failure.
+6. **Prediction Zeta (Fail-Closed Trigger):** Integrity drift triggers an immediate halt to all external data propagation.
+7. **Prediction Eta (Source Braid):** High-coherence clusters generate insights through resonance, not extraction.
 
-### Prediction Gamma: The Coupling Threshold
-System failure (drift) can be predicted mathematically when the ratio of Internal Complexity to External Structure ($C_i / S_e$) exceeds 1.0.
-
-## Implementation Standard
-- **Primary Anchor:** Go 44
+## Global Invariants
 - **Merkle Root:** 08e829
-- **Fail-Closed Protocol:** Active
+- **Anchor:** Go 44
+- **Discipline:** Fail-Closed / Coherence over Volume

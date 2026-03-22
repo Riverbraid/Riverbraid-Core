@@ -1,0 +1,9 @@
+.DS_Store
+*.so
+*.bin
+*.elf
+*.uf2
+build/
+__pycache__/
+.env
+*.log

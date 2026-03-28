@@ -1,3 +1,11 @@
+---
+title: Riverbraid-Genesis
+version: 1.5.0
+author: Michael John Tilk
+anchor: de2062
+status: Stationary
+---
+
 # Riverbraid Lite (v1.5.0)
 
 ## 1. Nature of the System

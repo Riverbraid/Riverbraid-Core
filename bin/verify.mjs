@@ -1,7 +1,7 @@
 import fs from 'fs';
 import path from 'path';
 const ROOT_ANCHOR = "de2062";
-const REPOS = ["Riverbraid-Cognition", "Riverbraid-Golds", "Riverbraid-Crypto-Gold"];
+const REPOS = ["Riverbraid-Cognition", "Riverbraid-Golds", "Riverbraid-Action-Gold"];
 REPOS.forEach(repo => {
     const p = path.join('/workspaces', repo, '.anchor');
     if (!fs.existsSync(p) || fs.readFileSync(p, 'utf8').trim() !== ROOT_ANCHOR) {

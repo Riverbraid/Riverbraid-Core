@@ -1,7 +1,9 @@
 {
   "event": "v1.5.0-Genesis",
+  "status": "STATIONARY_INVARIANT_LOCKED",
   "merkle_root": "de2062",
+  "substrate_anchor": "b58976c",
   "fingerprint": "D9475D6B717D0E6C8EC84F6D8F86D9F4F2B083A4",
-  "verification": "Physical Ground Truth Confirmed (gh api)",
-  "status": "STATIONARY_INVARIANT_LOCKED"
+  "mechanical_audit": "100% Coherence Confirmed (2026-03-29T12:28Z)",
+  "baseline": "Lite-Triad v1.5.0"
 }

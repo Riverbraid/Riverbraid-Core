@@ -1,0 +1,7 @@
+{
+  "event": "v1.5.0-Genesis",
+  "merkle_root": "de2062",
+  "fingerprint": "D9475D6B717D0E6C8EC84F6D8F86D9F4F2B083A4",
+  "verification": "Physical Ground Truth Confirmed (gh api)",
+  "status": "STATIONARY_INVARIANT_LOCKED"
+}

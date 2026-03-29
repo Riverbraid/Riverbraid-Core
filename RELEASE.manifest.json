@@ -1,0 +1,21 @@
+{
+  "version": "1.5.0-genesis",
+  "timestamp": "2026-03-29T12:09:54Z",
+  "merkle_root": "de2062",
+  "petals": [
+    { "name": "Riverbraid-Core", "sha": "19ba8dcd403327a1cf019c580915241cf41e386e" },
+    { "name": "Riverbraid-Cognition", "sha": "ca91566f88b8561e6497592fe55367025e0db8d6" },
+    { "name": "Riverbraid-Golds", "sha": "16e9b0d716d4ad955d3b78d804f2dfb43dd16795" },
+    { "name": "Riverbraid-Crypto-Gold", "sha": "5f775bbcff9a23e927cb964f11549403058ac8b1" },
+    { "name": "Riverbraid-Harness-Gold", "sha": "78339db638a9ac81ab78b9695974aceef11866b1" },
+    { "name": "Riverbraid-Integration-Gold", "sha": "b289d6f27351179d179d0adba03bed8eee9d690f" },
+    { "name": "Riverbraid-Judicial-Gold", "sha": "81e74b40ea2a6f0e22efcae192ca030fd7c4acc8" },
+    { "name": "Riverbraid-Memory-Gold", "sha": "bb375d71645c0a7d5dc71d2a37cd9f69f7f4cdd8" },
+    { "name": "Riverbraid-Refusal-Gold", "sha": "0ddd3afb2d65523e54e510b587520b37caa215e5" },
+    { "name": "Riverbraid-Temporal-Gold", "sha": "64a5d01f497eeb80c2e4c71d7a72b87797edf312" },
+    { "name": "Riverbraid-Action-Gold", "sha": "b321d150f6bb02d243a31f874cb209e1d2c2fe6b" },
+    { "name": "Riverbraid-Audio-Gold", "sha": "62aa51580bbbebcbb33890da4059614f637d27b7" },
+    { "name": "Riverbraid-Vision-Gold", "sha": "af5acbf857b31df6a583570f06d689d8530d15b9" },
+    { "name": ".github", "sha": "" }
+  ]
+}

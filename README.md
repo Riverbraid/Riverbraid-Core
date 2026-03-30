@@ -1,15 +1,15 @@
-# Riverbraid Lite (v1.5.0)
+# Riverbraid Core
 
-## 1. Nature of the System
-Riverbraid is a **Deterministic Kernel**. It does not possess "truth" regarding the physical world; it possesses "integrity" regarding the digital record it consumes. It is a system of **Witness**, not of **Judgment**.
+Deterministic governance kernel for the Riverbraid system.
 
-## 2. Core Architecture
-- **Layer 0 (Physical):** Enforced UTF-8/LF canonicalization.
-- **Layer 1 (Information):** Sealed Constitutional Quad (Scope, Resilience, Survivability, Durability).
-- **Layer 2 (Execution):** Deterministic state transitions anchored to the Genesis Root.
+## Purpose
+This repository is part of the Riverbraid cluster and exposes a repo specific verification and governance surface.
 
-## 3. Verification
-The integrity of this repository can be verified using the signed proof in `PROOFS/v1.5.0_resonance_proof.json`.
+## Verification
+Canonical verifier: `bin/run-vectors.cjs`
+Primary command: `node bin/run-vectors.cjs verify`
 
----
-*This repository is a node in the Riverbraid Cluster. Its state is governed by its internal invariants, independent of steward intent.*
+## Status
+Version: `1.5.0`
+State: `Stationary / Fail Closed`
+Merkle Root: `de2062`

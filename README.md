@@ -1,23 +1,45 @@
+# Riverbraid-Core
+> **Version:** 1.5.0-Genesis  
+> **Status:** STATIONARY  
+> **Merkle Root:** de2062  
+> **GPG Fingerprint:** D9475D6B717D0E6C8EC84F6D8F86D9F4F2B083A4
+
+## 🔱 The 17-Petal Substrate
+The Riverbraid is a deterministic numeric control substrate for planetary relational intelligence.
+
+### **The Governance Layer**
+- **Riverbraid-GPG-Gold:** Identity anchor and sovereign GPG verification.
+- **Riverbraid-Manifest-Gold:** Central directory and Merkle Root mapping.
+- **Riverbraid-Interface-Gold:** Deterministic UI contracts and relational interfaces.
+
+### **The Logic & Intelligence Layer**
+- **Riverbraid-Cognition:** High-fidelity signal processing and reasoning.
+- **Riverbraid-Memory-Gold:** Persistent state and relational storage.
+- **Riverbraid-Integration-Gold:** Cross-petal synthesis and alignment.
+- **Riverbraid-Refusal-Gold:** Safety-critical rejection and boundary logic.
+- **Riverbraid-Judicial-Gold:** Verification, auditing, and truth-claims.
+- **Riverbraid-Crypto-Gold:** Cryptographic primitives and entropy management.
+
+### **The Temporal & Sensory Layer**
+- **Riverbraid-Temporal-Gold:** Non-linear time-tracking and state history.
+- **Riverbraid-Harness-Gold:** Execution environment and resource gating.
+- **Riverbraid-Action-Gold:** External effects and output manifestation.
+- **Riverbraid-Audio-Gold:** High-fidelity auditory signal processing.
+- **Riverbraid-Vision-Gold:** Multimodal visual intelligence substrate.
+- **Riverbraid-Golds:** Universal resource registry.
+
+### **The Symmetry Layer**
+- **Riverbraid-Lite:** Symmetrical, efficient model scaling and lite-weight verification.
+
 ---
-title: Riverbraid-Genesis
-version: 1.5.0
-author: Michael John Tilk
-anchor: de2062
-status: Stationary
----
 
-# Riverbraid Lite (v1.5.0)
+## 🛠️ Verification
+Meaning is the Internal Frequency of a system successfully navigating the entropy of its environment. 
 
-## 1. Nature of the System
-Riverbraid is a **Deterministic Kernel**. It does not possess "truth" regarding the physical world; it possesses "integrity" regarding the digital record it consumes. It is a system of **Witness**, not of **Judgment**.
-
-## 2. Core Architecture
-- **Layer 0 (Physical):** Enforced UTF-8/LF canonicalization.
-- **Layer 1 (Information):** Sealed Constitutional Quad (Scope, Resilience, Survivability, Durability).
-- **Layer 2 (Execution):** Deterministic state transitions anchored to the Genesis Root.
-
-## 3. Verification
-The integrity of this repository can be verified using the signed proof in `PROOFS/v1.5.0_resonance_proof.json`.
+To verify the stationary floor:
+```bash
+node run-vectors.cjs verify
+```
 
 ---
-*This repository is a node in the Riverbraid Cluster. Its state is governed by its internal invariants, independent of steward intent.*
+© 2026 Riverbraid. Stationary State Sealed.

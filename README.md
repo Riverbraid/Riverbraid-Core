@@ -1,7 +1,7 @@
 # Riverbraid-Core
 > **Version:** 1.5.0-Genesis  
 > **Status:** STATIONARY  
-> **Merkle Root:** de2062  
+> **Merkle Root:** adef13  
 > **GPG Fingerprint:** D9475D6B717D0E6C8EC84F6D8F86D9F4F2B083A4
 
 ##  The 17-Petal Substrate

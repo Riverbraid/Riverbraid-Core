@@ -6,7 +6,7 @@ const REPOS = [
   "Riverbraid-Cognition", "Riverbraid-Golds", "Riverbraid-Crypto-Gold"
 ];
 
-const ROOT_ANCHOR = "de2062";
+const ROOT_ANCHOR = "adef13";
 
 function validateBraid() {
   console.log("--- Riverbraid Constitutional Validator ---");

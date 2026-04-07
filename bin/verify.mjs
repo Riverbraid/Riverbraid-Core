@@ -1,6 +1,6 @@
 import fs from 'fs';
 import path from 'path';
-const ROOT_ANCHOR = "de2062";
+const ROOT_ANCHOR = "adef13";
 const REPOS = ["Riverbraid-Cognition", "Riverbraid-Golds", "Riverbraid-Action-Gold"];
 REPOS.forEach(repo => {
     const p = path.join('/workspaces', repo, '.anchor');

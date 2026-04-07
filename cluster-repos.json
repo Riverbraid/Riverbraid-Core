@@ -1,0 +1,23 @@
+{
+  "repos": [
+    ".github",
+    "Riverbraid-Core",
+    "Riverbraid-Golds",
+    "Riverbraid-Cognition",
+    "Riverbraid-Lite",
+    "Riverbraid-Harness-Gold",
+    "Riverbraid-Manifest-Gold",
+    "Riverbraid-Interface-Gold",
+    "Riverbraid-GPG-Gold",
+    "Riverbraid-Crypto-Gold",
+    "Riverbraid-Judicial-Gold",
+    "Riverbraid-Memory-Gold",
+    "Riverbraid-Integration-Gold",
+    "Riverbraid-Refusal-Gold",
+    "Riverbraid-Safety-Gold",
+    "Riverbraid-Temporal-Gold",
+    "Riverbraid-Action-Gold",
+    "Riverbraid-Audio-Gold",
+    "Riverbraid-Vision-Gold"
+  ]
+}

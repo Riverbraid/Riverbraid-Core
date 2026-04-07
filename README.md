@@ -4,7 +4,7 @@
 > **Merkle Root:** adef13  
 > **GPG Fingerprint:** D9475D6B717D0E6C8EC84F6D8F86D9F4F2B083A4
 
-##  The 17-Petal Substrate
+##  The 19-Petal Substrate
 The Riverbraid is a deterministic numeric control substrate for planetary relational intelligence.
 
 ### **The Governance Layer**

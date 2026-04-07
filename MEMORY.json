@@ -1,22 +1,5 @@
 {
-  "system": "Riverbraid",
-  "version": "1.5.0-Genesis",
-  "status": "Stationary",
-  "governance": {
-    "root": "Riverbraid-Core",
-    "authority": "0C8C4B9A4E7A1C68489637705882DC2F75A38C26",
-    "anchor": "adef13",
-    "seal": "PROOFS/resonance.proof.asc"
-  },
-  "architecture": {
-    "logic_triad": ["gate.mjs", "heartbeat.mjs", "run-vectors.cjs"],
-    "baseline": "Riverbraid-Lite (38cb18f)",
-    "petals": 15,
-    "state": "Integration-Rest"
-  },
-  "invariants": {
-    "fail_closed": true,
-    "entropy_ban": "Gate 3 Enforced",
-    "mechanical_honesty": "Ground Truth Verified"
-  }
+  "anchor": "adef13",
+  "status": "STATIONARY",
+  "version": "1.5.0-Genesis"
 }

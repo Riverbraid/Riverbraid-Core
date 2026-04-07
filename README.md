@@ -4,7 +4,7 @@
 > **Merkle Root:** de2062  
 > **GPG Fingerprint:** D9475D6B717D0E6C8EC84F6D8F86D9F4F2B083A4
 
-## 🔱 The 17-Petal Substrate
+##  The 17-Petal Substrate
 The Riverbraid is a deterministic numeric control substrate for planetary relational intelligence.
 
 ### **The Governance Layer**
@@ -33,7 +33,7 @@ The Riverbraid is a deterministic numeric control substrate for planetary relati
 
 ---
 
-## 🛠️ Verification
+##  Verification
 Meaning is the Internal Frequency of a system successfully navigating the entropy of its environment. 
 
 To verify the stationary floor:
@@ -42,4 +42,4 @@ node run-vectors.cjs verify
 ```
 
 ---
-© 2026 Riverbraid. Stationary State Sealed.
+ 2026 Riverbraid. Stationary State Sealed.

@@ -1,13 +1,28 @@
-const path = require('path');
-function include(file, root) {
-  const rel = path.relative(root, file);
-  const excludes = ['.git', 'node_modules', '.rb_devlogs', 'constitution.snapshot.json', 'constitution.signature.json'];
-  if (excludes.some(e => rel.includes(e))) return false;
-  
-  // Core Critical Set
-  return rel === 'swarm-signatures.json' || 
-         rel.startsWith('bin/') || 
-         rel === 'package.json' ||
-         rel === 'cluster-repos.json';
-}
-module.exports = { include };
+module.exports = {
+  include(file, root) {
+    const path = require('path');
+    const rel = path.relative(root, file);
+
+    // 🚫 absolute exclusions (the "Observer" files)
+    const blocked = [
+      'constitution.snapshot.json',
+      'constitution.signature.json',
+      'constitution.threshold.json',
+      'run-vectors.cjs',
+      'package.json',
+      'package-lock.json',
+      'snapshot.schema.cjs'
+    ];
+
+    if (blocked.includes(rel)) return false;
+
+    // 🚫 system directories
+    if (
+      rel.startsWith('.git') ||
+      rel.startsWith('node_modules') ||
+      rel.startsWith('.rb_devlogs')
+    ) return false;
+
+    return true;
+  }
+};

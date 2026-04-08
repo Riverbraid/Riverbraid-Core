@@ -1,6 +1,11 @@
 {
-  "version": 2,
-  "merkle_root": "1b87c068b979d0832f07886504b8cfed739694fe58d97f72bf210d37611bf624",
-  "file_count": 10,
-  "timestamp": "2026-04-08T00:22:38.298Z"
+  "version": 3,
+  "merkle_root": "c419340b71f57284d14ecb1d6405c0f5bcc68c2a43c026d993d507350f44bc71",
+  "environment": {
+    "node": "v20.11.0",
+    "platform": "linux",
+    "arch": "x64"
+  },
+  "file_count": 48,
+  "timestamp": "2026-04-08T00:29:13.771Z"
 }

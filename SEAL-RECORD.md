@@ -17,3 +17,4 @@ All 19 repositories are now **Working** (containing executable logic, verifiers,
 To verify the cluster's integrity:
 1. Ensure `cluster-repos.json` matches the 19-petal list.
 2. Run the global-merkle-root script from the workspace root.
+2026-04-08 - V1.5.0 Seal: [ROOT_FROM_STEP_3]

@@ -4,7 +4,7 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "snapshot": "node bin/run-vectors.cjs snapshot",
+    "snapshot": "node run-vectors.cjs snapshot",
     "verify": "node run-vectors.cjs verify"
   },
   "engines": {

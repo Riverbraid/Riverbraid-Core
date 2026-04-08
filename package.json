@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "snapshot": "node bin/run-vectors.cjs snapshot",
-    "verify": "node bin/run-vectors.cjs verify"
+    "verify": "node run-vectors.cjs verify"
   },
   "engines": {
     "node": "20.11.0"

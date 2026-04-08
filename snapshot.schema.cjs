@@ -3,7 +3,7 @@ module.exports = {
     const path = require('path');
     const rel = path.relative(root, file);
 
-    // 🚫 absolute exclusions (the "Observer" files)
+    //  absolute exclusions (the "Observer" files)
     const blocked = [
       'constitution.snapshot.json',
       'constitution.signature.json',
@@ -16,7 +16,7 @@ module.exports = {
 
     if (blocked.includes(rel)) return false;
 
-    // 🚫 system directories
+    //  system directories
     if (
       rel.startsWith('.git') ||
       rel.startsWith('node_modules') ||

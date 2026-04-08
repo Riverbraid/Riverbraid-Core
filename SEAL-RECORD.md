@@ -1,4 +1,4 @@
-# Riverbraid v1.5.0 – Cluster Seal Record (Active Density)
+# Riverbraid v1.5.0  Cluster Seal Record (Active Density)
 
 **Date:** 2026-04-07  
 **Global Cluster Root:** `90da600578489fba71a275213e7b583c3c9d8b201fb5a81e3e197f1ad791a30b`

@@ -1,56 +1,6 @@
-[
-  {
-    "file": ".anchor"
-  },
-  {
-    "file": ".gitignore"
-  },
-  {
-    "file": "PROOFS/v1.5.0_resonance_proof.json.asc"
-  },
-  {
-    "file": "README.md"
-  },
-  {
-    "file": "bin/gate.mjs"
-  },
-  {
-    "file": "bin/heartbeat.mjs"
-  },
-  {
-    "file": "bin/run-vectors.cjs"
-  },
-  {
-    "file": "constitutional/DURABILITY.md"
-  },
-  {
-    "file": "constitutional/LAYER-INVARIANTS.md"
-  },
-  {
-    "file": "constitutional/NEUTRAL-LAYERS.md"
-  },
-  {
-    "file": "constitutional/RESILIENCE.md"
-  },
-  {
-    "file": "constitutional/SCOPE.md"
-  },
-  {
-    "file": "constitutional/SEAL-RECORD.md"
-  },
-  {
-    "file": "constitutional/SURVIVABILITY.md"
-  },
-  {
-    "file": "gate.mjs"
-  },
-  {
-    "file": "heartbeat.mjs"
-  },
-  {
-    "file": "run-vectors.cjs"
-  },
-  {
-    "file": "swarm_anchor.txt"
-  }
-]
+{
+  "name": "riverbraid-node",
+  "version": "1.5.0",
+  "timestamp": "2026-04-08T00:07:26.510Z",
+  "sha256": "c8bbcefd3ad9be0e219316a5fecaebc2dd1e470293e26d58f68baa37df163be5"
+}

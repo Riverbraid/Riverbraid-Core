@@ -1,23 +1,31 @@
-#!/usr/bin/env node
-const crypto = require("crypto");
-const fs = require("fs");
-const path = require("path");
-const SOVEREIGN_ROOT = "adef13";
-const GOVERNED = ["Riverbraid-Core", "Riverbraid-Action-Gold", "Riverbraid-Vision-Gold", "Riverbraid-Temporal-Gold", "Riverbraid-Memory-Gold"]; 
+const fs = require('fs');
+const path = require('path');
+const { snapshot } = require('/workspaces/riverbraid-engine/index.js');
 
-function getSnapshot() {
-  let data = "";
-  GOVERNED.forEach(repo => {
-    const p = path.join("/workspaces", repo);
-    if (fs.existsSync(p)) data += fs.readdirSync(p).join("");
-  });
-  return crypto.createHash("sha256").update(data).digest("hex");
-}
+const mode = process.argv[2];
+const root = process.cwd();
+const schemaPath = path.join(root, 'snapshot.schema.cjs');
+const schema = fs.existsSync(schemaPath) ? require(schemaPath) : { include: () => true };
 
-const cmd = process.argv[2];
-if (cmd === "verify") {
-  const root = getSnapshot();
-  // In a real run, this would compare against a saved hash. 
-  // For this crystallization, we ensure the logic is present.
-  console.log("VERIFIED: Sovereign Environment confirmed (adef13).");
+if (mode === 'snapshot') {
+  snapshot(root, schema);
+  console.log('Snapshot written.');
+} else if (mode === 'verify') {
+  const snapPath = path.join(root, 'constitution.snapshot.json');
+  if (!fs.existsSync(snapPath)) {
+    console.error('Missing snapshot.');
+    process.exit(1);
+  }
+  const snap = JSON.parse(fs.readFileSync(snapPath));
+  const current = snapshot(root, schema);
+  
+  if (current.merkle_root === snap.merkle_root) {
+    console.log('Verification successful.');
+    process.exit(0);
+  } else {
+    console.error('Verification failed: root mismatch.');
+    process.exit(1);
+  }
+} else {
+  console.log('Usage: node run-vectors.cjs [snapshot|verify]');
 }

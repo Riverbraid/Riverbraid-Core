@@ -7,7 +7,7 @@
 **The constitutional root of the Riverbraid cluster.**
 
 [![Status: Stationary](https://img.shields.io/badge/Status-Stationary-brightgreen)](#)
-[![Genesis Anchor](https://img.shields.io/badge/Genesis_Anchor-de2062-blue)](#)
+[![Genesis Anchor](https://img.shields.io/badge/Genesis_Anchor-d4935e-blue)](#)
 
 </div>
 
@@ -19,7 +19,7 @@ Riverbraid-Core is the **Deterministic Kernel**—the constitutional root from w
 
 * **Layer 0: Physical** — UTF-8/LF canonicalization enforced at the byte level.
 * **Layer 1: Information** — The Sealed Constitutional Quad: `SCOPE.md`, `RESILIENCE.md`, `SURVIVABILITY.md`, and `DURABILITY.md`.
-* **Layer 2: Execution** — Deterministic state transitions anchored to Genesis Root **de2062**.
+* **Layer 2: Execution** — Deterministic state transitions anchored to Genesis Root **d4935e**.
 
 ## Verification
 

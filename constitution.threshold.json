@@ -1,14 +1,1 @@
-{
-  "threshold": 2,
-  "deadlock_resolution": {
-    "enabled": true,
-    "tiers": [
-      { "level": 1, "deadlock_limit": 0, "action": "strict" },
-      { "level": 2, "deadlock_limit": 3, "action": "soft", "duration_steps": 86400 },
-      { "level": 3, "deadlock_limit": 10, "action": "emergency", "duration_steps": 3600 }
-    ],
-    "auto_clearance": { "enabled": true, "history_window": 1000, "commuting_threshold": 0.8 },
-    "step_to_time_ratio": 1,
-    "deadlock_window_steps": 3600
-  }
-}
+{"threshold": 2, "keys": ["ssh-ed25519 AAA... Custodian1", "ssh-ed25519 AAA... Custodian2"]}

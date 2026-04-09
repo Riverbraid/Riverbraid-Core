@@ -1,9 +1,7 @@
+node_modules/
 .DS_Store
-*.so
-*.bin
-*.elf
-*.uf2
-build/
-__pycache__/
-.env
+Thumbs.db
 *.log
+*.tmp
+.vscode/
+.idea/

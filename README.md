@@ -1,48 +1,30 @@
-# Riverbraid
+<div align="center">
 
-Riverbraid is a quiet, self-checking foundation for software systems.
+# O Riverbraid-Core
 
-It helps systems notice when something has changed, drifted, or broken  even in small, hard-to-detect ways.
+### The Deterministic Kernel
 
----
+**The constitutional root of the Riverbraid cluster.**
 
-## In plain English
+[![Status: Stationary](https://img.shields.io/badge/Status-Stationary-brightgreen)](#)
+[![Genesis Anchor](https://img.shields.io/badge/Genesis_Anchor-de2062-blue)](#)
 
-Most software breaks slowly and silently over time.
+</div>
 
-Files change. Tools update. Small differences creep in.  
-Eventually, something important stops working  and no one knows exactly when or why.
+## What Is This Repository?
 
-Riverbraid fixes that.
+Riverbraid-Core is the **Deterministic Kernel**—the constitutional root from which the entire Riverbraid cluster derives its integrity. All other repositories in the cluster are subordinate to the invariants established here.
 
-It creates a kind of memory for a system  a way for it to check itself and say:
+## Three-Layer Architecture
 
-> Am I still exactly what Im supposed to be?
+* **Layer 0: Physical** — UTF-8/LF canonicalization enforced at the byte level.
+* **Layer 1: Information** — The Sealed Constitutional Quad: `SCOPE.md`, `RESILIENCE.md`, `SURVIVABILITY.md`, and `DURABILITY.md`.
+* **Layer 2: Execution** — Deterministic state transitions anchored to Genesis Root **de2062**.
 
-If the answer is no, it fails clearly instead of drifting silently.
+## Verification
 
----
-
-## What it does
-
-Riverbraid:
-
-- Watches the important parts of a system
-- Creates a fingerprint of its exact state
-- Lets you verify that nothing has changed unexpectedly
-- Fails safely if something is off
-
----
-
-## Why it matters
-
-- Prevents silent breakage
-- Makes systems more honest and predictable
-- Helps you trust what you're running
-- Works quietly in the background
-
----
-
-## One sentence
-
-**Riverbraid is a way for software to continuously prove that it hasnt quietly changed.**
+```bash
+npm install
+node run-vectors.cjs
+node heartbeat.mjs
+```

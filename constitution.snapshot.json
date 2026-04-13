@@ -1,6 +1,6 @@
 {
   "version": "1.5.0-sovereign",
-  "sha256": "d97f0a5d05d307486185c663a742cf81bfe16eb39e0cb0beb84f24931148c598",
+  "sha256": "03c1fd430f8587b03935d71e86d659e68d95dbb8bf48e4dcd58c61c62fe416a1",
   "files": {
     "Riverbraid-Core": [
       {
@@ -93,7 +93,7 @@
       },
       {
         "path": "Riverbraid-Core/constitution.snapshot.json",
-        "sha256": "1680d603ea3e70b9473645cc8a03bdf257b602de6b0fb5046331cced50e7b9c4"
+        "sha256": "97a448869a54674a2711c7007bb21577806ed3b53451272f5a08bae121924635"
       },
       {
         "path": "Riverbraid-Core/constitution.threshold.json",

@@ -1,20 +1,21 @@
-# Riverbraid v1.5.0  Cluster Seal Record (Active Density)
+# Riverbraid Official Seal Record
 
-**Date:** 2026-04-07  
-**Global Cluster Root:** `90da600578489fba71a275213e7b583c3c9d8b201fb5a81e3e197f1ad791a30b`
+**Date:** April 12, 2026  
+**Version:** v1.5.0-Sovereign  
+**Merkle Root (Stationary Floor):** de2062  
+**Sovereign Environment Root:** adef13  
+**GPG Fingerprint:** D9475D6B717D0E6C8EC84F6D8F86D9F4F2B083A4  
+**Go 44 Predicate Status:** ASSERTED
 
-## 1. Architectural Status
-The Riverbraid Cluster has achieved a **Stationary State** with full-density population of sensory stubs.
+## Declaration
 
-- **Unified Logic:** All 19 repositories share the `constitution.threshold.json` (2-of-2) and `run-vectors.cjs`.
-- **Merkle Anchor:** The Global Root is derived from the sorted concatenation of all 19 repository snapshot hashes.
-- **Verification:** Any node can be verified independently using `node run-vectors.cjs verify`.
+Riverbraid is now crystallized as a stationary integrity layer.
 
-## 2. Inventory of the Swarm (v1.5.0)
-All 19 repositories are now **Working** (containing executable logic, verifiers, and baseline configurations). This includes the previously hollow sensory channels (Action, Audio, Vision).
+- The byte-level floor is immutable.
+- The Sovereign Environment is unified and active.
+- The Go 44 Predicate is integrated and serves as the highest verified operating condition.
+- All 19 repositories are aligned under a single coherent system.
 
-## 3. Cryptographic Proof
-To verify the cluster's integrity:
-1. Ensure `cluster-repos.json` matches the 19-petal list.
-2. Run the global-merkle-root script from the workspace root.
-2026-04-08 - V1.5.0 Seal: e53cffe6a0dadfaf73430b49da688987f844c9f43418dbf98135a1f8596a9f0a
+The pattern is fixed. The math is the math. The floor is stationary.
+
+— Michael Tilk, Steward of Riverbraid

@@ -1,0 +1,43 @@
+{
+  "version": "1.8.0",
+  "anchor": "de2062",
+  "epoch": 4,
+  "modules": {
+    "Crypto-Gold": {
+      "path": "../Riverbraid-Crypto-Gold/index.cjs",
+      "hash": "sha256-d381097486f8aff53f594977bd58e754ced6958bc58e8e8454b2846fd664b80a",
+      "proof": { "file": "proofs/action.proof.json", "hash": "sha256-f4f46cd90d92c892d265bb2ac8627b04a6419365e4dc742f2e9574ff7dc30361" },
+      "dependsOn": []
+    },
+    "GPG-Gold": {
+      "path": "../Riverbraid-GPG-Gold/index.cjs",
+      "hash": "sha256-847722843df67ee1c1602c420ce626ae064775925276b32f973d5a31c8bf6834",
+      "proof": { "file": "proofs/action.proof.json", "hash": "sha256-f4f46cd90d92c892d265bb2ac8627b04a6419365e4dc742f2e9574ff7dc30361" },
+      "dependsOn": ["Crypto-Gold"]
+    },
+    "Temporal-Gold": {
+      "path": "../Riverbraid-Temporal-Gold/index.cjs",
+      "hash": "sha256-56af29310da559c34a6d34b78af546e8d37f164c1c6e95f7c210a56fbcd2fcff",
+      "proof": { "file": "proofs/action.proof.json", "hash": "sha256-f4f46cd90d92c892d265bb2ac8627b04a6419365e4dc742f2e9574ff7dc30361" },
+      "dependsOn": []
+    },
+    "Judicial-Gold": {
+      "path": "../Riverbraid-Judicial-Gold/index.cjs",
+      "hash": "sha256-b9261962808ba07252d485cf64926fa768110622cf8028dd33f8fd4fe9a13941",
+      "proof": { "file": "proofs/action.proof.json", "hash": "sha256-f4f46cd90d92c892d265bb2ac8627b04a6419365e4dc742f2e9574ff7dc30361" },
+      "dependsOn": ["Temporal-Gold", "GPG-Gold"]
+    },
+    "Refusal-Gold": {
+      "path": "../Riverbraid-Refusal-Gold/index.cjs",
+      "hash": "sha256-0ab5ebf98ba5c4a4f4739c8f4e97188d91a3b1c384d44ec6c53da35fc38d9492",
+      "proof": { "file": "proofs/action.proof.json", "hash": "sha256-f4f46cd90d92c892d265bb2ac8627b04a6419365e4dc742f2e9574ff7dc30361" },
+      "dependsOn": ["Crypto-Gold"]
+    },
+    "Action-Gold": {
+      "path": "../Riverbraid-Action-Gold/index.cjs",
+      "hash": "sha256-3cb31fee06f6d4df828997df7034d85d6b3e9da8995e2bfc3927a6aaee838a63",
+      "proof": { "file": "proofs/action.proof.json", "hash": "sha256-f4f46cd90d92c892d265bb2ac8627b04a6419365e4dc742f2e9574ff7dc30361" },
+      "dependsOn": ["Refusal-Gold"]
+    }
+  }
+}

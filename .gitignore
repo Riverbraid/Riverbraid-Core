@@ -5,3 +5,10 @@ Thumbs.db
 *.tmp
 .vscode/
 .idea/
+*.vo
+*.vok
+*.vos
+*.glob
+*.cmo
+*.cmi
+sim

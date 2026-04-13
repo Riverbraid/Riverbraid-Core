@@ -1,0 +1,7 @@
+{
+  "module": "Audio-Gold",
+  "epoch": 2,
+  "verifiedProperties": ["DET_001", "ISO_001", "CMR_001"],
+  "method": "static-analysis",
+  "tool": "riverbraid-scanner-v1"
+}

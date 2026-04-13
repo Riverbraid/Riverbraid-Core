@@ -1,0 +1,19 @@
+{
+  "version": "1.6.0",
+  "anchor": "de2062",
+  "epoch": 2,
+  "properties": [
+    {
+      "id": "DET_001",
+      "description": "Deterministic execution: Prohibits Date, Math.random, and non-deterministic I/O."
+    },
+    {
+      "id": "ISO_001",
+      "description": "State isolation: No mutation outside declared state boundaries."
+    },
+    {
+      "id": "CMR_001",
+      "description": "Controlled module access: All imports must resolve via CMR only."
+    }
+  ]
+}

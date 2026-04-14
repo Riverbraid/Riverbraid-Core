@@ -6,7 +6,13 @@
     "stationary_state": "H_div_zero"
   },
   "gates": {
-    "linear": ["hygiene", "assemble"],
-    "nonlinear": ["build", "vectors"]
+    "linear": [
+      "hygiene",
+      "assemble"
+    ],
+    "nonlinear": [
+      "build",
+      "vectors"
+    ]
   }
 }

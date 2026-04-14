@@ -19,7 +19,7 @@ if (constitution.threshold !== 1) {
 }
 
 try {
-    const vmPath = './Go44/riverbraid_vm';
+    const vmPath = '../Riverbraid-Core/Go44/riverbraid_vm';
     execSync(`${vmPath} --verify constitution.threshold.json`);
     console.log("Integrity: Verifier is coupled. ✅");
     console.log("Semantic Bridge: Scale Separation Active. ✅");

@@ -12,3 +12,12 @@ Thumbs.db
 *.cmo
 *.cmi
 sim
+# Round 2 & 3 Expunging
+__pycache__/
+*.pyc
+runtime/*.cmi
+runtime/*.cmo
+logs/*.log
+MEMORY.json
+runtime.csv
+MEMORY.runtime.json

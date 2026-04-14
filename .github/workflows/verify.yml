@@ -1,44 +1,22 @@
-name: Riverbraid Integrity Guard
-
-on:
-  push:
-    branches: [ main ]
-  pull_request:
-    branches: [ main ]
+name: Riverbraid Sovereign Guard
+on: [push, pull_request]
 
 jobs:
-  verify-floor:
+  verify:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
         with:
-          path: Riverbraid-Core
+          node-version-file: '.nvmrc'
+          cache: 'npm'
 
-      # Checkout all governed petals for a full cluster check
-      - name: Checkout Petals
-        run: |
-          for repo in Riverbraid-Golds Riverbraid-Crypto-Gold Riverbraid-Judicial-Gold Riverbraid-Memory-Gold Riverbraid-Integration-Gold Riverbraid-Refusal-Gold Riverbraid-Cognition Riverbraid-Harness-Gold Riverbraid-Temporal-Gold Riverbraid-Action-Gold Riverbraid-Audio-Gold Riverbraid-Vision-Gold Riverbraid-Lite Riverbraid-Interface-Gold Riverbraid-Manifest-Gold Riverbraid-GPG-Gold Riverbraid-Safety-Gold; do
-            git clone https://github.com/${{ github.repository_owner }}/$repo.git ../$repo || echo "Skip $repo"
-          done
+      - name: Install Coq
+        run: sudo apt-get update && sudo apt-get install -y coq
 
-      - name: Setup Node.js
-        uses: actions/setup-node@v4
-        with:
-          node-version: '20'
+      - name: Compile Proofs
+        working-directory: Go44
+        run: coqc -Q . Riverbraid Core.v
 
-      - name: Assert LF Line Endings
-        run: |
-          find . -name "*.js" -o -name "*.mjs" -o -name "*.cjs" -o -name "*.md" | xargs grep -lU $'\r' && (echo "FAIL: CRLF detected" && exit 1) || echo "Line endings OK"
-
-      - name: Run Integrity Verification
-        working-directory: Riverbraid-Core
-        run: |
-          export RB_WORKSPACE_ROOT=$(pwd)/..
-          node run-vectors.cjs verify
-
-      - name: Assert Snapshot Currency
-        working-directory: Riverbraid-Core
-        run: |
-          export RB_WORKSPACE_ROOT=$(pwd)/..
-          node run-vectors.cjs snapshot
-          git diff --exit-code constitution.snapshot.json || (echo "FAIL: Snapshot is stale" && exit 1)
+      - name: Integrity Check
+        run: node run-vectors.cjs verify

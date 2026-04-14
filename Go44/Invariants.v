@@ -7,7 +7,13 @@ Theorem step_monotonic :
     step s' = S (step s) \/ step s' = step s.
 Proof.
   intros s c s' H.
-  destruct c; simpl in H; try (inversion H; subst; simpl; auto).
-  unfold apply_transition in H.
-  destruct (frozen s); inversion H; subst; simpl; auto.
+  destruct c; simpl in H.
+  - (* Transition *)
+    destruct (frozen s) eqn:E.
+    + inversion H.
+    + inversion H; subst; simpl. left. reflexivity.
+  - (* Freeze *)
+    inversion H; subst; simpl. right. reflexivity.
+  - (* Thaw *)
+    inversion H; subst; simpl. right. reflexivity.
 Qed.

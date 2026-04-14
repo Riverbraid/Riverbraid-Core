@@ -1,1 +1,18 @@
-{"threshold": 2, "keys": ["ssh-ed25519 AAA... Custodian1", "ssh-ed25519 AAA... Custodian2"]}
+{
+  "version": "1.5.0",
+  "threshold": 2,
+  "key_type": "gpg-ed25519",
+  "guardians": [
+    {
+      "id": "guardian-1",
+      "fingerprint": "93A54C7965E4518B90A09123456789ABCDEF0123",
+      "key_server": "keys.openpgp.org"
+    },
+    {
+      "id": "guardian-2",
+      "fingerprint": "A2B4C6D8E0F2A4C6E80123456789ABCDEF012345",
+      "key_server": "keys.openpgp.org"
+    }
+  ],
+  "GOVERNANCE_STATUS": "PRE-CEREMONY"
+}

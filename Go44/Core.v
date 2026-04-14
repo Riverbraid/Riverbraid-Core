@@ -1,41 +1,20 @@
-Require Import Arith List.
-Import ListNotations.
+Require Import Coq.Arith.PeanoNat.
 
 Record State := mkState {
-  step : nat;
-  root : nat;
+  step   : nat;
   frozen : bool
 }.
 
 Inductive Command :=
-| Transition (r : nat)
+| Transition
 | Freeze
-| Thaw
-| Clearance (t : nat).
+| Thaw.
 
-Definition apply_transition s r :=
-  if frozen s then None
-  else Some (mkState (S (step s)) (Nat.max (root s) r) false).
-
-Definition apply_freeze s := Some (mkState (step s) (root s) true).
-Definition apply_thaw s := Some (mkState (step s) (root s) false).
-Definition apply_clearance s t := 
-  if (0 <? t) then Some (mkState (step s) (root s) false) else None.
-
-Definition transition s c :=
+Definition transition (s : State) (c : Command) : option State :=
   match c with
-  | Transition r => apply_transition s r
-  | Freeze => apply_freeze s
-  | Thaw => apply_thaw s
-  | Clearance t => apply_clearance s t
-  end.
-
-Fixpoint run (s : State) (cs : list Command) : State :=
-  match cs with
-  | [] => s
-  | c :: cs' => 
-      match transition s c with
-      | Some s' => run s' cs'
-      | None => run s cs'
-      end
+  | Transition =>
+      if frozen s then None
+      else Some (mkState (S (step s)) false)
+  | Freeze => Some (mkState (step s) true)
+  | Thaw  => Some (mkState (step s) false)
   end.

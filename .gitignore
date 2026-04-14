@@ -18,6 +18,5 @@ __pycache__/
 runtime/*.cmi
 runtime/*.cmo
 logs/*.log
-MEMORY.json
 runtime.csv
 MEMORY.runtime.json

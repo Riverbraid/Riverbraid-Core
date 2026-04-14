@@ -2,7 +2,7 @@
   "version": "1.5.0-alpha-solo",
   "status": "GENESIS_ROOT",
   "timestamp_utc": "2026-03-22T20:52:45Z",
-  "merkle_root": "216713300468e4e77e097ab42ddd9b752b46cfdcb1dbe7f4ac4e03a38f249bdc",
+  "merkle_root": "b20e903e939723d2a9a301ae240a9807d73a03c689adce933638f05a847eec17",
   "invariants": ["NO_SILENT_DROP", "AGGREGATION_MONOTONICITY"],
   "signature_status": "ACTIVE"
 }

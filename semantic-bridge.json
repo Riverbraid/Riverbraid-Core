@@ -1,0 +1,12 @@
+{
+  "version": "1.5.0",
+  "invariants": {
+    "coupling_test": "strict",
+    "scale_separation": "gate_active",
+    "stationary_state": "H_div_zero"
+  },
+  "gates": {
+    "linear": ["hygiene", "assemble"],
+    "nonlinear": ["build", "vectors"]
+  }
+}

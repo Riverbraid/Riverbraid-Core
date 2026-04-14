@@ -1,19 +1,27 @@
 import { createHash } from 'crypto';
-import { assertPulse } from './heartbeat.mjs';
-const GENESIS_ROOT = 'de2062';
-function canonicalize(input) {
-  if (typeof input !== 'string') throw new Error('GATE:REJECT — input must be a string');
-  const normalized = input.replace(/\r\n/g, '\n').replace(/\r/g, '\n');
-  if (/[\uFEFF]/.test(normalized)) throw new Error('GATE:REJECT — BOM detected');
-  return normalized;
-}
-function computeAuditHash(payload) {
-  return createHash('sha256').update(JSON.stringify(payload)).digest('hex').slice(0, 16);
-}
-export function gate(rawInput, priorHash = null) {
-  const canonical = canonicalize(rawInput);
-  const AUDIT_HASH = computeAuditHash({ canonical, genesis: GENESIS_ROOT });
-  const metrics = { mode: 'engage', coherence: 0.9, AUDIT_HASH };
-  const heartbeat = assertPulse(metrics, priorHash);
-  return { status: 'OPEN', genesis_root: GENESIS_ROOT, AUDIT_HASH, heartbeat_hash: heartbeat.HEARTBEAT_HASH };
+import { readFileSync } from 'fs';
+
+// Root anchor for state transitions
+const ANCHOR = readFileSync('.anchor', 'utf8').trim();
+
+export function gate(input) {
+  if (!input || typeof input !== 'object') {
+    throw new Error('GATE: null or invalid input — FAIL-CLOSED');
+  }
+  
+  // 128-bit security threshold (Audit Hash)
+  const hash = createHash('sha256')
+    .update(JSON.stringify(input))
+    .digest('hex')
+    .slice(0, 32); 
+
+  if (!input.AUDIT_HASH) {
+    throw new Error('GATE: missing AUDIT_HASH — FAIL-CLOSED');
+  }
+  
+  if (input.AUDIT_HASH !== hash) {
+    throw new Error(`GATE: hash mismatch — FAIL-CLOSED`);
+  }
+  
+  return { passed: true, anchor: ANCHOR, hash };
 }

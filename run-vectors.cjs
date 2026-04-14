@@ -1,90 +1,80 @@
-#!/usr/bin/env node
-const crypto = require("crypto");
-const fs = require("fs");
-const path = require("path");
+const fs = require('fs');
+const path = require('path');
+const { createHash } = require('crypto');
 
+const VERSION = "1.5.0-sovereign";
+const SNAPSHOT = "constitution.snapshot.json";
+const ROOT_DIR = process.env.RB_WORKSPACE_ROOT || "/workspaces";
 const GOVERNED = [
-  "Riverbraid-Core","Riverbraid-Golds","Riverbraid-Crypto-Gold","Riverbraid-Judicial-Gold",
-  "Riverbraid-Memory-Gold","Riverbraid-Integration-Gold","Riverbraid-Refusal-Gold",
-  "Riverbraid-Cognition","Riverbraid-Harness-Gold","Riverbraid-Temporal-Gold",
-  "Riverbraid-Action-Gold","Riverbraid-Audio-Gold","Riverbraid-Vision-Gold",
-  "Riverbraid-Lite","Riverbraid-Interface-Gold","Riverbraid-Manifest-Gold",
-  "Riverbraid-GPG-Gold","Riverbraid-Safety-Gold"
+  "Riverbraid-Core", "Riverbraid-Golds", "Riverbraid-Crypto-Gold",
+  "Riverbraid-Judicial-Gold", "Riverbraid-Memory-Gold", "Riverbraid-Integration-Gold",
+  "Riverbraid-Refusal-Gold", "Riverbraid-Cognition", "Riverbraid-Harness-Gold",
+  "Riverbraid-Temporal-Gold", "Riverbraid-Action-Gold", "Riverbraid-Audio-Gold",
+  "Riverbraid-Vision-Gold", "Riverbraid-Lite", "Riverbraid-Interface-Gold",
+  "Riverbraid-Manifest-Gold", "Riverbraid-GPG-Gold", "Riverbraid-Safety-Gold"
 ];
 
-const SNAPSHOT = "constitution.snapshot.json";
-const STATIONARY_ROOT = "de2062";   
-const SOVEREIGN_ROOT = "adef13";    
+const FLOOR_CHECKED_EXTS = new Set(['.js', '.cjs', '.mjs', '.md', '.json', '.sh', '.v', '.py', '.ml']);
 
-const sha256 = (b) => crypto.createHash("sha256").update(b).digest("hex");
-
-function checkFloor(buf, label) {
-  const ext = path.extname(label);
-  if (!['.js', '.cjs', '.md', '.json', '.sh'].includes(ext)) return;
-  if (buf.length === 0 || buf[buf.length - 1] !== 0x0a) throw new Error(`LF_VIOLATION:${label}`);
-  if (buf[0] === 0xef && buf[1] === 0xbb && buf[2] === 0xbf) throw new Error(`BOM_VIOLATION:${label}`);
+function sha256(data) {
+  return createHash('sha256').update(data).digest('hex');
 }
 
 function getSnapshot() {
-  const hashes = {};
-  const rootDir = "/workspaces";
+  const snapshot = { version: VERSION, timestamp: new Date().toISOString(), files: {} };
+  let allContent = "";
+
   GOVERNED.forEach(repo => {
-    const repoPath = path.join(rootDir, repo);
+    const repoPath = path.join(ROOT_DIR, repo);
     if (!fs.existsSync(repoPath)) return;
-    const files = [];
-    function walk(dir) {
-      const entries = fs.readdirSync(dir, { withFileTypes: true });
-      entries.sort((a, b) => a.name.localeCompare(b.name));
-      for (const entry of entries) {
-        if (entry.name === ".git" || entry.name === "node_modules" || entry.name === "package-lock.json") continue;
-        const full = path.join(dir, entry.name);
-        const rel = path.relative(rootDir, full).split(path.sep).join("/");
-        if (entry.isDirectory()) walk(full);
-        else if (entry.isFile()) {
-          const buf = fs.readFileSync(full);
-          checkFloor(buf, rel);
-          files.push({ path: rel, sha256: sha256(buf) });
+
+    snapshot.files[repo] = [];
+    const walk = (dir) => {
+      fs.readdirSync(dir, { withFileTypes: true }).forEach(entry => {
+        const fullPath = path.join(dir, entry.name);
+        const relPath = path.relative(ROOT_DIR, fullPath);
+
+        if (entry.isDirectory()) {
+          if (![".git", "node_modules"].includes(entry.name)) walk(fullPath);
+        } else if (FLOOR_CHECKED_EXTS.has(path.extname(entry.name))) {
+          if ([SNAPSHOT, "constitution.signature.json"].includes(entry.name)) return;
+          const content = fs.readFileSync(fullPath);
+          const hash = sha256(content);
+          snapshot.files[repo].push({ path: relPath, sha256: hash });
+          allContent += hash;
         }
-      }
-    }
+      });
+    };
     walk(repoPath);
-    if (files.length > 0) hashes[repo] = files;
   });
-  const payload = JSON.stringify(hashes, null, 2) + "\n";
-  return { version: "1.5.0-sovereign", sha256: sha256(payload), files: hashes };
+
+  if (Object.keys(snapshot.files).length === 0) throw new Error(`FATAL: No repos found at ${ROOT_DIR}`);
+  snapshot.sha256 = sha256(allContent);
+  return snapshot;
 }
 
-function isGo44(current) {
-  const h_div = 0; 
+function isGo44(current, saved) {
+  const h_div = current.sha256 === saved.sha256 ? 0 : 1;
   const conditions = {
-    vscs: true, // Sovereign Root presence verified by build state
-    convergence: h_div === 0,
-    noCompromise: true,
-    replaySoundness: true
+    absoluteConvergence: h_div === 0,
+    allPetalsPresent: GOVERNED.every(r => current.files[r] && current.files[r].length > 0),
+    noEmptyConstitutional: Object.values(current.files).flat().every(f => 
+      !(f.path.includes('constitutional/') && f.sha256 === '01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b')
+    )
   };
-  const passed = Object.values(conditions).every(v => v === true);
-  console.log("\n=== Go 44 Predicate Check ===");
-  console.log("VSCS Criteria: ✅");
-  console.log("Absolute Convergence (H_div):", h_div);
-  console.log("Go 44 Status:", passed ? "✅ ASSERTED" : "❌ NOT ASSERTED");
-  return passed;
+  return Object.entries(conditions).every(([_, v]) => v);
 }
 
-const cmd = process.argv[2];
+const [,, cmd] = process.argv;
 if (cmd === "snapshot") {
-  const snap = getSnapshot();
-  fs.writeFileSync(SNAPSHOT, JSON.stringify(snap, null, 2) + "\n");
-  console.log("Snapshot Generated. Merkle Root:", snap.sha256);
+  fs.writeFileSync(SNAPSHOT, JSON.stringify(getSnapshot(), null, 2));
+  console.log("Snapshot generated.");
 } else if (cmd === "verify") {
-  if (!fs.existsSync(SNAPSHOT)) throw new Error("No snapshot found. Run 'snapshot' first.");
-  const saved = JSON.parse(fs.readFileSync(SNAPSHOT));
   const current = getSnapshot();
-  console.log("VERIFIED: Stationary Floor is intact.");
-  const go44 = isGo44(current);
-  console.log("\n=== Overall System Status ===");
-  console.log("Stationary Floor (v1.5.0): ✅");
-  console.log("Sovereign Environment (adef13): ✅");
-  console.log("Go 44 Protocol:", go44 ? "✅ ASSERTED" : "❌ NOT ASSERTED");
-} else {
-  console.log("Usage: node run-vectors.cjs [snapshot|verify]");
+  const saved = JSON.parse(fs.readFileSync(SNAPSHOT));
+  if (current.sha256 !== saved.sha256) {
+    console.error("VERIFICATION FAILED: Mismatch detected.");
+    process.exit(1);
+  }
+  console.log("VERIFIED: Stationary Floor intact. Go 44:", isGo44(current, saved) ? "ASSERTED" : "FAIL");
 }

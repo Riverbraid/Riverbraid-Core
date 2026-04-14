@@ -11,6 +11,8 @@ const PREDICTIONS = [
 ];
 
 export function pulse(metrics, priorHash = null) {
+  if (PREDICTIONS.length === 0) throw new Error("HEARTBEAT: no predicates — FAIL-CLOSED");
+  if (PREDICTIONS.length === 0) throw new Error('HEARTBEAT FAIL-CLOSED: predicate array is empty');
   const results = PREDICTIONS.map(p => {
     let passed; try { passed = p.test(metrics, priorHash); } catch (e) { passed = false; }
     return { id: p.id, name: p.name, passed };
@@ -22,7 +24,7 @@ export function pulse(metrics, priorHash = null) {
     signal: allPassed ? 'CLOSED-LOOP' : 'FAIL-CLOSED',
     AUDIT_HASH: metrics.AUDIT_HASH 
   };
-  heartbeat.HEARTBEAT_HASH = createHash('sha256').update(JSON.stringify(heartbeat)).digest('hex').slice(0, 16);
+  heartbeat.HEARTBEAT_HASH = createHash('sha256').update(JSON.stringify(heartbeat)).digest('hex');
   return heartbeat;
 }
 

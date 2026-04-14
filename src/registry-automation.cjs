@@ -1,6 +1,5 @@
 const fs = require('fs');
 const path = require('path');
-
 const REGISTRY_PATH = path.join(__dirname, '..', '..', 'Riverbraid-Manifest-Gold', 'registry.json');
 
 function evaluateModuleHealth(moduleName, result) {
@@ -18,5 +17,4 @@ function evaluateModuleHealth(moduleName, result) {
     }
     return true;
 }
-
 module.exports = { evaluateModuleHealth };

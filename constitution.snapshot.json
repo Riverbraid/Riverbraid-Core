@@ -1,6 +1,6 @@
 {
   "version": "1.5.0-sovereign",
-  "timestamp": "2026-04-14T04:48:45.903Z",
+  "timestamp": "2026-04-14T04:50:13.476Z",
   "files": {
     "Riverbraid-Core": [
       {
@@ -141,7 +141,7 @@
       },
       {
         "path": "Riverbraid-Core/constitutional/NEUTRAL-LAYERS.md",
-        "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+        "sha256": "e5b4048b186aa1cf4eb245826b8253630bc9926ba00703a1c6dc2ad22bb92356"
       },
       {
         "path": "Riverbraid-Core/constitutional/RESILIENCE.md",
@@ -149,15 +149,15 @@
       },
       {
         "path": "Riverbraid-Core/constitutional/SCOPE.md",
-        "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+        "sha256": "13c4dd49b3ca66fe53d0ec5cd7f9efc6550205274a9b67bd92ffdc30f5caf93c"
       },
       {
         "path": "Riverbraid-Core/constitutional/SEAL-RECORD.md",
-        "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+        "sha256": "f4e0369f3efe03a5d51de1e0d212bd1d98bf2131b399e11da0f0a0af563fd217"
       },
       {
         "path": "Riverbraid-Core/constitutional/SURVIVABILITY.md",
-        "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+        "sha256": "a735023fe0afa867bcf999d20b459af766303c2b6fde90cc120e136084db3917"
       },
       {
         "path": "Riverbraid-Core/crypt-vault.cjs",
@@ -1683,31 +1683,31 @@
       },
       {
         "path": "Riverbraid-Temporal-Gold/constitutional/DURABILITY.md",
-        "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+        "sha256": "7a9cd7cbe4b1ee99dc775868da26ad9aa20047830cf454038f97db5736030742"
       },
       {
         "path": "Riverbraid-Temporal-Gold/constitutional/LAYER-INVARIANTS.md",
-        "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+        "sha256": "b6e1fd4f83d7e8431418e3dbd3f87bebe729fe87a1fa085375a88d3d9bb2e6be"
       },
       {
         "path": "Riverbraid-Temporal-Gold/constitutional/NEUTRAL-LAYERS.md",
-        "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+        "sha256": "25bf5f1780d8afdf4fb68548f087f4515117130770568e617ca2b97249f9268b"
       },
       {
         "path": "Riverbraid-Temporal-Gold/constitutional/RESILIENCE.md",
-        "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+        "sha256": "4da4238ccb3b1435997421a2fb71829ba4f1562699bda2a35c499469b33406af"
       },
       {
         "path": "Riverbraid-Temporal-Gold/constitutional/SCOPE.md",
-        "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+        "sha256": "596aca088adc659c120eac62699bc2797cf1a4938c81efe8f8878fbd47eb0242"
       },
       {
         "path": "Riverbraid-Temporal-Gold/constitutional/SEAL-RECORD.md",
-        "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+        "sha256": "1e053f834416370c16037a2e5ba8dcd94cbf221a1bfc75f5af0c8c8380b436ca"
       },
       {
         "path": "Riverbraid-Temporal-Gold/constitutional/SURVIVABILITY.md",
-        "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+        "sha256": "59977a720125a54b6dc515001c0ad34d96ca9ba546d6e9ad4cf92ab6eee725b2"
       },
       {
         "path": "Riverbraid-Temporal-Gold/crypt-vault.cjs",
@@ -1829,31 +1829,31 @@
       },
       {
         "path": "Riverbraid-Action-Gold/constitutional/DURABILITY.md",
-        "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+        "sha256": "c641950e1d77860c1492102286450e053266faf8611b02190731af615da081f1"
       },
       {
         "path": "Riverbraid-Action-Gold/constitutional/LAYER-INVARIANTS.md",
-        "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+        "sha256": "1b7138d432ac5e05fbd2675219861ff66eb48d13a1bfabf0da74a676cc460484"
       },
       {
         "path": "Riverbraid-Action-Gold/constitutional/NEUTRAL-LAYERS.md",
-        "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+        "sha256": "f0b73f868f64edaddd00a331fa280a8c661d700233a506c3360fcb76ed4a1f75"
       },
       {
         "path": "Riverbraid-Action-Gold/constitutional/RESILIENCE.md",
-        "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+        "sha256": "1ac41904759a7dc7210fb1e78684df7e884fc49e426bfb11bcd2b7c4d7b9f80b"
       },
       {
         "path": "Riverbraid-Action-Gold/constitutional/SCOPE.md",
-        "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+        "sha256": "2ceb866da52ccc941661578d10ba72c28abd15ab330fdf80114c09ca76748f7e"
       },
       {
         "path": "Riverbraid-Action-Gold/constitutional/SEAL-RECORD.md",
-        "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+        "sha256": "f79ba4d27d00c2147dec1991a6f3dcc8a2a7a598a3329c84173c94937850f404"
       },
       {
         "path": "Riverbraid-Action-Gold/constitutional/SURVIVABILITY.md",
-        "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+        "sha256": "9915fb5be8144f880169b0379a15eb59ae472c177d22f28de3cc6c9ca259fd74"
       },
       {
         "path": "Riverbraid-Action-Gold/crypt-vault.cjs",
@@ -1975,31 +1975,31 @@
       },
       {
         "path": "Riverbraid-Audio-Gold/constitutional/DURABILITY.md",
-        "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+        "sha256": "7649646bc1f7410c3f70648f62207f09afa49cdc26f1bf961759f22d924056c7"
       },
       {
         "path": "Riverbraid-Audio-Gold/constitutional/LAYER-INVARIANTS.md",
-        "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+        "sha256": "6413b46d05def9e136658a5c9928ed3f36afb52a3f9b0943e2bc04cbe1505ecf"
       },
       {
         "path": "Riverbraid-Audio-Gold/constitutional/NEUTRAL-LAYERS.md",
-        "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+        "sha256": "1b135eb0dd17d0c1a167f2dfb94e52a4a93f08e9c448bfadc8d16ed8e7e2455d"
       },
       {
         "path": "Riverbraid-Audio-Gold/constitutional/RESILIENCE.md",
-        "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+        "sha256": "06e714a21ccef3df45611537b144764891c4bafe6aadf18f0dcbd8aecd69d2ce"
       },
       {
         "path": "Riverbraid-Audio-Gold/constitutional/SCOPE.md",
-        "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+        "sha256": "43b9f5637598b2995e309a2b75d16e6ffe930f72f7667795541803dc77613979"
       },
       {
         "path": "Riverbraid-Audio-Gold/constitutional/SEAL-RECORD.md",
-        "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+        "sha256": "f2c63f9658ec6d3638159f2715abff07218c0989e8b38b915a48d4dcbe024065"
       },
       {
         "path": "Riverbraid-Audio-Gold/constitutional/SURVIVABILITY.md",
-        "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+        "sha256": "e71cd50d78e82c1e41d4448c0b8d4ba259d4928489e8d3abbe25758c6536d62d"
       },
       {
         "path": "Riverbraid-Audio-Gold/crypt-vault.cjs",
@@ -2113,31 +2113,31 @@
       },
       {
         "path": "Riverbraid-Vision-Gold/constitutional/DURABILITY.md",
-        "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+        "sha256": "eb6740b19aa0b81d30dd555be2fb266db39cbd5c36130fc121d75c71b8753daa"
       },
       {
         "path": "Riverbraid-Vision-Gold/constitutional/LAYER-INVARIANTS.md",
-        "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+        "sha256": "5d47665e2102c7e466d4e25ce6f6fc175dfe691339c188d8caee8d6f1c2ebe5a"
       },
       {
         "path": "Riverbraid-Vision-Gold/constitutional/NEUTRAL-LAYERS.md",
-        "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+        "sha256": "00edc28d3aeef1ed871918daba41d4b5301f7daec5420a05162df5f82d7fb2b3"
       },
       {
         "path": "Riverbraid-Vision-Gold/constitutional/RESILIENCE.md",
-        "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+        "sha256": "b9793d20c94ed0cc75ddaeb0ccf545c570184a5014c75e150fc73246fb3c1578"
       },
       {
         "path": "Riverbraid-Vision-Gold/constitutional/SCOPE.md",
-        "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+        "sha256": "5ee6d3012a7892e9edacc9a0f422ddd95cda6622caf934442f970614067d7eda"
       },
       {
         "path": "Riverbraid-Vision-Gold/constitutional/SEAL-RECORD.md",
-        "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+        "sha256": "3a61395e30d4d0edb04ed315299b958345f434ee1e068dcc4265fbd781d23fe5"
       },
       {
         "path": "Riverbraid-Vision-Gold/constitutional/SURVIVABILITY.md",
-        "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+        "sha256": "23fd7c3012dea04680d542009f4404c32306e8263d9f9a3d35ebe1ea08e2ab37"
       },
       {
         "path": "Riverbraid-Vision-Gold/crypt-vault.cjs",
@@ -2335,31 +2335,31 @@
       },
       {
         "path": "Riverbraid-Lite/constitutional/DURABILITY.md",
-        "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+        "sha256": "f483cda86c5daade3e2a0265e37e09306f553b0188213b07b2df06c8473bd6a3"
       },
       {
         "path": "Riverbraid-Lite/constitutional/LAYER-INVARIANTS.md",
-        "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+        "sha256": "e0325136e4624017c6ecbabdaa9d4149e3341d82d058eea9afb5a39e2b63c27a"
       },
       {
         "path": "Riverbraid-Lite/constitutional/NEUTRAL-LAYERS.md",
-        "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+        "sha256": "8f761aa5e68d54fd3488c3d64b40ac215483562763bc17d0a4efe09c33620cf6"
       },
       {
         "path": "Riverbraid-Lite/constitutional/RESILIENCE.md",
-        "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+        "sha256": "4784a2e01f781af2962f0e46b4c24b5a51f8e28a652d8f84bf8a438d3d669aee"
       },
       {
         "path": "Riverbraid-Lite/constitutional/SCOPE.md",
-        "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+        "sha256": "8424dca7e61999dbc3bf90f3a90f8b16b316e109a54f4476147a46e3d9eb3490"
       },
       {
         "path": "Riverbraid-Lite/constitutional/SEAL-RECORD.md",
-        "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+        "sha256": "8009d263d520110ced71c3d3d9d4a85babf21860eca8868d3b5b395de445f630"
       },
       {
         "path": "Riverbraid-Lite/constitutional/SURVIVABILITY.md",
-        "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+        "sha256": "5b03ac72c8ec31e45334b70d631ec624dd8ec5078aa00f0efb7781700f5cd0fa"
       },
       {
         "path": "Riverbraid-Lite/crypt-vault.cjs",
@@ -2903,5 +2903,5 @@
       }
     ]
   },
-  "sha256": "39f655aae4452de77de36cb315542bfde7bf6d020d8858d00606700f1000a0ea"
+  "sha256": "9e68e74bf2e0101155563b32edbbdfb77d72ed1469101c4a74e60e01a6565e19"
 }

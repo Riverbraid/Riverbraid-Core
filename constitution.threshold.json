@@ -1,18 +1,4 @@
 {
-  "version": "1.5.0",
-  "threshold": 2,
-  "key_type": "gpg-ed25519",
-  "guardians": [
-    {
-      "id": "guardian-1",
-      "fingerprint": "93A54C7965E4518B90A09123456789ABCDEF0123",
-      "key_server": "keys.openpgp.org"
-    },
-    {
-      "id": "guardian-2",
-      "fingerprint": "A2B4C6D8E0F2A4C6E80123456789ABCDEF012345",
-      "key_server": "keys.openpgp.org"
-    }
-  ],
-  "GOVERNANCE_STATUS": "PRE-CEREMONY"
+  "threshold": 1,
+  "verifier_integrity": "49ed3a59933717b485f6c3f8c0ab3d8d5461d9e1f252790410d77d4b7706bba8"
 }

@@ -1,27 +1,28 @@
+// gate.mjs — Riverbraid-Core v1.5.0
+// Fail-closed gate. Exits process on any invariant violation.
+
 import { createHash } from 'crypto';
 import { readFileSync } from 'fs';
 
-// Root anchor for state transitions
-const ANCHOR = readFileSync('.anchor', 'utf8').trim();
+const ANCHOR_PATH = new URL('.anchor', import.meta.url);
+const SNAPSHOT_PATH = new URL('constitution.snapshot.json', import.meta.url);
 
-export function gate(input) {
-  if (!input || typeof input !== 'object') {
-    throw new Error('GATE: null or invalid input — FAIL-CLOSED');
-  }
-  
-  // 128-bit security threshold (Audit Hash)
-  const hash = createHash('sha256')
-    .update(JSON.stringify(input))
+try {
+  const ANCHOR = readFileSync(ANCHOR_PATH, 'utf8').trim();
+  const SNAPSHOT = JSON.parse(readFileSync(SNAPSHOT_PATH, 'utf8'));
+
+  const computed = createHash('sha256')
+    .update(JSON.stringify(SNAPSHOT, null, 2))
     .digest('hex')
-    .slice(0, 32); 
+    .slice(0, 6);
 
-  if (!input.AUDIT_HASH) {
-    throw new Error('GATE: missing AUDIT_HASH — FAIL-CLOSED');
+  if (computed !== ANCHOR) {
+    console.error(`[GATE FAIL] Anchor mismatch. Expected ${ANCHOR}, got ${computed}`);
+    process.exit(1);
   }
-  
-  if (input.AUDIT_HASH !== hash) {
-    throw new Error(`GATE: hash mismatch — FAIL-CLOSED`);
-  }
-  
-  return { passed: true, anchor: ANCHOR, hash };
+} catch (e) {
+  console.error(`[GATE FAIL] Critical system file missing or corrupt.`);
+  process.exit(1);
 }
+
+export const GATE_PASSED = true;

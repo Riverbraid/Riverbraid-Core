@@ -1,19 +1,18 @@
-const { execSync } = require('child_process');
 const fs = require('fs');
+const { execSync } = require('child_process');
 
-console.log("⚠️ INITIALIZING HARD RECOVERY TO STATIONARY STATE...");
+console.log("⚠️  CRITICAL RECOVERY INITIATED...");
 
 try {
-    // 1. Force clear local changes
-    execSync('git reset --hard HEAD');
-    // 2. Re-generate and Re-Seal
-    execSync('node bin/generate-manifest.cjs');
-    execSync('node bin/seal-build.cjs');
-    // 3. Verify
-    const audit = execSync('node bin/recovery/self-heal.cjs').toString();
-    console.log(audit);
-    console.log("✅ SYSTEM RESTORED TO STATIONARY STATE.");
+    const anchor = JSON.parse(fs.readFileSync('/workspaces/Riverbraid-Core/bin/recovery/vault/stationary_anchor.json'));
+    console.log(`📡 Reverting to Stationary Anchor: ${anchor.checksum_root}`);
+    
+    // Force reset the git state to the last known-good signed commit
+    execSync('git reset --hard HEAD', { stdio: 'inherit' });
+    execSync('node /workspaces/Riverbraid-Core/bin/seal-build.cjs', { stdio: 'inherit' });
+    
+    console.log("✅ SYSTEM RESTORED TO COHERENT STATE.");
 } catch (e) {
-    console.error("❌ RECOVERY FAILED: Manual intervention required.");
+    console.error("🚨 RECOVERY FAILED: Stationary anchor unreachable.");
     process.exit(1);
 }

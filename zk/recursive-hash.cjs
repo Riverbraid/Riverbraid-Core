@@ -1,10 +1,18 @@
 const crypto = require('crypto');
+
 /**
- * Recursive Hash Chain: Deterministic state evolution.
- * This is structural preparation for future zk-SNARK integration.
+ * Validates a hash chain by verifying the previous proof 
+ * and current state converge on a new deterministic proof.
  */
-function foldHash(previousHash, currentRoot, hardwareId) {
-    const input = `${previousHash}:${currentRoot}:${hardwareId}`;
+function verifyChain(prevProof, currentRoot, hardwareId, targetProof) {
+    const input = `${prevProof}:${currentRoot}:${hardwareId}`;
+    const generated = crypto.createHash('sha256').update(input).digest('hex');
+    return generated === targetProof;
+}
+
+function foldHash(prevProof, currentRoot, hardwareId) {
+    const input = `${prevProof}:${currentRoot}:${hardwareId}`;
     return crypto.createHash('sha256').update(input).digest('hex');
 }
-module.exports = { foldHash };
+
+module.exports = { foldHash, verifyChain };

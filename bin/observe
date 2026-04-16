@@ -1,17 +1,17 @@
 #!/usr/bin/env node
-const path = require('path');
 const fs = require('fs');
 
-// Path resolution to ensure residency
-const signalPath = path.join(process.cwd(), 'src/connectors/health-signal.js');
+// Absolute residency check
+const signalPath = '/workspaces/Riverbraid-Interface-Gold/src/connectors/health-signal.cjs';
+const ledgerPath = '/workspaces/Riverbraid-Core/lib/thermodynamics/ledger.cjs';
 
 if (!fs.existsSync(signalPath)) {
-    console.error(`🚨 CRITICAL: Health signal module not found at ${signalPath}`);
+    console.error(`🚨 MISSING CONNECTOR: ${signalPath}`);
     process.exit(1);
 }
 
 const { getPublicSignal } = require(signalPath);
-const { logSignal } = require('@riverbraid/core/ledger');
+const { logSignal } = require(ledgerPath);
 
 console.log("🔭 RIVERBRAID UNIVERSAL OBSERVER INITIATED...");
 

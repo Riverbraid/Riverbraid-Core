@@ -1,42 +1,15 @@
 import fs from 'fs';
 import path from 'path';
+import { verifySwarm } from './verify-swarm.cjs';
 
-const REPOS = [
-  "Riverbraid-Action-Gold", "Riverbraid-Audio-Gold", "Riverbraid-Vision-Gold",
-  "Riverbraid-Cognition", "Riverbraid-Golds", "Riverbraid-Crypto-Gold"
-];
-
-const ROOT_ANCHOR = "adef13";
-
-function validateBraid() {
-  console.log("--- Riverbraid Constitutional Validator ---");
-  
-  REPOS.forEach(repo => {
-    const anchorPath = path.join('/workspaces', repo, '.anchor');
-    if (!fs.existsSync(anchorPath)) {
-      console.error(`[FAIL-CLOSED] ${repo}: No .anchor found. Halted.`);
-      process.exit(1);
-    }
+export function validateStationary(label) {
+    const expected = fs.readFileSync(path.join(process.cwd(), 'MERKLE_ROOT'), 'utf8').trim();
     
-    const anchor = fs.readFileSync(anchorPath, 'utf8').trim();
-    if (anchor !== ROOT_ANCHOR) {
-      console.error(`[FAIL-CLOSED] ${repo}: Anchor mismatch (${anchor}). Halted.`);
-      process.exit(1);
+    if (verifySwarm(expected)) {
+        console.log(`✅ Validator OK: ${label} (${expected})`);
+        return true;
+    } else {
+        console.error(`❌ Riverbraid: ${label} failed stationary check (Quorum not reached)`);
+        return false;
     }
-    console.log(`[OK] ${repo}: Anchor Verified (${ROOT_ANCHOR})`);
-
-    const triad = ['gate.mjs', 'heartbeat.mjs', 'run-vectors.cjs'];
-    triad.forEach(file => {
-      const filePath = path.join('/workspaces', repo, 'bin', file);
-      if (!fs.existsSync(filePath)) {
-        console.error(`[INVARIANT VIOLATION] ${repo}: Missing ${file}.`);
-        process.exit(1);
-      }
-    });
-    console.log(`[OK] ${repo}: Logic Triad Compliant.`);
-  });
-
-  console.log("--- Status: STATIONARY / COMPLIANT ---");
 }
-
-validateBraid();

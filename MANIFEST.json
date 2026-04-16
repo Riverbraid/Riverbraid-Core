@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-04-16T07:11:09.699Z",
+  "timestamp": "2026-04-16T07:16:37.182Z",
   "anchor": "01a777",
   "files": [
     {
@@ -140,7 +140,7 @@
     },
     {
       "path": "MANIFEST.json",
-      "hash": "01e3125721187c1812926bd30ef559d02abb03786ccea24f52a3ed27286dbb4e"
+      "hash": "3e8ce5bc7d155e5ba673b145485263688322ef2280a38d1288efa5ee835c3ba6"
     },
     {
       "path": "MEMORY.json",
@@ -257,6 +257,10 @@
     {
       "path": "bin/pulse.mjs",
       "hash": "fb5d1cde646f066dc08497a0b65e34ede5a7196bc928eef44665daf0761890b1"
+    },
+    {
+      "path": "bin/recovery/self-heal.cjs",
+      "hash": "c608fffd483ade7cd8cd843179d93ec150d4226556939ee8a0a2c7d74026a720"
     },
     {
       "path": "bin/seal-build.cjs",

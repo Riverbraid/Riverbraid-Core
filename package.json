@@ -1,7 +1,7 @@
 {
   "name": "@riverbraid/core",
   "version": "1.1.0",
-  "type": "commonjs",
+  "type": "module",
   "exports": {
     "./thermodynamics": "./lib/thermodynamics/governor.cjs",
     "./enforcer": "./bin/enforcer.cjs",
@@ -11,9 +11,16 @@
   },
   "scripts": {
     "seal": "node bin/seal-build.cjs",
-    "enforce": "node bin/enforcer.cjs"
+    "enforce": "node bin/enforcer.cjs",
+    "verify": "node run-vectors.cjs verify",
+    "snapshot": "node run-vectors.cjs snapshot",
+    "test": "node run-vectors.cjs verify"
   },
   "dependencies": {
     "express": "^5.2.1"
+  },
+  "engines": {
+    "node": "20.11.0",
+    "npm": "10.2.4"
   }
 }

@@ -12,5 +12,8 @@
   "scripts": {
     "seal": "node bin/seal-build.cjs",
     "enforce": "node bin/enforcer.cjs"
+  },
+  "dependencies": {
+    "express": "^5.2.1"
   }
 }

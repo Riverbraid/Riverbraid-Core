@@ -15,17 +15,21 @@ function getFiles(dir, fileList = []) {
   return fileList;
 }
 
-const manifest = {
-  timestamp: new Date().toISOString(),
-  anchor: fs.readFileSync('MERKLE_ROOT', 'utf8').trim(),
-  files: getFiles(process.cwd()).map(f => {
+const manifestFiles = getFiles(process.cwd())
+  .filter(f => !f.endsWith('MANIFEST.json')) // Ignore the manifest during generation
+  .map(f => {
     const content = fs.readFileSync(f);
     return {
       path: path.relative(process.cwd(), f),
       hash: crypto.createHash('sha256').update(content).digest('hex')
     };
-  })
+  });
+
+const manifest = {
+  timestamp: new Date().toISOString(),
+  anchor: fs.readFileSync('MERKLE_ROOT', 'utf8').trim(),
+  files: manifestFiles
 };
 
 fs.writeFileSync('MANIFEST.json', JSON.stringify(manifest, null, 2));
-console.log("📄 MANIFEST.json generated and sealed.");
+console.log("📄 MANIFEST.json generated (Self-Referential Shield Active).");

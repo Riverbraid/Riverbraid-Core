@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-04-16T07:16:37.182Z",
+  "timestamp": "2026-04-16T07:17:25.782Z",
   "anchor": "01a777",
   "files": [
     {
@@ -139,10 +139,6 @@
       "hash": "3c43d4165819a1a9f973bd0124e3d9cba76901529180c6941b7735a3315fc33d"
     },
     {
-      "path": "MANIFEST.json",
-      "hash": "3e8ce5bc7d155e5ba673b145485263688322ef2280a38d1288efa5ee835c3ba6"
-    },
-    {
       "path": "MEMORY.json",
       "hash": "43254ed5180509ca0e9127409c0cf8d33179e97d0688ea7d69651b9abee72ae0"
     },
@@ -240,7 +236,7 @@
     },
     {
       "path": "bin/generate-manifest.cjs",
-      "hash": "c1adc2d4a0bdcfe1cac722c1f8e1c279decbc9617160052309e3d53dab3019bc"
+      "hash": "b92273d2ff52e1e086372805ca482af30cfe3ddbf8a5d23a7c6eb7d190fbf567"
     },
     {
       "path": "bin/heartbeat.mjs",

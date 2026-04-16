@@ -112,7 +112,6 @@ c6b114658a80f9286ac1bb2a70a85f54e334fe04a3fe9539ae099cee2db3130d  ./proofs/visio
 8bd90c796cfd9ebd8b8f46ef13422a741c4f4c77ac531b62fabbd88dc64a4add  ./refusal-engine.cjs
 f097e91f644a61db7a3f4f22d37fae464895580d8b31a5bfbca627da5ef9a46e  ./riverbraid-shield.js
 8f857fab8b2f55a703e71e6562e701117c640f3205a00da0529dc45c42468090  ./run-vectors.cjs
-7ff79f63b63ca6d7dc1a8fcebc1c20a230baee9c183f6809189734b964ecccba  ./run-vectors1.5.cjs
 66ece7fe476a65d8f7d93a377d17a27a0a99e0221f9e36d0156806de245b46df  ./runtime.csv
 4d751bfb8392f8e18361a2f7c1813c1f02b59e16e167f4e0c196d04e97e253fe  ./runtime/sim.ml
 dd51d5cd3afe43d9f508bfceb7dc3bf1475e89516ebf1a386d51d1bee083be9e  ./safety-gate.cjs

@@ -5,7 +5,9 @@
   "exports": {
     "./thermodynamics": "./lib/thermodynamics/governor.cjs",
     "./enforcer": "./bin/enforcer.cjs",
-    "./manifest": "./MANIFEST.json"
+    "./manifest": "./MANIFEST.json",
+    "./sync-map": "./lib/sync-map.json",
+    "./ledger": "./lib/thermodynamics/ledger.cjs"
   },
   "scripts": {
     "seal": "node bin/seal-build.cjs",

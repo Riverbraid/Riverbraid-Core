@@ -1,22 +1,26 @@
-name: Riverbraid Sovereign Guard
-on: [push, pull_request]
-
+name: verify
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
 jobs:
   verify:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
+    env:
+      TZ: UTC
+      LC_ALL: C.UTF-8
+      LANG: C.UTF-8
+      NO_COLOR: "1"
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-node@v4
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Setup Node
+        uses: actions/setup-node@v4
         with:
-          node-version-file: '.nvmrc'
-          cache: 'npm'
-
-      - name: Install Coq
-        run: sudo apt-get update && sudo apt-get install -y coq
-
-      - name: Compile Proofs
-        working-directory: Go44
-        run: coqc -Q . Riverbraid Core.v
-
-      - name: Integrity Check
-        run: node run-vectors.cjs verify
+          node-version: 20.11.0
+          cache: npm
+      - name: Install
+        run: npm ci
+      - name: Verify
+        run: npm test

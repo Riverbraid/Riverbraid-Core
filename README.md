@@ -1,3 +1,10 @@
+---
+**Status:** Stationary (v1.5.0)
+**Normative Source:** Riverbraid-Core
+**Verification:** `npm test`
+**Authority:** 2-of-2 GPG Threshold
+---
+
 <div align="center">
 
 # O Riverbraid-Core
@@ -33,4 +40,3 @@ node heartbeat.mjs
 ## Part of the Riverbraid Constellation
 A self-verifying integrity substrate anchored to stationary Merkle root **de2062** (Sovereign layer **adef13**).
 Verification: `node run-vectors.cjs verify`
-

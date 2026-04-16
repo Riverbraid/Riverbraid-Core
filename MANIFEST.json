@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-04-16T07:09:42.552Z",
+  "timestamp": "2026-04-16T07:11:09.699Z",
   "anchor": "01a777",
   "files": [
     {
@@ -140,7 +140,7 @@
     },
     {
       "path": "MANIFEST.json",
-      "hash": "0ffda8bb66353a1260e528cf50acb8fd306882df70122567f67d27b7efce0f80"
+      "hash": "01e3125721187c1812926bd30ef559d02abb03786ccea24f52a3ed27286dbb4e"
     },
     {
       "path": "MEMORY.json",
@@ -247,8 +247,20 @@
       "hash": "c0bc8656b364ee5d0535aa09c6fc959c8ea8b0dadfbd7571ad1b2ddab772fe31"
     },
     {
+      "path": "bin/node-identity.cjs",
+      "hash": "a3e8b175f7305fd969dd23b5bdbd7f9ed7e4edec88d2678babe57bab31093bf5"
+    },
+    {
+      "path": "bin/perpetual-auditor.cjs",
+      "hash": "77b63a0f242da7a3ad71a4b7355e069a15e322fa88e27a54119b084518977146"
+    },
+    {
       "path": "bin/pulse.mjs",
       "hash": "fb5d1cde646f066dc08497a0b65e34ede5a7196bc928eef44665daf0761890b1"
+    },
+    {
+      "path": "bin/seal-build.cjs",
+      "hash": "457cad57af13fb93af5cc50aabefbe432564c092244681f5216b95dc95f2ce3f"
     },
     {
       "path": "bin/status_provider.mjs",
@@ -570,5 +582,7 @@
       "path": "zk/recursive-hash.cjs",
       "hash": "3c92f6434ea76e14b21b23b9db9831735eb685736c60697078b16e0602aac60b"
     }
-  ]
+  ],
+  "nodeId": "28c98bd1790dcbbb",
+  "signature": "d5a0cfeaf862aad1524d6b1fb26e3d0582523d3049b49bc124d5d1ca87e5889d"
 }

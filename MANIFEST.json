@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-04-16T07:21:13.747Z",
+  "timestamp": "2026-04-16T07:27:47.213Z",
   "anchor": "01a777",
   "files": [
     {
@@ -255,6 +255,10 @@
       "hash": "fb5d1cde646f066dc08497a0b65e34ede5a7196bc928eef44665daf0761890b1"
     },
     {
+      "path": "bin/recovery/hard-reset.cjs",
+      "hash": "e0d4d996586887f944e1317ee671e60ae66654f7cc19f458846bbc01d2c0d260"
+    },
+    {
       "path": "bin/recovery/self-heal.cjs",
       "hash": "c608fffd483ade7cd8cd843179d93ec150d4226556939ee8a0a2c7d74026a720"
     },
@@ -404,7 +408,7 @@
     },
     {
       "path": "lib/thermodynamics/governor.cjs",
-      "hash": "13f9fdd2e0d270813b9192ae29c719fa5c2d17cd7f725f4ab013652d5b04a655"
+      "hash": "8b71dbba11dad265c2ce116f5f38873e2a8d9a157d12e96e40c42ac4ace0ce3f"
     },
     {
       "path": "modules.constitution.json",
@@ -577,6 +581,14 @@
     {
       "path": "verify-swarm.cjs",
       "hash": "e7d87975c530823d99f133e533e0c2daa6cac2260e28afb3c19c94509f29f2b2"
+    },
+    {
+      "path": "zk/PROOFS_CHAIN.json",
+      "hash": "e312eab2e8fd858acabcdaaf72ea37347e94702abcd3ad06fc03bac5206572ee"
+    },
+    {
+      "path": "zk/chain-proofs.cjs",
+      "hash": "c33e0c750bf905f1f990763dc9517e87dfc208d597e67b701f2a099b546cd566"
     },
     {
       "path": "zk/constraints.circom",

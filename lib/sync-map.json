@@ -1,0 +1,22 @@
+{
+  "system": "Riverbraid Gold",
+  "version": "1.1.0",
+  "identity": "28c98bd1790dcbbb",
+  "components": {
+    "core": {
+      "path": "/workspaces/Riverbraid-Core",
+      "logic": "Thermodynamic Enforcer",
+      "seal": "GPG-D9475D6B"
+    },
+    "interface": {
+      "path": "/workspaces/Riverbraid-Interface-Gold",
+      "logic": "Semantic Bridge",
+      "operator": "bin/braid"
+    }
+  },
+  "invariants": {
+    "entropy_threshold": 5.0,
+    "current_entropy": 4.8515,
+    "boot_protocol": "Fail-Closed"
+  }
+}

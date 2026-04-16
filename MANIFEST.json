@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-04-16T07:29:25.758Z",
+  "timestamp": "2026-04-16T07:38:56.659Z",
   "anchor": "01a777",
   "files": [
     {
@@ -223,8 +223,16 @@
       "hash": "1ae18a36a12509eeb570c0f3c8ce76abd22d8a66c466412a7e3e4e581fc1e7e5"
     },
     {
+      "path": "bin/braid",
+      "hash": "2d54329395fedf467d5290734a2c4fca12f6925983c83b1a3bc0f47cd715fc22"
+    },
+    {
       "path": "bin/consensus.cjs",
       "hash": "75901c73db19b9ae4774fb152e4296f69b0235af0ca2d48409219d7da49f47f7"
+    },
+    {
+      "path": "bin/enforcer.cjs",
+      "hash": "81c61761883db7b195e7c7e7d9c70071d5d78185b21941f0ec85b5aa61969d0d"
     },
     {
       "path": "bin/entropy-signal.cjs",
@@ -407,6 +415,10 @@
       "hash": "9f44306953216ddb7dc704a66094177486681e308478b92586d5751de7be88ca"
     },
     {
+      "path": "lib/sync-map.json",
+      "hash": "ce1474681a729688394bfdd4f74d942e083531bf6658f5acfdfac20c86e66774"
+    },
+    {
       "path": "lib/thermodynamics/governor.cjs",
       "hash": "8b71dbba11dad265c2ce116f5f38873e2a8d9a157d12e96e40c42ac4ace0ce3f"
     },
@@ -416,7 +428,7 @@
     },
     {
       "path": "package.json",
-      "hash": "12b047aed4e87757791502bb9049558121494f79943e7f711446519875077d38"
+      "hash": "23fb88a05ebae1f54c9336fa81e69d679f114b72669dce9fbb61b40d10c786c1"
     },
     {
       "path": "paradox-resolver.cjs",

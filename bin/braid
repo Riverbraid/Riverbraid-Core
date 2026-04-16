@@ -1,0 +1,9 @@
+#!/bin/bash
+# The Universal Riverbraid Entry Point
+if [ "$1" == "boot" ]; then
+    node riverbraid-gate.mjs
+elif [ "$1" == "signal" ]; then
+    node src/connectors/health-signal.js
+else
+    echo "Usage: braid [boot|signal]"
+fi

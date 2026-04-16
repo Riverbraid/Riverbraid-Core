@@ -1,13 +1,14 @@
 {
-  "name": "riverbraid-node",
-  "version": "1.5.0-alpha-solo",
-  "private": true,
-  "type": "module",
-  "scripts": {
-    "verify": "node run-vectors.cjs verify",
-    "snapshot": "node run-vectors.cjs snapshot"
+  "name": "@riverbraid/core",
+  "version": "1.1.0",
+  "type": "commonjs",
+  "exports": {
+    "./thermodynamics": "./lib/thermodynamics/governor.cjs",
+    "./enforcer": "./bin/enforcer.cjs",
+    "./manifest": "./MANIFEST.json"
   },
-  "engines": {
-    "node": "20.11.0"
+  "scripts": {
+    "seal": "node bin/seal-build.cjs",
+    "enforce": "node bin/enforcer.cjs"
   }
 }

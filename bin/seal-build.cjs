@@ -1,14 +1,28 @@
 const fs = require('fs');
 const crypto = require('crypto');
-const { execSync } = require('child_process');
+const path = require('path');
 
-const fingerprint = execSync('node bin/node-identity.cjs').toString();
-const manifest = JSON.parse(fs.readFileSync('MANIFEST.json', 'utf8'));
+const root = path.join(__dirname, '..');
+const identity = JSON.parse(fs.readFileSync(path.join(root, 'data/identity/node_id.json')));
 
-manifest.nodeId = fingerprint;
-manifest.signature = crypto.createHash('sha256')
-    .update(manifest.anchor + fingerprint)
-    .digest('hex');
+function hashDir(dir) {
+    const files = fs.readdirSync(dir).filter(f => !f.startsWith('.') && f !== 'MANIFEST.json');
+    let hash = crypto.createHash('sha256');
+    files.forEach(file => {
+        const fullPath = path.join(dir, file);
+        if (fs.statSync(fullPath).isFile()) {
+            hash.update(fs.readFileSync(fullPath));
+        }
+    });
+    return hash.digest('hex');
+}
 
-fs.writeFileSync('MANIFEST.json', JSON.stringify(manifest, null, 2));
-console.log(`✅ MANIFEST SEALED: Signed by Node [${fingerprint}]`);
+const manifest = {
+    node: identity.identity,
+    timestamp: new Date().toISOString(),
+    integrity: hashDir(path.join(root, 'lib')),
+    status: "SEALED"
+};
+
+fs.writeFileSync(path.join(root, 'MANIFEST.json'), JSON.stringify(manifest, null, 2));
+console.log(`✅ MANIFEST SEALED: Signed by Node [${identity.identity}]`);

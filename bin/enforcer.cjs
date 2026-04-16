@@ -1,16 +1,25 @@
 const fs = require('fs');
+const path = require('path');
 const { calculateShannonEntropy } = require('../lib/thermodynamics/governor.cjs');
 
 function enforceSovereignty() {
     console.log("🛡️  ENFORCING THERMODYNAMIC SOVEREIGNTY...");
     
-    const manifest = fs.readFileSync('MANIFEST.json', 'utf8');
+    // Absolute path to the Core Manifest
+    const manifestPath = '/workspaces/Riverbraid-Core/MANIFEST.json';
+    
+    if (!fs.existsSync(manifestPath)) {
+        console.error("🚨 CRITICAL FAILURE: Manifest missing at " + manifestPath);
+        process.exit(1);
+    }
+
+    const manifest = fs.readFileSync(manifestPath, 'utf8');
     const entropy = calculateShannonEntropy(manifest);
     const LIMIT = 5.0;
 
     if (entropy > LIMIT) {
         console.error(`🚨 CRITICAL FAILURE: Entropy (${entropy.toFixed(4)}) exceeds Sovereign Limit (${LIMIT}).`);
-        console.error("System is entering Fail-Closed state. No execution permitted.");
+        console.error("System is entering Fail-Closed state.");
         process.exit(1);
     }
     

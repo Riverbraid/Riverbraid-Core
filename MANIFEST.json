@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-04-16T07:17:25.782Z",
+  "timestamp": "2026-04-16T07:20:15.411Z",
   "anchor": "01a777",
   "files": [
     {
@@ -403,6 +403,10 @@
       "hash": "9f44306953216ddb7dc704a66094177486681e308478b92586d5751de7be88ca"
     },
     {
+      "path": "lib/thermodynamics/governor.cjs",
+      "hash": "679283cd4716891fa5084588a8b741591d5baca78360b6fe3bfd7b23c2b41ff9"
+    },
+    {
       "path": "modules.constitution.json",
       "hash": "91e5e9ac8abf4d061aa0be038bdcab5b882b40461f4ef14a135e2aa8e30e8bc3"
     },
@@ -557,6 +561,10 @@
     {
       "path": "tests/fuzz/canonicalization.fuzz.js",
       "hash": "3712139b5e2b36a30bcb516df59d214db613cd98cc3d884ffb48c23937b155da"
+    },
+    {
+      "path": "tests/integrity.test.cjs",
+      "hash": "fec7bfe8cc043f7a767b30b2485aaa513cd3c4e58cdd7e3226218925374cdd43"
     },
     {
       "path": "v1.5.0-SOVEREIGN.md",

@@ -1,6 +1,11 @@
-# Security & Integrity Policy
-## Verification
-This repository is a locked node in the Riverbraid constellation. 
-Any drift from the stationary Merkle root is considered a security event.
-## Reporting
-Report integrity failures or logic bypasses through the primary Riverbraid-Golds issue tracker.
+# Security Policy
+
+Security relevant issues include:
+
+- snapshot drift
+- verification bypass
+- hash instability
+- hidden file surface changes
+- false verification success
+
+Include exact commands, output, and affected file paths in any report.

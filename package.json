@@ -4,6 +4,7 @@
   "private": true,
   "type": "commonjs",
   "scripts": {
+    "snapshot": "node run-vectors.cjs snapshot",
     "verify": "node run-vectors.cjs verify",
     "test": "node run-vectors.cjs verify"
   },

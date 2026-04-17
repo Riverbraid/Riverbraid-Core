@@ -1,4 +1,4 @@
 # Layer Invariants
-1. Integer-only numeric models.
-2. Unicode scalar ordering for all manifest keys.
-3. Byte-identical reproduction across Node.js v24.11.1.
+1. Meaning is the Internal Frequency of a system successfully navigating entropy.
+2. Purpose is a Thermodynamic Signal.
+3. Every path generated is a petal of one Source braid.

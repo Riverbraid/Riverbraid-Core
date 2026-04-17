@@ -1,4 +1,2 @@
-# SCOPE — Riverbraid-Core
-Status: ACTIVE
-Anchor: de2062
-This file establishes the foundational boundary for the Riverbraid-Prime runtime.
+# Scope Invariants
+Riverbraid-Core defines the boundary of the deterministic runtime. External agents may read this state but cannot influence the threshold logic without a 2-of-2 signed manifest update.

@@ -3,6 +3,7 @@
   "version": "1.5.0",
   "private": true,
   "type": "commonjs",
+  "main": "run-vectors.cjs",
   "scripts": {
     "snapshot": "node run-vectors.cjs snapshot",
     "verify": "node run-vectors.cjs verify",

@@ -1,26 +1,14 @@
 {
   "name": "@riverbraid/core",
-  "version": "1.1.0",
-  "type": "module",
-  "exports": {
-    "./thermodynamics": "./lib/thermodynamics/governor.cjs",
-    "./enforcer": "./bin/enforcer.cjs",
-    "./manifest": "./MANIFEST.json",
-    "./sync-map": "./lib/sync-map.json",
-    "./ledger": "./lib/thermodynamics/ledger.cjs"
-  },
+  "version": "1.5.0",
+  "private": true,
+  "type": "commonjs",
   "scripts": {
-    "seal": "node bin/seal-build.cjs",
-    "enforce": "node bin/enforcer.cjs",
-    "verify": "node run-vectors.cjs verify",
     "snapshot": "node run-vectors.cjs snapshot",
+    "verify": "node run-vectors.cjs verify",
     "test": "node run-vectors.cjs verify"
   },
-  "dependencies": {
-    "express": "^5.2.1"
-  },
   "engines": {
-    "node": "20.11.0",
-    "npm": "10.2.4"
+    "node": "24.11.1"
   }
 }

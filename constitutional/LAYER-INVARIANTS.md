@@ -1,4 +1,4 @@
-# LAYER-INVARIANTS.md
-- **Structural Integrity:** Every repository must maintain a valid .anchor file matching the Core Merkle Root.
-- **Scale Separation:** Sensory petals (Action, Audio, Vision) may not execute root-level governance commands.
-- **Deterministic Vectors:** All logic in /bin must operate via run-vectors.cjs to ensure reproducible outcomes.
+# Layer Invariants
+1. Integer-only numeric models.
+2. Unicode scalar ordering for all manifest keys.
+3. Byte-identical reproduction across Node.js v24.11.1.

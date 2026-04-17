@@ -1,7 +1,5 @@
 # Riverbraid-Core
 
-[![Verify](https://github.com/Riverbraid/Riverbraid-Core/actions/workflows/verify.yml/badge.svg)](https://github.com/Riverbraid/Riverbraid-Core/actions/workflows/verify.yml)
-
 Riverbraid-Core is the deterministic constitutional verifier for the Riverbraid system.
 
 ## Scope

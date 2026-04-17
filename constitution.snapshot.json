@@ -1,6 +1,6 @@
 {
   "version": "1.5.0",
-  "merkle_root": "55162d9edae6bd39e22967cbbdc46c69777abf73907891e577a48cd7859b6a85",
+  "merkle_root": "0bf3c50da0b423fc52e42e29b4fedbb2becd30d5328e872f95e4c2ded812d23c",
   "files": [
     {
       "path": "_CoqProject",
@@ -18,6 +18,11 @@
       "leaf": "f56dae0eb9692111f3550d5a0a1d4615c62ae4191d4ee74faf493c8a16ee44bc"
     },
     {
+      "path": ".eternal_seal",
+      "sha256": "4ba2165094cc656486214e9daee1f670f43aac3fdd5fd1115d7e9ffe6c675136",
+      "leaf": "7a729143798cd4dccc40a7eae7dd5fa0ee9c6de464903e21b4eb6dac88bd0117"
+    },
+    {
       "path": ".gitattributes",
       "sha256": "cc3f145429f6ae24a57310577a4eec3e4190bcc4ce109c484376930b9c510dad",
       "leaf": "73e44cfb0b1aa580e2cade19b45d20332843fd3a65556f6dd3fa6eb7b19e87be"
@@ -31,6 +36,16 @@
       "path": ".nvmrc",
       "sha256": "1d57b0b9ecdc8c2f5bc0b6844ea2173d6530996998aed3fadaecb54766bb9585",
       "leaf": "8ada8083b29207ca6d3035e5575f03fc49cc800191437f3c6f5922c4bfb2a3e8"
+    },
+    {
+      "path": ".riverbraid/authority.json",
+      "sha256": "07f257326f51e01fa0583239ac3bada36677387d5a5926e6f5f7de19e0aa18ee",
+      "leaf": "470ead82a2a4f7b999fe48c6601483205e427197af55ec09adeae3b5b92f99a6"
+    },
+    {
+      "path": ".stationary",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "leaf": "4128d49c9067dae903efcd4775dfed44f40ddaeabad7d2c538b85a7db8b4bae7"
     },
     {
       "path": ".stationary_lock",
@@ -119,8 +134,8 @@
     },
     {
       "path": "constitution.threshold.json",
-      "sha256": "6a83c3e58e52124450cdaf1cdd94367168c7fbf0aa719abb324f0ef015287b63",
-      "leaf": "fcd15f9524f211ceeea571a41f70dc56b5f6b4deea792176a3bc0c155459b06f"
+      "sha256": "4ee348735d3e4e050b55a863701e7f210fccde007eab9101a658ac65eab78595",
+      "leaf": "d30fa0dd36ecf97221b8dba1d4a23c1ea19579c2f01fac399abe0c6e40f91385"
     },
     {
       "path": "constitutional/DURABILITY.md",
@@ -128,9 +143,19 @@
       "leaf": "b13f22850e040ae90fafbbe2313507d985e4bfee0967b609a9cedcd46a49b674"
     },
     {
+      "path": "constitutional/guard_execution.sh",
+      "sha256": "5deb9e0b3413947490840bb813e20c5343080f1ce41e4f4819a3517705891b02",
+      "leaf": "e6072f413b86b6036e3115295f766aa5efdf3d5c00a4ea5fa00450a2c0901ca0"
+    },
+    {
+      "path": "constitutional/integrity.js",
+      "sha256": "216b791d8730d45d013c34f60d4e8fe38539dbdf309e65b36ba4990be6967d2f",
+      "leaf": "37edc8c8136bb987c3c56a053ed71311303a693de9c449d03885aa6955754d7e"
+    },
+    {
       "path": "constitutional/LAYER-INVARIANTS.md",
-      "sha256": "85811814876c7fce951f898c98968a1e2b8e37af8d50d8f234b84d90d6c7135b",
-      "leaf": "006a7f38b5e3ec72204418401a4e7a81cf4f897dc40a3f3d8d7498c6465b6b6b"
+      "sha256": "036f0a681b725da2798191fceaaa5dca1ab591b5e6f22d3f17d2cc1e000677f3",
+      "leaf": "13d5d8d4d763caac9cf93c0c737d6ac018681696b27c9207014a5495736d07d3"
     },
     {
       "path": "constitutional/NEUTRAL-LAYERS.md",
@@ -144,8 +169,8 @@
     },
     {
       "path": "constitutional/SCOPE.md",
-      "sha256": "13c4dd49b3ca66fe53d0ec5cd7f9efc6550205274a9b67bd92ffdc30f5caf93c",
-      "leaf": "678c291e82e32cb70e2e090e87cc7ea5f599eb5f7afdd8f04431d5a6c4fa55cb"
+      "sha256": "9730c2d7988df785c8f6875bcea57b89b4f1b4620ad53328d0c0cf655e52b364",
+      "leaf": "5f63b8e6987fa3d62b91fd33dcb6157aac4f72f27f98a80843c3fd62c9b95920"
     },
     {
       "path": "constitutional/SEAL-RECORD.md",
@@ -154,13 +179,18 @@
     },
     {
       "path": "constitutional/SURVIVABILITY.md",
-      "sha256": "a735023fe0afa867bcf999d20b459af766303c2b6fde90cc120e136084db3917",
-      "leaf": "80270aba5fc494ccf452c1e322b4d3262b670014558c2df221e3dce82a1ca6be"
+      "sha256": "2f48bd498e5c204d0655974234fbe04890a5fa2d084483ad87a7eb8b08551e10",
+      "leaf": "af8d8fc6836eaa4e95a5be7a59d1b7bccfc6a8d7d01bae12dcca6965429fb7a9"
     },
     {
       "path": "constraints.dsl",
       "sha256": "c9ab66425094bbeeede3466fa5de3a9cc596adbf21ddb88d3bd7b64faaff6bf9",
       "leaf": "b294e50dc18ffa1f0d85d5ff66aa49af27d5d86c9761eecffe7274253591d5cf"
+    },
+    {
+      "path": "CONTRIBUTING.md",
+      "sha256": "38495ac39001e357fce203ed25662ecfcd4cda5afde198e71640a44a681bfe89",
+      "leaf": "2b0f12207d2a7e826808690cf272a4bad85bc8d43e2ff17f7c046b638e9d2fb1"
     },
     {
       "path": "convergence_plot.png",
@@ -308,6 +338,11 @@
       "leaf": "db2f9130f2325f30f3718619ba9ae34d1f090a1ed3b1dfcd8902ded81857f242"
     },
     {
+      "path": "GOVERNANCE.md",
+      "sha256": "7b79f60795a92139cf2a6e9d66f34a78dc72dbeb6fd41e278ab7e6e1c244e813",
+      "leaf": "d2db44de9e0ed239e9ed5d8922783c3ecb18f48e693d5ebd4a01f57bf042b2d6"
+    },
+    {
       "path": "GPG-POLICY.md",
       "sha256": "e93d0c0a1157e9f4a46daf954c74ed1d7d0441dba5bace0469b54e8d2a1a903a",
       "leaf": "b4f108f58bf2adf307d383d4338bef6767c5614edab41a47bb6483d47e9306ae"
@@ -368,6 +403,11 @@
       "leaf": "304cd705bc284aa572d6c72dfcce959cee632250ef76737716ea9cffaedbc2ad"
     },
     {
+      "path": "merkle-root.json",
+      "sha256": "0e847d605e1fbce9543d4eb92e265bd739d413335bce6e883decb8d282bcf294",
+      "leaf": "cbfb47ac0c2d00b17ab44adccd28549aba3762e5697fc4047185023444d29037"
+    },
+    {
       "path": "modules.constitution.json",
       "sha256": "91e5e9ac8abf4d061aa0be038bdcab5b882b40461f4ef14a135e2aa8e30e8bc3",
       "leaf": "a0967f0f37bbcae37cc584c7e019589654acc1cb2bca7eab143f74536b80c381"
@@ -379,8 +419,8 @@
     },
     {
       "path": "package.json",
-      "sha256": "5c08630593678c763aeff0b007e52699825f16f1e21a4d932d5823a7bd5ed8cc",
-      "leaf": "7d407316d95bb738053e31746231a86a6ab8b70abb0d2a6b7ade3cb232ade1f0"
+      "sha256": "8c8a8b44cbeb0850e594306030e40e183739f410f228d7aeef293c9c048bc0b3",
+      "leaf": "77a05977b5e7a20a7c8fdcf2e5a2d35c10da2bf8e03b24981c870b1dce0eca33"
     },
     {
       "path": "paradox-resolver.cjs",
@@ -429,8 +469,8 @@
     },
     {
       "path": "README.md",
-      "sha256": "565eab5c783abefaeac190f20befd0d8d797fc2ec598356ed8ac8517c595ebf0",
-      "leaf": "63c37353dce43e70d4a363a710631562a1c0f3b2e464f134c8c2c9bac1cc01ed"
+      "sha256": "e720170c60b9881db8b2f94f0c92c63c8602889539f031106a8ab8aa2234960b",
+      "leaf": "6d33be89b452984506f0e059ec5ed8511f616154e88e4e1ea8f07456afd027f2"
     },
     {
       "path": "refusal-engine.cjs",
@@ -454,8 +494,8 @@
     },
     {
       "path": "run-vectors.cjs",
-      "sha256": "dacac55fa4846267c962d0e5a46d2ba3d81a40de7cd544cd25751407e788c818",
-      "leaf": "e448a8e65fd67fa0cbdbd24c67ce708edbf83bbd817e1ce9a5912f874e6e0458"
+      "sha256": "3595058359dadf4aace64c189659ee7bbf48ae743db34215a435557957b8b271",
+      "leaf": "ce4801b88bfab30cfb0b5bf7aecf1816d1dd0bab7c7fee7aa2eb3351cb6159eb"
     },
     {
       "path": "runtime.csv",
@@ -489,8 +529,8 @@
     },
     {
       "path": "SECURITY.md",
-      "sha256": "e5b9e82de0305fb04235aa90d03538979403d11d44f64f5567ba6ee41784a62d",
-      "leaf": "1d7a5ff2dca6001e079406aa37d99e1784170c9567f57f3c6184a7feef67daa7"
+      "sha256": "3985dcf7f58d6697d1ef0b2aec0027370a223d0df459e545b4a0a126f53292e0",
+      "leaf": "5a397a68310e192a452cd3c12a3ad1f56384e11c7e7396b4f09fc99b93f3ada1"
     },
     {
       "path": "semantic-bridge.json",
@@ -526,6 +566,11 @@
       "path": "SOVEREIGN-ENVIRONMENT.md",
       "sha256": "66dfdddbc560f21a35ca44a5ce98b56296f3ba0ee3fdf924e1974e05eecadf3b",
       "leaf": "7bfd54d79245b0b70df145e5b531e5513a77fa845ac3df822ecde27e19ee43ab"
+    },
+    {
+      "path": "SPEC.md",
+      "sha256": "097ab262d5655624874c0e0f059deddd93808a3f5a129777fcf7844501c49afa",
+      "leaf": "83891eefed21fafe1fa70cb83652fed329130dbc4b345a24c2d9cf2bb653ffe7"
     },
     {
       "path": "specs/convergence.spec",
@@ -606,6 +651,11 @@
       "path": "temporal-bridge.cjs",
       "sha256": "79a05febb750bd1e2d2e87c12019a9266c3ed39a0080c332ae45a4be6a44edbd",
       "leaf": "b4f83a332aadba60d558ebfb851aa3b6dcf2cd56f5481b2926193b9f6e34a4ca"
+    },
+    {
+      "path": "test-gate.sh",
+      "sha256": "761a5ffdba2f228d4a7713aa0d2dd1948aea9e9cefa5e09431adbff2f8b9f115",
+      "leaf": "bc1866f9c473af5eaf1df8296d2ca7427ab66c2554a9f78937a5f93927db112f"
     },
     {
       "path": "tests/fuzz/canonicalization.fuzz.js",

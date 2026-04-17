@@ -41,7 +41,7 @@ function main() {
       fs.writeFileSync(SNAPSHOT_FILE, JSON.stringify(snapshot, null, 2) + '\n');
       console.log(`SNAPSHOT_WRITTEN: ${snapshot.merkle_root}`);
     } else if (cmd === 'verify') {
-      console.log('VERIFIED: Floor is Stationary.');
+      console.log('VERIFIED: SIGNAL_STATIONARY_MATCH.');
     }
   } catch (err) { console.error(err.message); process.exit(1); }
 }

@@ -1,6 +1,6 @@
 {
   "version": "1.5.0",
-  "merkle_root": "0bf3c50da0b423fc52e42e29b4fedbb2becd30d5328e872f95e4c2ded812d23c",
+  "merkle_root": "5d70b717464b32db378bdce62d025caa816d0027fe55058948efa555a6fae067",
   "files": [
     {
       "path": "_CoqProject",
@@ -9,8 +9,8 @@
     },
     {
       "path": ".anchor",
-      "sha256": "b4cb6ba7a4e26df0e27e9aeebfafd4b298c6617ae78c934d4faf4e13d7070781",
-      "leaf": "6c9037a9ae07ffe889a43df709c78437d85642731dcb893ac077c3bddbec287b"
+      "sha256": "987d04db5482f1c73da667a34322a7fb73c730d504e6dce9882d8673bec711a8",
+      "leaf": "a2c7006435b0d604fba206d29ba49fa785908acebde957ebc497bcb6df8f55f0"
     },
     {
       "path": ".anchor.asc",
@@ -44,8 +44,8 @@
     },
     {
       "path": ".stationary",
-      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-      "leaf": "4128d49c9067dae903efcd4775dfed44f40ddaeabad7d2c538b85a7db8b4bae7"
+      "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+      "leaf": "842559270126a13eea824e10eece73893de7963d2f7b908ee81c8c9087f5361d"
     },
     {
       "path": ".stationary_lock",
@@ -54,8 +54,8 @@
     },
     {
       "path": ".stationary-seal",
-      "sha256": "df48de2fb69bb42f3fe91e56141328d2bcf6930ee35bdb15d9d3ebe6f8d5b04e",
-      "leaf": "d4e6e8c854bea2882873c14113aad59b837bbf4cc3e86b2e2302a4b1c79c7056"
+      "sha256": "987d04db5482f1c73da667a34322a7fb73c730d504e6dce9882d8673bec711a8",
+      "leaf": "246916447206b3b7fdb566df9c31d414e24d578a03b729b4e6fb4207c10a769e"
     },
     {
       "path": "anchors/core.anchor",
@@ -74,8 +74,13 @@
     },
     {
       "path": "Assemble",
-      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-      "leaf": "cf08042f2774ae6f778b45660cd980dc37a42b484606fda8d1cffbd649ee4119"
+      "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+      "leaf": "457838507fe78831b5aa00423240020e8321d10a1deca6d413a2bada5b1137fd"
+    },
+    {
+      "path": "audit-ledger.js",
+      "sha256": "51c389321d5c15d996a24e6cc289f4000d62a6ba7167c53dac617ce9c2acd95a",
+      "leaf": "999b494b0202069d100c4e039da22df72ca60fd97d6f9a79757ae1bc32df1cdd"
     },
     {
       "path": "bridge-protocol.cjs",
@@ -84,8 +89,8 @@
     },
     {
       "path": "Build",
-      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-      "leaf": "d1b70d8ed2b634a49ddfce78f98d028bf9262565f6200f1511a73b29fc2501f6"
+      "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+      "leaf": "2efa19a82a75734498efd4ac956698c85c1f01a05a0b9575b5205df24839a6c2"
     },
     {
       "path": "canonical-json.cjs",
@@ -96,6 +101,11 @@
       "path": "ccdg.cjs",
       "sha256": "a9e87a79094eaf7276862943a741196e884b6dcd739064325d1076c11f3d6df8",
       "leaf": "aa0bd10c6c049a6c10271f12a47c865223ebc5d7c57d90043f2f292b329c1cd4"
+    },
+    {
+      "path": "CHANGELOG.md",
+      "sha256": "f214e5f955946ca5b2b47872714295c592970d4b5284b6b508ed3747f8f8d098",
+      "leaf": "f41bc7a9e8ad5df83a902a5e52551f7def5e74e993afacab2d31a89219ebf29c"
     },
     {
       "path": "cluster-manifest.json",
@@ -134,8 +144,8 @@
     },
     {
       "path": "constitution.threshold.json",
-      "sha256": "4ee348735d3e4e050b55a863701e7f210fccde007eab9101a658ac65eab78595",
-      "leaf": "d30fa0dd36ecf97221b8dba1d4a23c1ea19579c2f01fac399abe0c6e40f91385"
+      "sha256": "dfff76f7c9c0dff478886a4da7f0ad46a957a4fbb92fe44855cbcf55be97af44",
+      "leaf": "9237bb06ede1d3f79d094a449042c90c20e5ed2384f49a33df5acdcb4f6d4c3c"
     },
     {
       "path": "constitutional/DURABILITY.md",
@@ -189,8 +199,8 @@
     },
     {
       "path": "CONTRIBUTING.md",
-      "sha256": "38495ac39001e357fce203ed25662ecfcd4cda5afde198e71640a44a681bfe89",
-      "leaf": "2b0f12207d2a7e826808690cf272a4bad85bc8d43e2ff17f7c046b638e9d2fb1"
+      "sha256": "591616cfa5b58267c67db7be9141b3b0df7ba6b846c9ebba7b0654c84b0e3a19",
+      "leaf": "3e7f2304dda5d07bf03fd6438f731e5879b27ac87810740bb1e8e7cc4e224ef3"
     },
     {
       "path": "convergence_plot.png",
@@ -394,8 +404,8 @@
     },
     {
       "path": "MANIFEST.json",
-      "sha256": "b47fc2abef8491184be72c5299fb1bca1cf1b7189c4ba81f87b45cc1a2f47046",
-      "leaf": "32556682d0d1af6b26a8b052dddba4ffb5e5469e9c02cb982a66eae38186ff34"
+      "sha256": "6e11aa31f2975b4edc3d91ef2af6e7789fb72240e9d064e339957fd72308e610",
+      "leaf": "72f0aff0413f874f3a6d2f399f72f75e2b562188450374017a2203144ecfea07"
     },
     {
       "path": "MERKLE_ROOT",
@@ -419,8 +429,8 @@
     },
     {
       "path": "package.json",
-      "sha256": "8c8a8b44cbeb0850e594306030e40e183739f410f228d7aeef293c9c048bc0b3",
-      "leaf": "77a05977b5e7a20a7c8fdcf2e5a2d35c10da2bf8e03b24981c870b1dce0eca33"
+      "sha256": "5c08630593678c763aeff0b007e52699825f16f1e21a4d932d5823a7bd5ed8cc",
+      "leaf": "7d407316d95bb738053e31746231a86a6ab8b70abb0d2a6b7ade3cb232ade1f0"
     },
     {
       "path": "paradox-resolver.cjs",
@@ -469,8 +479,8 @@
     },
     {
       "path": "README.md",
-      "sha256": "e720170c60b9881db8b2f94f0c92c63c8602889539f031106a8ab8aa2234960b",
-      "leaf": "6d33be89b452984506f0e059ec5ed8511f616154e88e4e1ea8f07456afd027f2"
+      "sha256": "4ba1ab9a4f73f10599a390ae02ed5ff00c680603c445ab931981bd7a7e6f4d6b",
+      "leaf": "ea57bfd5204b0d1740e6a20acdc27afe4c96f2bf1c2584f521137cd1b364c343"
     },
     {
       "path": "refusal-engine.cjs",
@@ -494,8 +504,8 @@
     },
     {
       "path": "run-vectors.cjs",
-      "sha256": "3595058359dadf4aace64c189659ee7bbf48ae743db34215a435557957b8b271",
-      "leaf": "ce4801b88bfab30cfb0b5bf7aecf1816d1dd0bab7c7fee7aa2eb3351cb6159eb"
+      "sha256": "c217940418078f8f2bd50e285c092812ebc197d4a8168a856488005ae13105a1",
+      "leaf": "d0228f4d76cdfb4a6c22d1fb911fa1323851082c6e5f94df5aefb59f2eb89caa"
     },
     {
       "path": "runtime.csv",
@@ -529,8 +539,8 @@
     },
     {
       "path": "SECURITY.md",
-      "sha256": "3985dcf7f58d6697d1ef0b2aec0027370a223d0df459e545b4a0a126f53292e0",
-      "leaf": "5a397a68310e192a452cd3c12a3ad1f56384e11c7e7396b4f09fc99b93f3ada1"
+      "sha256": "03972c71efc0ba601089efd590d631c9a2b5f896077d461ed6b1ac47eabb5fc4",
+      "leaf": "aff9f885e6ebdce013ce0775ac2457b93d7f1658f713a787ef51d8f728c6d482"
     },
     {
       "path": "semantic-bridge.json",
@@ -544,8 +554,8 @@
     },
     {
       "path": "signature.asc",
-      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-      "leaf": "c48d9d49795affad3ae2080b852d5d5db8db9f599829c0a04e243703c06854e1"
+      "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+      "leaf": "7dcdeec1a357267b49aa19387db06d7b21a8d311710ee3585c66916302cb7836"
     },
     {
       "path": "snapshot.schema.cjs",
@@ -594,8 +604,8 @@
     },
     {
       "path": "src/invariants.js",
-      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-      "leaf": "ecc1baabfc8af70d335208369bde5c3ee97f50e412b3a6120c41bb7730975150"
+      "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+      "leaf": "50f34053783e335449e8af16b279e4d3062be8f3770490c4eeb4e4735b71d8a9"
     },
     {
       "path": "src/invariants/election.cjs",
@@ -644,8 +654,8 @@
     },
     {
       "path": "swarm-signatures.json",
-      "sha256": "e899fe303523f80b6350416dd5f9d93ec593733a057aad851338404aa4343d3f",
-      "leaf": "f0583ec69b63b043e95838d5a50fa43654fbfa37f686650783d953c8232a050e"
+      "sha256": "e60eb8a5cb876cf974ed37f5482a0bd2957f814855475b6f58dcc70e0244c026",
+      "leaf": "bc3aee307304448e5d9c6825fe9263350a26df72d124a8c95dfb62b4ead621ee"
     },
     {
       "path": "temporal-bridge.cjs",
@@ -679,8 +689,8 @@
     },
     {
       "path": "Vectors",
-      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-      "leaf": "0de37fb784e2bfd0ef775ed55a40294ceb0e2e7424b2f166217b8e9de4eae88a"
+      "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+      "leaf": "882bd8f8e9f7fbe392ef0a0dc69bdff0a542dfbac9f8659c61f5ce302748f40f"
     },
     {
       "path": "VECTORS_ATTESTATION_V1.json",
@@ -709,8 +719,8 @@
     },
     {
       "path": "zk/PROOFS_CHAIN.json",
-      "sha256": "e312eab2e8fd858acabcdaaf72ea37347e94702abcd3ad06fc03bac5206572ee",
-      "leaf": "679095d67c05081e80002fbda3d8fb11d90b1d5274b54b6b6e4f67ee72895b32"
+      "sha256": "441daf65bfce4ded957e47503e52a413205996b16b9a4e7e7355c461bf25b7ca",
+      "leaf": "f0dc312af79ab16ecc77f1367fc6931a768ddfcbe29accdcc0c1a8d4f8f778c5"
     },
     {
       "path": "zk/prove.cjs",

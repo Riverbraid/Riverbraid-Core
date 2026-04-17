@@ -1,12 +1,27 @@
-name: Stationary Verification
-on: [push, pull_request]
+name: verify
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+env:
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
+
 jobs:
   verify:
     runs-on: ubuntu-latest
+
     steps:
       - uses: actions/checkout@v4
+
       - uses: actions/setup-node@v4
         with:
           node-version: '24.11.1'
-      - run: npm install --package-lock-only
-      - run: npm test
+
+      - run: |
+          if [ -f package-lock.json ]; then
+            npm install --package-lock-only
+          fi
+
+      - run: node run-vectors.cjs verify

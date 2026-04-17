@@ -1,18 +1,36 @@
 # Riverbraid-Core
-**Status: Irrefutable Stationary State**
 
-## Constellation Anchors
-- **Version**: 1.5.0
-- **Stationary Merkle Root**: de20625f9b8c7d1e8ec84f6d8f86d9f4f2b083a4
-- **Runtime Environment**: Node.js v24.11.1 (Deterministic)
+Riverbraid-Core is the deterministic constitutional verifier for the Riverbraid system.
 
-## Verification
-Verification is handled by the local `run-vectors.cjs` engine. 
-To verify the integrity of the root:
-\`\`\`bash
+## Scope
+
+This repository has one narrow job:
+
+- define the verification entrypoint
+- define threshold policy
+- seal a snapshot of governed files
+- verify that current state still matches the sealed state
+
+## Files
+
+- `run-vectors.cjs`
+- `constitution.threshold.json`
+- `constitution.snapshot.json`
+
+## Runtime
+
+- Node `24.11.1`
+
+## Commands
+
+```bash
 npm test
-\`\`\`
+node run-vectors.cjs snapshot
+node run-vectors.cjs verify
+```
 
-## Governance
-Constitutional invariants are defined in the \`/constitutional\` directory. 
-The system operates on a Fail-Closed posture.
+A state is valid only if:
+
+- threshold policy is satisfied
+- current governed files hash exactly to the sealed snapshot
+- verification exits successfully

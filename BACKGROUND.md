@@ -11,3 +11,10 @@ Riverbraid is a conceptual framework for relational intelligence and AI coherenc
 
 ## Design Intent
 The goal is to move from dataset-centric intelligence to rule-and-anchor-centric intelligence. We prioritize coherence over volume and mechanical honesty over automated convenience.
+
+## The Research Specification
+Meaning is the internal frequency of a system successfully navigating the entropy of its environment. 
+This project operates under the following constraints:
+* **Rejecting Volume**: Intelligence through better constraints, not more data.
+* **Rule-and-Anchor**: Moving from dataset-centric to rule-centric models.
+* **Thermodynamic Signal**: Treating Purpose as a measurable signal within the entropy-equilibrium.

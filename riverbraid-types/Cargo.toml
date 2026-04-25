@@ -1,0 +1,18 @@
+[package]
+name = "riverbraid-types"
+version = "0.1.0"
+edition = "2021"
+description = "Canonical shared types for the Riverbraid governance layer"
+license = "MIT"
+repository = "https://github.com/Riverbraid/riverbraid-types"
+
+[features]
+default = ["std"]
+std = []
+serde = ["dep:serde"]
+
+[dependencies]
+serde = { version = "1", default-features = false, features = ["derive"], optional = true }
+
+[dev-dependencies]
+serde_json = "1"

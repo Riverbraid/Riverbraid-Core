@@ -1,0 +1,40 @@
+#!/bin/bash
+# Riverbraid CLI - Mechanical Verifier
+
+COMMAND=$1
+MANIFEST="manifest.json"
+
+case $COMMAND in
+  init)
+    echo "Initializing manifest..."
+    touch "$MANIFEST"
+    echo "{ \"files\": [] }" > "$MANIFEST"
+    echo "Done: $MANIFEST created."
+    ;;
+  snapshot)
+    echo "Recording file states..."
+    # Finds all files, skips the manifest itself, and generates hashes
+    find . -type f ! -name "$MANIFEST" ! -path "./.git/*" -exec sha256sum {} + | sort > "$MANIFEST.tmp"
+    mv "$MANIFEST.tmp" "$MANIFEST"
+    echo "Done: Snapshot recorded in $MANIFEST."
+    ;;
+  verify)
+    echo "Verifying integrity..."
+    if [ ! -f "$MANIFEST" ]; then
+      echo "ERROR: No manifest found. Run 'init' and 'snapshot' first."
+      exit 1
+    fi
+    # Compares current state against the manifest
+    sha256sum -c "$MANIFEST" --status
+    if [ $? -eq 0 ]; then
+      echo "PASS: Integrity confirmed."
+    else
+      echo "FAIL: File state has changed."
+      exit 1
+    fi
+    ;;
+  *)
+    echo "Usage: riverbraid [init|snapshot|verify]"
+    exit 1
+    ;;
+esac

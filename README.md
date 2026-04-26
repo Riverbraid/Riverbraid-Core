@@ -1,14 +1,7 @@
-# Riverbraid-Core
-**Minimal. Deterministic. Pip-installable.**
+# RIVERBRAID CORE
+The Spine. Minimal, deterministic, pip-installable runtime. Fail-closed discipline.
 
-The spine-only runtime for the Riverbraid system. This repository holds the foundational truth of the filesystem through strict integrity checks and spatial governance.
-
-## The Floor
-* **Determinism**: No heuristics. No guesses.
-* **Integrity**: Filesystem hash comparison (SHA-256).
-* **Governance**: Fail-closed discipline.
-
-## Execution
-bash ./riverbraid init
-bash ./riverbraid snapshot
-bash ./riverbraid verify
+## System Context
+* **Part of the Riverbraid Constellation.**
+* **Status**: V2 (Hardened)
+* **Protocol**: Mechanical Honesty

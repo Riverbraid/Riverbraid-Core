@@ -1,0 +1,10 @@
+{
+  "invariants": [
+    "Terms in VOCABULARY_LOCK.md never change without a major version bump.",
+    "Authority must remain Normative."
+  ],
+  "fail_closed_triggers": [
+    "Missing version header",
+    "Undefined core term usage"
+  ]
+}

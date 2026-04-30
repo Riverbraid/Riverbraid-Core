@@ -1,0 +1,16 @@
+﻿name: Riverbraid Verification Suite
+on: [push]
+jobs:
+  verify-integrity:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Import GPG Key
+        uses: crazy-max/ghaction-import-gpg@v6
+        with:
+          gpg_private_key: ${{ secrets.GPG_PRIVATE_KEY }}
+          passphrase: ${{ secrets.GPG_PASSPHRASE }}
+      - name: Verify Merkle de2062
+        run: |
+          # Enforce absolute v2 standard
+          node audit_final.js

@@ -1,4 +1,13 @@
 ﻿# Riverbraid-Core
+> **Status:** ROOT_AUDIT_VERIFIED (v1.5.0)
+> **Claim Boundary:** Declared Conditions Only[cite: 2]
+
+This repository is a verified node within the Riverbraid Constellation.
+It adheres to the Stationary State invariant and is audited against 
+the Riverbraid-Manifest-Gold authority gate.[cite: 1, 2]
+
+---
+# Riverbraid-Core
 ## Riverbraid Unified Control Architecture v2.1
 
 ### Cognitive Signature
@@ -17,3 +26,4 @@ Spatial integrity is maintained via filesystem hash recomputation.
 ---
 *Last Synchronized: 2026-04-30 01:49*
 *Status: integration_rest*
+

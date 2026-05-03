@@ -1,0 +1,6 @@
+﻿{
+    "signals":  "CLEAR",
+    "coherence":  1,
+    "state":  "integration_rest",
+    "foundational_floor":  "SET"
+}

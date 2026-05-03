@@ -1,10 +1,11 @@
-{
-  "name": "riverbraid-core",
-  "version": "1.0.0",
-  "scripts": {
-    "test": "jest"
-  },
-  "devDependencies": {
-    "jest": "^29.0.0"
-  }
+﻿{
+    "name":  "riverbraid-core",
+    "version":  "1.0.0",
+    "scripts":  {
+                    "test":  "jest",
+                    "test:riverbraid":  "node verify-vector.cjs"
+                },
+    "devDependencies":  {
+                            "jest":  "^29.0.0"
+                        }
 }

@@ -1,0 +1,16 @@
+{
+  "repo": "Riverbraid-Core",
+  "status": "VERIFIED",
+  "verification_scope": "ring0-file-surface",
+  "claim_boundary": "declared-conditions-only",
+  "required_files": [
+    "package.json",
+    "AUTHORITY.md",
+    "RING.md",
+    "cluster-manifest-v2.json",
+    "constellation-audit.mjs"
+  ],
+  "missing_files": [],
+  "failure_codes": [],
+  "digest": "sha256:6b1e922e44ad679de659160f47820ad3475cc5bec53d0bb47478548b43f5ccd9"
+}

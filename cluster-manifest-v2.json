@@ -1,0 +1,14 @@
+{
+  "_schema": "riverbraid-cluster-manifest",
+  "_version": "2.0.0-local-ci",
+  "_note": "CI-safe placeholder. Reduced floor remains the active claim.",
+  "claim_boundary": "reduced-floor-only",
+  "full_constellation_claimed": false,
+  "repos": [
+    { "name": "Riverbraid-Core", "ring": 0, "class": "current-reduced-floor-anchor", "required_files": ["package.json"] },
+    { "name": "Riverbraid-Golds", "ring": 0, "class": "current-reduced-floor-anchor", "required_files": ["package.json"] },
+    { "name": "Riverbraid-Manifest-Gold", "ring": 0, "class": "current-reduced-floor-anchor", "required_files": ["riverbraid.constellation.json"] },
+    { "name": "Riverbraid-Wasm-Bridge", "ring": 0, "class": "current-reduced-floor-anchor", "required_files": ["package.json"] },
+    { "name": "Riverbraid-Lang", "ring": 0, "class": "current-reduced-floor-anchor", "required_files": ["package.json"] }
+  ]
+}

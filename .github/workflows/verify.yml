@@ -1,28 +1,16 @@
 name: Riverbraid Verification Suite
-on:
-  push:
-    branches: [main]
-  pull_request: [main]
-  workflow_dispatch:
+on: [push, pull_request, workflow_dispatch]
 permissions:
   contents: read
 jobs:
   verify-core:
-    name: Verify Riverbraid Core
     runs-on: ubuntu-24.04
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
         with:
           node-version: '20.11.0'
-      - name: Verify Core Integrity
+      - name: Run compatibility audit
         run: |
-          if [ ! -f "package.json" ]; then exit 1; fi
-          if [ -f "cluster-manifest-v2.json" ]; then
-            node -e "JSON.parse(require('fs').readFileSync('cluster-manifest-v2.json','utf8').replace(/^\uFEFF/,'')); console.log('Manifest OK')"
-          fi
-          if [ -f "constellation-audit.mjs" ]; then
-            node --check constellation-audit.mjs
-          fi
-      - name: Final status
-        run: echo "RIVERBRAID_CORE_WORKFLOW_VERIFIED"
+          node audit_final.js
+          node constellation-audit.mjs --ring 0

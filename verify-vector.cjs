@@ -1,17 +1,27 @@
-﻿const fs = require('fs');
-const path = require('path');
+const fs = require('fs');
 const crypto = require('crypto');
 
-// Honest behavior check: Ensure package.json exists
-const hasPackage = fs.existsSync(path.join(__dirname, 'package.json'));
-const content = fs.readFileSync(__filename);
-const digest = crypto.createHash('sha256').update(content).digest('hex');
+/** 
+ * Ground Truth: df8fc8e4 
+ * Established: 2026-05-03
+ * Protocol: Absolute V2 (RDK v1.5.0)
+ */
+const EXPECTED_HASH = 'df8fc8e4'; 
 
-console.log(JSON.stringify({
-  repo: "Riverbraid-Core",
-  state: "active",
-  contract_valid: hasPackage,
-  behavior_valid: true,
-  status: hasPackage ? "PASS" : "FAIL",
-  digest: "sha256:" + digest
-}));
+const files = fs.readdirSync(__dirname).filter(f => f.endsWith('.js') || f.endsWith('.cjs'));
+let hashSum = crypto.createHash('sha256');
+
+files.forEach(file => {
+    const content = fs.readFileSync(file);
+    hashSum.update(content);
+});
+
+const computed = hashSum.digest('hex').substring(0, 8);
+
+if (computed === EXPECTED_HASH) {
+    console.log(computed);
+    process.exit(0);
+} else {
+    console.error('VERIFICATION_FAIL: HASH_MISMATCH (Computed: ' + computed + ')');
+    process.exit(1);
+}

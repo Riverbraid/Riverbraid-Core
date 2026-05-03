@@ -1,6 +1,5 @@
-﻿{
-    "signals":  "CLEAR",
-    "coherence":  1,
-    "state":  "integration_rest",
-    "foundational_floor":  "SET"
+{
+    "expected_hash": "09bf8edd365570bfe80dc6b8ee9ca6f5ef10b11efa8dcc7da2e75ca7a55b23ce",
+    "status": "HARDENED",
+    "claim_boundary": "core-spatial-only"
 }

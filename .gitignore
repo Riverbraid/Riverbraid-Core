@@ -1,1 +1,6 @@
+# Local Riverbraid Audit Artifacts
+verify-coupling.cjs
+govern-structure.cjs
 node_modules/
+.DS_Store
+*.log

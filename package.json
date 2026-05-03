@@ -1,4 +1,4 @@
-﻿{
+{
     "name":  "riverbraid-core",
     "version":  "1.0.0",
     "scripts":  {
@@ -7,5 +7,8 @@
                 },
     "devDependencies":  {
                             "jest":  "^29.0.0"
-                        }
+                        },
+    "riverbraid":  {
+                       "role":  "spine"
+                   }
 }

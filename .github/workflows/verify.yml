@@ -1,16 +1,44 @@
 name: Riverbraid Verification Suite
-on: [push, pull_request, workflow_dispatch]
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+  workflow_dispatch:
 permissions:
   contents: read
 jobs:
   verify-core:
     runs-on: ubuntu-24.04
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-node@v4
+      - name: Checkout Riverbraid-Core
+        uses: actions/checkout@v4
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
         with:
           node-version: '20.11.0'
-      - name: Run compatibility audit
+      - name: Clone Ring 0 sibling repositories
+        shell: bash
         run: |
+          set -euo pipefail
+          cd ..
+          for repo in \
+            Riverbraid-Golds \
+            Riverbraid-Governance \
+            Riverbraid-Integrity-Floors \
+            Riverbraid-Types
+          do
+            echo "Cloning $repo"
+            git clone --depth 1 "https://github.com/Riverbraid/${repo}.git" "$repo"
+          done
+          echo "RING0_SIBLINGS_CLONED"
+      - name: Run compatibility audit
+        shell: bash
+        run: |
+          set -euo pipefail
           node audit_final.js
           node constellation-audit.mjs --ring 0
+      - name: Final status
+        run: echo "RIVERBRAID_CORE_RING0_CI_OK"

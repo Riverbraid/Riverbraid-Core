@@ -1,0 +1,308 @@
+{
+  "schema": "riverbraid.phase20.cross_repo_anchor_registry",
+  "version": "1.0.0",
+  "workspace": "C:\\Riverbraid",
+  "source": "local git remotes and repo-root verifiers",
+  "repos": [
+    {
+      "repo": "Riverbraid-Core",
+      "petal": "Core",
+      "invariant": "CORE_GOVERNANCE",
+      "local_head": "568abb8",
+      "remote_head": "568abb8",
+      "local_remote_aligned": true,
+      "verify_status": "VERIFIED",
+      "status": "FAILED_OR_INCOMPLETE"
+    },
+    {
+      "repo": "Riverbraid-Crypto-Gold",
+      "petal": "Crypto-Gold",
+      "invariant": "CRYPTOGRAPHIC_INTEGRITY",
+      "local_head": "285b4d0",
+      "remote_head": "285b4d0",
+      "local_remote_aligned": true,
+      "verify_status": "VERIFIED",
+      "status": "VERIFIED_STATIONARY"
+    },
+    {
+      "repo": "Riverbraid-Judicial-Gold",
+      "petal": "Judicial-Gold",
+      "invariant": "RULE_ADHERENCE",
+      "local_head": "4f7cd76",
+      "remote_head": "4f7cd76",
+      "local_remote_aligned": true,
+      "verify_status": "VERIFIED",
+      "status": "FAILED_OR_INCOMPLETE"
+    },
+    {
+      "repo": "Riverbraid-Memory-Gold",
+      "petal": "Memory-Gold",
+      "invariant": "MEMORY_STATIONARY",
+      "local_head": "fb913a2",
+      "remote_head": "fb913a2",
+      "local_remote_aligned": true,
+      "verify_status": "VERIFIED",
+      "status": "VERIFIED_STATIONARY"
+    },
+    {
+      "repo": "Riverbraid-Integration-Gold",
+      "petal": "Integration-Gold",
+      "invariant": "INTEGRATION_COHERENCE",
+      "local_head": "8439d3a",
+      "remote_head": "8439d3a",
+      "local_remote_aligned": true,
+      "verify_status": "VERIFIED",
+      "status": "VERIFIED_STATIONARY"
+    },
+    {
+      "repo": "Riverbraid-Refusal-Gold",
+      "petal": "Refusal-Gold",
+      "invariant": "REFUSAL_STATIONARY",
+      "local_head": "59b94ab",
+      "remote_head": "59b94ab",
+      "local_remote_aligned": true,
+      "verify_status": "VERIFIED",
+      "status": "VERIFIED_STATIONARY"
+    },
+    {
+      "repo": "Riverbraid-Safety-Gold",
+      "petal": "Safety-Gold",
+      "invariant": "SAFETY_FLOOR_STATIONARY",
+      "local_head": "4b32ce6",
+      "remote_head": "4b32ce6",
+      "local_remote_aligned": true,
+      "verify_status": "VERIFIED",
+      "status": "VERIFIED_STATIONARY"
+    },
+    {
+      "repo": "Riverbraid-Identity-Gold",
+      "petal": "Identity-Gold",
+      "invariant": "IDENTITY_STATIONARY",
+      "local_head": "855522c",
+      "remote_head": "855522c",
+      "local_remote_aligned": true,
+      "verify_status": "VERIFIED",
+      "status": "VERIFIED_STATIONARY"
+    },
+    {
+      "repo": "Riverbraid-Cognition",
+      "petal": "Cognition",
+      "invariant": "COGNITION_STATIONARY",
+      "local_head": "6a37b41",
+      "remote_head": "6a37b41",
+      "local_remote_aligned": true,
+      "verify_status": "VERIFIED",
+      "status": "VERIFIED_STATIONARY"
+    },
+    {
+      "repo": "Riverbraid-Harness-Gold",
+      "petal": "Harness-Gold",
+      "invariant": "HARNESS_STATIONARY",
+      "local_head": "a38b18f",
+      "remote_head": "a38b18f",
+      "local_remote_aligned": true,
+      "verify_status": "VERIFIED",
+      "status": "VERIFIED_STATIONARY"
+    },
+    {
+      "repo": "Riverbraid-Temporal-Gold",
+      "petal": "Temporal-Gold",
+      "invariant": "TEMPORAL_STATIONARY",
+      "local_head": "64dd830",
+      "remote_head": "64dd830",
+      "local_remote_aligned": true,
+      "verify_status": "VERIFIED",
+      "status": "VERIFIED_STATIONARY"
+    },
+    {
+      "repo": "Riverbraid-Action-Gold",
+      "petal": "Action-Gold",
+      "invariant": "ACTION_STATIONARY",
+      "local_head": "6841248",
+      "remote_head": "6841248",
+      "local_remote_aligned": true,
+      "verify_status": "VERIFIED",
+      "status": "VERIFIED_STATIONARY"
+    },
+    {
+      "repo": "Riverbraid-Audio-Gold",
+      "petal": "Audio-Gold",
+      "invariant": "AUDIO_STATIONARY",
+      "local_head": "7c7fb89",
+      "remote_head": "7c7fb89",
+      "local_remote_aligned": true,
+      "verify_status": "VERIFIED",
+      "status": "VERIFIED_STATIONARY"
+    },
+    {
+      "repo": "Riverbraid-Vision-Gold",
+      "petal": "Vision-Gold",
+      "invariant": "VISION_STATIONARY",
+      "local_head": "a295d51",
+      "remote_head": "a295d51",
+      "local_remote_aligned": true,
+      "verify_status": "VERIFIED",
+      "status": "VERIFIED_STATIONARY"
+    },
+    {
+      "repo": "Riverbraid-Interface-Gold",
+      "petal": "Interface-Gold",
+      "invariant": "INTERFACE_STATIONARY",
+      "local_head": "d388af5",
+      "remote_head": "d388af5",
+      "local_remote_aligned": true,
+      "verify_status": "VERIFIED",
+      "status": "VERIFIED_STATIONARY"
+    },
+    {
+      "repo": "Riverbraid-Manifest-Gold",
+      "petal": "Manifest-Gold",
+      "invariant": "MANIFEST_STATIONARY",
+      "local_head": "5e6d4fb",
+      "remote_head": "5e6d4fb",
+      "local_remote_aligned": true,
+      "verify_status": "VERIFIED",
+      "status": "VERIFIED_STATIONARY"
+    },
+    {
+      "repo": "Riverbraid-GPG-Gold",
+      "petal": "GPG-Gold",
+      "invariant": "GPG_STATIONARY",
+      "local_head": "6441aeb",
+      "remote_head": "6441aeb",
+      "local_remote_aligned": true,
+      "verify_status": "VERIFIED",
+      "status": "VERIFIED_STATIONARY"
+    },
+    {
+      "repo": "Riverbraid-Nexus-Gold",
+      "petal": "Nexus-Gold",
+      "invariant": "NEXUS_STATIONARY",
+      "local_head": "6b4a210",
+      "remote_head": "6b4a210",
+      "local_remote_aligned": true,
+      "verify_status": "VERIFIED",
+      "status": "VERIFIED_STATIONARY"
+    },
+    {
+      "repo": "Riverbraid-Pulse-Gold",
+      "petal": "Pulse-Gold",
+      "invariant": "PULSE_STATIONARY",
+      "local_head": "f0e893c",
+      "remote_head": "f0e893c",
+      "local_remote_aligned": true,
+      "verify_status": "VERIFIED",
+      "status": "VERIFIED_STATIONARY"
+    },
+    {
+      "repo": "Riverbraid-Flow-Gold",
+      "petal": "Flow-Gold",
+      "invariant": "FLOW_STATIONARY",
+      "local_head": "4febfe1",
+      "remote_head": "4febfe1",
+      "local_remote_aligned": true,
+      "verify_status": "VERIFIED",
+      "status": "VERIFIED_STATIONARY"
+    },
+    {
+      "repo": "Riverbraid-Discovery-Gold",
+      "petal": "Discovery-Gold",
+      "invariant": "DISCOVERY_STATIONARY",
+      "local_head": "6055971",
+      "remote_head": "6055971",
+      "local_remote_aligned": true,
+      "verify_status": "VERIFIED",
+      "status": "VERIFIED_STATIONARY"
+    },
+    {
+      "repo": "Riverbraid-Bridge-Gold",
+      "petal": "Bridge-Gold",
+      "invariant": "BRIDGE_STATIONARY",
+      "local_head": "bf1b883",
+      "remote_head": "bf1b883",
+      "local_remote_aligned": true,
+      "verify_status": "VERIFIED",
+      "status": "VERIFIED_STATIONARY"
+    },
+    {
+      "repo": "Riverbraid-Bio-Gold",
+      "petal": "Bio-Gold",
+      "invariant": "BIO_STATIONARY",
+      "local_head": "69b4b33",
+      "remote_head": "69b4b33",
+      "local_remote_aligned": true,
+      "verify_status": "VERIFIED",
+      "status": "VERIFIED_STATIONARY"
+    },
+    {
+      "repo": "Riverbraid-Network-Gold",
+      "petal": "Network-Gold",
+      "invariant": "NETWORK_STATIONARY",
+      "local_head": "849ffdb",
+      "remote_head": "849ffdb",
+      "local_remote_aligned": true,
+      "verify_status": "VERIFIED",
+      "status": "VERIFIED_STATIONARY"
+    },
+    {
+      "repo": "Riverbraid-Storage-Gold",
+      "petal": "Storage-Gold",
+      "invariant": "STORAGE_STATIONARY",
+      "local_head": "5a5274b",
+      "remote_head": "5a5274b",
+      "local_remote_aligned": true,
+      "verify_status": "VERIFIED",
+      "status": "VERIFIED_STATIONARY"
+    },
+    {
+      "repo": "Riverbraid-Spatial-Gold",
+      "petal": "Spatial-Gold",
+      "invariant": "SPATIAL_STATIONARY",
+      "local_head": "409c43d",
+      "remote_head": "409c43d",
+      "local_remote_aligned": true,
+      "verify_status": "VERIFIED",
+      "status": "VERIFIED_STATIONARY"
+    },
+    {
+      "repo": "Riverbraid-Security-Gold",
+      "petal": "Security-Gold",
+      "invariant": "SECURITY_STATIONARY",
+      "local_head": "e080aa5",
+      "remote_head": "e080aa5",
+      "local_remote_aligned": true,
+      "verify_status": "VERIFIED",
+      "status": "VERIFIED_STATIONARY"
+    },
+    {
+      "repo": "Riverbraid-Resonance-Gold",
+      "petal": "Resonance-Gold",
+      "invariant": "RESONANCE_STATIONARY",
+      "local_head": "6143791",
+      "remote_head": "6143791",
+      "local_remote_aligned": true,
+      "verify_status": "VERIFIED",
+      "status": "VERIFIED_STATIONARY"
+    },
+    {
+      "repo": "Riverbraid-Weave-Gold",
+      "petal": "Weave-Gold",
+      "invariant": "WEAVE_STATIONARY",
+      "local_head": "5778b3d",
+      "remote_head": "5778b3d",
+      "local_remote_aligned": true,
+      "verify_status": "VERIFIED",
+      "status": "VERIFIED_STATIONARY"
+    },
+    {
+      "repo": "Riverbraid-Gold-V2",
+      "petal": "Gold-V2",
+      "invariant": "GOLD_V2_STATIONARY",
+      "local_head": "f1a6c8e",
+      "remote_head": "f1a6c8e",
+      "local_remote_aligned": true,
+      "verify_status": "VERIFIED",
+      "status": "VERIFIED_STATIONARY"
+    }
+  ]
+}

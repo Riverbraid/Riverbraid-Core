@@ -1,0 +1,219 @@
+{
+  "schema": "riverbraid.phase20.core_manifest_alignment",
+  "version": "1.0.0",
+  "core_repo": "Riverbraid-Core",
+  "manifest_file": "cluster-manifest-v2.json",
+  "manifest_found": true,
+  "checks": [
+    {
+      "repo": "Riverbraid-Core",
+      "remote_head": "568abb8",
+      "repo_mentioned": true,
+      "anchor_mentioned": false,
+      "alignment": "REPO_LISTED_BUT_CURRENT_ANCHOR_NOT_FOUND"
+    },
+    {
+      "repo": "Riverbraid-Crypto-Gold",
+      "remote_head": "285b4d0",
+      "repo_mentioned": true,
+      "anchor_mentioned": false,
+      "alignment": "REPO_LISTED_BUT_CURRENT_ANCHOR_NOT_FOUND"
+    },
+    {
+      "repo": "Riverbraid-Judicial-Gold",
+      "remote_head": "4f7cd76",
+      "repo_mentioned": true,
+      "anchor_mentioned": false,
+      "alignment": "REPO_LISTED_BUT_CURRENT_ANCHOR_NOT_FOUND"
+    },
+    {
+      "repo": "Riverbraid-Memory-Gold",
+      "remote_head": "fb913a2",
+      "repo_mentioned": true,
+      "anchor_mentioned": false,
+      "alignment": "REPO_LISTED_BUT_CURRENT_ANCHOR_NOT_FOUND"
+    },
+    {
+      "repo": "Riverbraid-Integration-Gold",
+      "remote_head": "8439d3a",
+      "repo_mentioned": true,
+      "anchor_mentioned": false,
+      "alignment": "REPO_LISTED_BUT_CURRENT_ANCHOR_NOT_FOUND"
+    },
+    {
+      "repo": "Riverbraid-Refusal-Gold",
+      "remote_head": "59b94ab",
+      "repo_mentioned": true,
+      "anchor_mentioned": false,
+      "alignment": "REPO_LISTED_BUT_CURRENT_ANCHOR_NOT_FOUND"
+    },
+    {
+      "repo": "Riverbraid-Safety-Gold",
+      "remote_head": "4b32ce6",
+      "repo_mentioned": true,
+      "anchor_mentioned": false,
+      "alignment": "REPO_LISTED_BUT_CURRENT_ANCHOR_NOT_FOUND"
+    },
+    {
+      "repo": "Riverbraid-Identity-Gold",
+      "remote_head": "855522c",
+      "repo_mentioned": true,
+      "anchor_mentioned": false,
+      "alignment": "REPO_LISTED_BUT_CURRENT_ANCHOR_NOT_FOUND"
+    },
+    {
+      "repo": "Riverbraid-Cognition",
+      "remote_head": "6a37b41",
+      "repo_mentioned": true,
+      "anchor_mentioned": false,
+      "alignment": "REPO_LISTED_BUT_CURRENT_ANCHOR_NOT_FOUND"
+    },
+    {
+      "repo": "Riverbraid-Harness-Gold",
+      "remote_head": "a38b18f",
+      "repo_mentioned": true,
+      "anchor_mentioned": false,
+      "alignment": "REPO_LISTED_BUT_CURRENT_ANCHOR_NOT_FOUND"
+    },
+    {
+      "repo": "Riverbraid-Temporal-Gold",
+      "remote_head": "64dd830",
+      "repo_mentioned": true,
+      "anchor_mentioned": false,
+      "alignment": "REPO_LISTED_BUT_CURRENT_ANCHOR_NOT_FOUND"
+    },
+    {
+      "repo": "Riverbraid-Action-Gold",
+      "remote_head": "6841248",
+      "repo_mentioned": true,
+      "anchor_mentioned": false,
+      "alignment": "REPO_LISTED_BUT_CURRENT_ANCHOR_NOT_FOUND"
+    },
+    {
+      "repo": "Riverbraid-Audio-Gold",
+      "remote_head": "7c7fb89",
+      "repo_mentioned": true,
+      "anchor_mentioned": false,
+      "alignment": "REPO_LISTED_BUT_CURRENT_ANCHOR_NOT_FOUND"
+    },
+    {
+      "repo": "Riverbraid-Vision-Gold",
+      "remote_head": "a295d51",
+      "repo_mentioned": true,
+      "anchor_mentioned": false,
+      "alignment": "REPO_LISTED_BUT_CURRENT_ANCHOR_NOT_FOUND"
+    },
+    {
+      "repo": "Riverbraid-Interface-Gold",
+      "remote_head": "d388af5",
+      "repo_mentioned": true,
+      "anchor_mentioned": false,
+      "alignment": "REPO_LISTED_BUT_CURRENT_ANCHOR_NOT_FOUND"
+    },
+    {
+      "repo": "Riverbraid-Manifest-Gold",
+      "remote_head": "5e6d4fb",
+      "repo_mentioned": true,
+      "anchor_mentioned": false,
+      "alignment": "REPO_LISTED_BUT_CURRENT_ANCHOR_NOT_FOUND"
+    },
+    {
+      "repo": "Riverbraid-GPG-Gold",
+      "remote_head": "6441aeb",
+      "repo_mentioned": true,
+      "anchor_mentioned": false,
+      "alignment": "REPO_LISTED_BUT_CURRENT_ANCHOR_NOT_FOUND"
+    },
+    {
+      "repo": "Riverbraid-Nexus-Gold",
+      "remote_head": "6b4a210",
+      "repo_mentioned": true,
+      "anchor_mentioned": false,
+      "alignment": "REPO_LISTED_BUT_CURRENT_ANCHOR_NOT_FOUND"
+    },
+    {
+      "repo": "Riverbraid-Pulse-Gold",
+      "remote_head": "f0e893c",
+      "repo_mentioned": true,
+      "anchor_mentioned": false,
+      "alignment": "REPO_LISTED_BUT_CURRENT_ANCHOR_NOT_FOUND"
+    },
+    {
+      "repo": "Riverbraid-Flow-Gold",
+      "remote_head": "4febfe1",
+      "repo_mentioned": true,
+      "anchor_mentioned": false,
+      "alignment": "REPO_LISTED_BUT_CURRENT_ANCHOR_NOT_FOUND"
+    },
+    {
+      "repo": "Riverbraid-Discovery-Gold",
+      "remote_head": "6055971",
+      "repo_mentioned": true,
+      "anchor_mentioned": false,
+      "alignment": "REPO_LISTED_BUT_CURRENT_ANCHOR_NOT_FOUND"
+    },
+    {
+      "repo": "Riverbraid-Bridge-Gold",
+      "remote_head": "bf1b883",
+      "repo_mentioned": true,
+      "anchor_mentioned": false,
+      "alignment": "REPO_LISTED_BUT_CURRENT_ANCHOR_NOT_FOUND"
+    },
+    {
+      "repo": "Riverbraid-Bio-Gold",
+      "remote_head": "69b4b33",
+      "repo_mentioned": true,
+      "anchor_mentioned": false,
+      "alignment": "REPO_LISTED_BUT_CURRENT_ANCHOR_NOT_FOUND"
+    },
+    {
+      "repo": "Riverbraid-Network-Gold",
+      "remote_head": "849ffdb",
+      "repo_mentioned": true,
+      "anchor_mentioned": false,
+      "alignment": "REPO_LISTED_BUT_CURRENT_ANCHOR_NOT_FOUND"
+    },
+    {
+      "repo": "Riverbraid-Storage-Gold",
+      "remote_head": "5a5274b",
+      "repo_mentioned": true,
+      "anchor_mentioned": false,
+      "alignment": "REPO_LISTED_BUT_CURRENT_ANCHOR_NOT_FOUND"
+    },
+    {
+      "repo": "Riverbraid-Spatial-Gold",
+      "remote_head": "409c43d",
+      "repo_mentioned": true,
+      "anchor_mentioned": false,
+      "alignment": "REPO_LISTED_BUT_CURRENT_ANCHOR_NOT_FOUND"
+    },
+    {
+      "repo": "Riverbraid-Security-Gold",
+      "remote_head": "e080aa5",
+      "repo_mentioned": true,
+      "anchor_mentioned": false,
+      "alignment": "REPO_LISTED_BUT_CURRENT_ANCHOR_NOT_FOUND"
+    },
+    {
+      "repo": "Riverbraid-Resonance-Gold",
+      "remote_head": "6143791",
+      "repo_mentioned": true,
+      "anchor_mentioned": false,
+      "alignment": "REPO_LISTED_BUT_CURRENT_ANCHOR_NOT_FOUND"
+    },
+    {
+      "repo": "Riverbraid-Weave-Gold",
+      "remote_head": "5778b3d",
+      "repo_mentioned": true,
+      "anchor_mentioned": false,
+      "alignment": "REPO_LISTED_BUT_CURRENT_ANCHOR_NOT_FOUND"
+    },
+    {
+      "repo": "Riverbraid-Gold-V2",
+      "remote_head": "f1a6c8e",
+      "repo_mentioned": true,
+      "anchor_mentioned": false,
+      "alignment": "REPO_LISTED_BUT_CURRENT_ANCHOR_NOT_FOUND"
+    }
+  ]
+}

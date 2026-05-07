@@ -1,0 +1,40 @@
+{
+  "schema": "riverbraid.phase20.cluster_verification",
+  "version": "1.0.0",
+  "status": "CLUSTER_HAS_FAILURES",
+  "totals": {
+    "expected_repos": 30,
+    "existing_repos": 30,
+    "missing_repos": 0,
+    "verified_stationary": 28,
+    "failed_or_incomplete": 2
+  },
+  "failures": [
+    {
+      "repo": "Riverbraid-Core",
+      "status": "FAILED_OR_INCOMPLETE",
+      "exists": true,
+      "clean": false,
+      "local_remote_aligned": true,
+      "verify_mjs_present": true,
+      "verify_exit_code": 0,
+      "verify_output_present": true,
+      "verify_output_status": "VERIFIED",
+      "post_verify_clean": false,
+      "verify_stderr": ""
+    },
+    {
+      "repo": "Riverbraid-Judicial-Gold",
+      "status": "FAILED_OR_INCOMPLETE",
+      "exists": true,
+      "clean": false,
+      "local_remote_aligned": true,
+      "verify_mjs_present": true,
+      "verify_exit_code": 0,
+      "verify_output_present": true,
+      "verify_output_status": "VERIFIED",
+      "post_verify_clean": true,
+      "verify_stderr": ""
+    }
+  ]
+}

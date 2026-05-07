@@ -7,7 +7,7 @@
   "checks": [
     {
       "repo": "Riverbraid-Core",
-      "remote_head": "568abb8",
+      "remote_head": "10c5292",
       "repo_mentioned": true,
       "anchor_mentioned": false,
       "alignment": "REPO_LISTED_BUT_CURRENT_ANCHOR_NOT_FOUND"

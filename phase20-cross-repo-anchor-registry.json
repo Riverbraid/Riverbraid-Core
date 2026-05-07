@@ -8,11 +8,11 @@
       "repo": "Riverbraid-Core",
       "petal": "Core",
       "invariant": "CORE_GOVERNANCE",
-      "local_head": "568abb8",
-      "remote_head": "568abb8",
+      "local_head": "10c5292",
+      "remote_head": "10c5292",
       "local_remote_aligned": true,
       "verify_status": "VERIFIED",
-      "status": "FAILED_OR_INCOMPLETE"
+      "status": "VERIFIED_STATIONARY"
     },
     {
       "repo": "Riverbraid-Crypto-Gold",
@@ -32,7 +32,7 @@
       "remote_head": "4f7cd76",
       "local_remote_aligned": true,
       "verify_status": "VERIFIED",
-      "status": "FAILED_OR_INCOMPLETE"
+      "status": "VERIFIED_STATIONARY"
     },
     {
       "repo": "Riverbraid-Memory-Gold",

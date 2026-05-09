@@ -1,0 +1,356 @@
+﻿{
+    "schema":  "riverbraid.phase21.repair_map",
+    "version":  "1.2.1",
+    "source":  "Phase 20 registry plus Phase 21.03 workflow precedence reclassification",
+    "proof_boundary":  "Workflow passing requires a successful GitHub Actions run on the current origin/main head.",
+    "repo_count":  30,
+    "totals":  {
+                   "workflow_remote_passing":  2,
+                   "workflow_missing":  23,
+                   "workflow_misaligned":  4,
+                   "workflow_no_current_head_run":  1,
+                   "workflow_in_progress_or_pending":  0,
+                   "workflow_failed":  0,
+                   "gh_cli_error":  0,
+                   "local_missing":  0,
+                   "requires_repair":  28
+               },
+    "repair_order":  {
+                         "2_workflow_misaligned":  [
+                                                       {
+                                                           "repo":  "Riverbraid-Core",
+                                                           "classification":  "WORKFLOW_COMMAND_MISALIGNED"
+                                                       },
+                                                       {
+                                                           "repo":  "Riverbraid-Manifest-Gold",
+                                                           "classification":  "WORKFLOW_COMMAND_MISALIGNED"
+                                                       },
+                                                       {
+                                                           "repo":  "Riverbraid-GPG-Gold",
+                                                           "classification":  "WORKFLOW_COMMAND_MISALIGNED"
+                                                       },
+                                                       {
+                                                           "repo":  "Riverbraid-Gold-V2",
+                                                           "classification":  "WORKFLOW_COMMAND_MISALIGNED"
+                                                       }
+                                                   ],
+                         "1_workflow_missing":  [
+                                                    {
+                                                        "repo":  "Riverbraid-Crypto-Gold",
+                                                        "classification":  "WORKFLOW_MISSING"
+                                                    },
+                                                    {
+                                                        "repo":  "Riverbraid-Judicial-Gold",
+                                                        "classification":  "WORKFLOW_MISSING"
+                                                    },
+                                                    {
+                                                        "repo":  "Riverbraid-Memory-Gold",
+                                                        "classification":  "WORKFLOW_MISSING"
+                                                    },
+                                                    {
+                                                        "repo":  "Riverbraid-Integration-Gold",
+                                                        "classification":  "WORKFLOW_MISSING"
+                                                    },
+                                                    {
+                                                        "repo":  "Riverbraid-Identity-Gold",
+                                                        "classification":  "WORKFLOW_MISSING"
+                                                    },
+                                                    {
+                                                        "repo":  "Riverbraid-Cognition",
+                                                        "classification":  "WORKFLOW_MISSING"
+                                                    },
+                                                    {
+                                                        "repo":  "Riverbraid-Temporal-Gold",
+                                                        "classification":  "WORKFLOW_MISSING"
+                                                    },
+                                                    {
+                                                        "repo":  "Riverbraid-Action-Gold",
+                                                        "classification":  "WORKFLOW_MISSING"
+                                                    },
+                                                    {
+                                                        "repo":  "Riverbraid-Audio-Gold",
+                                                        "classification":  "WORKFLOW_MISSING"
+                                                    },
+                                                    {
+                                                        "repo":  "Riverbraid-Vision-Gold",
+                                                        "classification":  "WORKFLOW_MISSING"
+                                                    },
+                                                    {
+                                                        "repo":  "Riverbraid-Interface-Gold",
+                                                        "classification":  "WORKFLOW_MISSING"
+                                                    },
+                                                    {
+                                                        "repo":  "Riverbraid-Nexus-Gold",
+                                                        "classification":  "WORKFLOW_MISSING"
+                                                    },
+                                                    {
+                                                        "repo":  "Riverbraid-Pulse-Gold",
+                                                        "classification":  "WORKFLOW_MISSING"
+                                                    },
+                                                    {
+                                                        "repo":  "Riverbraid-Flow-Gold",
+                                                        "classification":  "WORKFLOW_MISSING"
+                                                    },
+                                                    {
+                                                        "repo":  "Riverbraid-Discovery-Gold",
+                                                        "classification":  "WORKFLOW_MISSING"
+                                                    },
+                                                    {
+                                                        "repo":  "Riverbraid-Bridge-Gold",
+                                                        "classification":  "WORKFLOW_MISSING"
+                                                    },
+                                                    {
+                                                        "repo":  "Riverbraid-Bio-Gold",
+                                                        "classification":  "WORKFLOW_MISSING"
+                                                    },
+                                                    {
+                                                        "repo":  "Riverbraid-Network-Gold",
+                                                        "classification":  "WORKFLOW_MISSING"
+                                                    },
+                                                    {
+                                                        "repo":  "Riverbraid-Storage-Gold",
+                                                        "classification":  "WORKFLOW_MISSING"
+                                                    },
+                                                    {
+                                                        "repo":  "Riverbraid-Spatial-Gold",
+                                                        "classification":  "WORKFLOW_MISSING"
+                                                    },
+                                                    {
+                                                        "repo":  "Riverbraid-Security-Gold",
+                                                        "classification":  "WORKFLOW_MISSING"
+                                                    },
+                                                    {
+                                                        "repo":  "Riverbraid-Resonance-Gold",
+                                                        "classification":  "WORKFLOW_MISSING"
+                                                    },
+                                                    {
+                                                        "repo":  "Riverbraid-Weave-Gold",
+                                                        "classification":  "WORKFLOW_MISSING"
+                                                    }
+                                                ],
+                         "4_workflow_failed":  [
+
+                                               ],
+                         "3_no_current_head_run":  [
+                                                       {
+                                                           "repo":  "Riverbraid-Refusal-Gold",
+                                                           "classification":  "WORKFLOW_NO_CURRENT_HEAD_RUN"
+                                                       }
+                                                   ],
+                         "5_gh_cli_error":  [
+
+                                            ]
+                     },
+    "repos":  [
+                  {
+                      "repo":  "Riverbraid-Core",
+                      "classification":  "WORKFLOW_COMMAND_MISALIGNED",
+                      "workflow_dir_present":  true,
+                      "workflow_command_aligned":  false,
+                      "audit_note":  ""
+                  },
+                  {
+                      "repo":  "Riverbraid-Crypto-Gold",
+                      "classification":  "WORKFLOW_MISSING",
+                      "workflow_dir_present":  false,
+                      "workflow_command_aligned":  false,
+                      "audit_note":  ""
+                  },
+                  {
+                      "repo":  "Riverbraid-Judicial-Gold",
+                      "classification":  "WORKFLOW_MISSING",
+                      "workflow_dir_present":  false,
+                      "workflow_command_aligned":  false,
+                      "audit_note":  ""
+                  },
+                  {
+                      "repo":  "Riverbraid-Memory-Gold",
+                      "classification":  "WORKFLOW_MISSING",
+                      "workflow_dir_present":  false,
+                      "workflow_command_aligned":  false,
+                      "audit_note":  ""
+                  },
+                  {
+                      "repo":  "Riverbraid-Integration-Gold",
+                      "classification":  "WORKFLOW_MISSING",
+                      "workflow_dir_present":  false,
+                      "workflow_command_aligned":  false,
+                      "audit_note":  ""
+                  },
+                  {
+                      "repo":  "Riverbraid-Refusal-Gold",
+                      "classification":  "WORKFLOW_NO_CURRENT_HEAD_RUN",
+                      "workflow_dir_present":  true,
+                      "workflow_command_aligned":  true,
+                      "audit_note":  ""
+                  },
+                  {
+                      "repo":  "Riverbraid-Safety-Gold",
+                      "classification":  "WORKFLOW_REMOTE_PASSING",
+                      "workflow_dir_present":  true,
+                      "workflow_command_aligned":  true,
+                      "audit_note":  ""
+                  },
+                  {
+                      "repo":  "Riverbraid-Identity-Gold",
+                      "classification":  "WORKFLOW_MISSING",
+                      "workflow_dir_present":  false,
+                      "workflow_command_aligned":  false,
+                      "audit_note":  ""
+                  },
+                  {
+                      "repo":  "Riverbraid-Cognition",
+                      "classification":  "WORKFLOW_MISSING",
+                      "workflow_dir_present":  false,
+                      "workflow_command_aligned":  false,
+                      "audit_note":  ""
+                  },
+                  {
+                      "repo":  "Riverbraid-Harness-Gold",
+                      "classification":  "WORKFLOW_REMOTE_PASSING",
+                      "workflow_dir_present":  true,
+                      "workflow_command_aligned":  true,
+                      "audit_note":  ""
+                  },
+                  {
+                      "repo":  "Riverbraid-Temporal-Gold",
+                      "classification":  "WORKFLOW_MISSING",
+                      "workflow_dir_present":  false,
+                      "workflow_command_aligned":  false,
+                      "audit_note":  ""
+                  },
+                  {
+                      "repo":  "Riverbraid-Action-Gold",
+                      "classification":  "WORKFLOW_MISSING",
+                      "workflow_dir_present":  false,
+                      "workflow_command_aligned":  false,
+                      "audit_note":  ""
+                  },
+                  {
+                      "repo":  "Riverbraid-Audio-Gold",
+                      "classification":  "WORKFLOW_MISSING",
+                      "workflow_dir_present":  false,
+                      "workflow_command_aligned":  false,
+                      "audit_note":  ""
+                  },
+                  {
+                      "repo":  "Riverbraid-Vision-Gold",
+                      "classification":  "WORKFLOW_MISSING",
+                      "workflow_dir_present":  false,
+                      "workflow_command_aligned":  false,
+                      "audit_note":  ""
+                  },
+                  {
+                      "repo":  "Riverbraid-Interface-Gold",
+                      "classification":  "WORKFLOW_MISSING",
+                      "workflow_dir_present":  false,
+                      "workflow_command_aligned":  false,
+                      "audit_note":  ""
+                  },
+                  {
+                      "repo":  "Riverbraid-Manifest-Gold",
+                      "classification":  "WORKFLOW_COMMAND_MISALIGNED",
+                      "workflow_dir_present":  true,
+                      "workflow_command_aligned":  false,
+                      "audit_note":  ""
+                  },
+                  {
+                      "repo":  "Riverbraid-GPG-Gold",
+                      "classification":  "WORKFLOW_COMMAND_MISALIGNED",
+                      "workflow_dir_present":  true,
+                      "workflow_command_aligned":  false,
+                      "audit_note":  ""
+                  },
+                  {
+                      "repo":  "Riverbraid-Nexus-Gold",
+                      "classification":  "WORKFLOW_MISSING",
+                      "workflow_dir_present":  false,
+                      "workflow_command_aligned":  false,
+                      "audit_note":  ""
+                  },
+                  {
+                      "repo":  "Riverbraid-Pulse-Gold",
+                      "classification":  "WORKFLOW_MISSING",
+                      "workflow_dir_present":  false,
+                      "workflow_command_aligned":  false,
+                      "audit_note":  ""
+                  },
+                  {
+                      "repo":  "Riverbraid-Flow-Gold",
+                      "classification":  "WORKFLOW_MISSING",
+                      "workflow_dir_present":  false,
+                      "workflow_command_aligned":  false,
+                      "audit_note":  ""
+                  },
+                  {
+                      "repo":  "Riverbraid-Discovery-Gold",
+                      "classification":  "WORKFLOW_MISSING",
+                      "workflow_dir_present":  false,
+                      "workflow_command_aligned":  false,
+                      "audit_note":  ""
+                  },
+                  {
+                      "repo":  "Riverbraid-Bridge-Gold",
+                      "classification":  "WORKFLOW_MISSING",
+                      "workflow_dir_present":  false,
+                      "workflow_command_aligned":  false,
+                      "audit_note":  ""
+                  },
+                  {
+                      "repo":  "Riverbraid-Bio-Gold",
+                      "classification":  "WORKFLOW_MISSING",
+                      "workflow_dir_present":  false,
+                      "workflow_command_aligned":  false,
+                      "audit_note":  ""
+                  },
+                  {
+                      "repo":  "Riverbraid-Network-Gold",
+                      "classification":  "WORKFLOW_MISSING",
+                      "workflow_dir_present":  false,
+                      "workflow_command_aligned":  false,
+                      "audit_note":  ""
+                  },
+                  {
+                      "repo":  "Riverbraid-Storage-Gold",
+                      "classification":  "WORKFLOW_MISSING",
+                      "workflow_dir_present":  false,
+                      "workflow_command_aligned":  false,
+                      "audit_note":  ""
+                  },
+                  {
+                      "repo":  "Riverbraid-Spatial-Gold",
+                      "classification":  "WORKFLOW_MISSING",
+                      "workflow_dir_present":  false,
+                      "workflow_command_aligned":  false,
+                      "audit_note":  ""
+                  },
+                  {
+                      "repo":  "Riverbraid-Security-Gold",
+                      "classification":  "WORKFLOW_MISSING",
+                      "workflow_dir_present":  false,
+                      "workflow_command_aligned":  false,
+                      "audit_note":  ""
+                  },
+                  {
+                      "repo":  "Riverbraid-Resonance-Gold",
+                      "classification":  "WORKFLOW_MISSING",
+                      "workflow_dir_present":  false,
+                      "workflow_command_aligned":  false,
+                      "audit_note":  ""
+                  },
+                  {
+                      "repo":  "Riverbraid-Weave-Gold",
+                      "classification":  "WORKFLOW_MISSING",
+                      "workflow_dir_present":  false,
+                      "workflow_command_aligned":  false,
+                      "audit_note":  ""
+                  },
+                  {
+                      "repo":  "Riverbraid-Gold-V2",
+                      "classification":  "WORKFLOW_COMMAND_MISALIGNED",
+                      "workflow_dir_present":  true,
+                      "workflow_command_aligned":  false,
+                      "audit_note":  ""
+                  }
+              ]
+}

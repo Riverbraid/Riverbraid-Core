@@ -1,6 +1,6 @@
-﻿{
+{
     "schema":  "riverbraid.phase24c.readme_metadata_patch_plan",
-    "version":  "1.0.0",
+    "version":  "1.1.0",
     "proof_boundary":  "Plan only. No repository modification is performed by this file.",
     "source_audit_commit":  "5add70b9f998175a774d2eb972f8444feb5e2a15",
     "repo_count_with_actions":  29,
@@ -16,7 +16,8 @@
                         "missing_readme_topics":  [
 
                                                   ],
-                        "github_about_missing":  false
+                        "github_about_missing":  false,
+                        "github_topics_missing":  false
                     },
                     {
                         "repo":  "Riverbraid-Judicial-Gold",
@@ -29,7 +30,8 @@
                         "missing_readme_topics":  [
 
                                                   ],
-                        "github_about_missing":  false
+                        "github_about_missing":  false,
+                        "github_topics_missing":  false
                     },
                     {
                         "repo":  "Riverbraid-Memory-Gold",
@@ -42,7 +44,8 @@
                         "missing_readme_topics":  [
 
                                                   ],
-                        "github_about_missing":  false
+                        "github_about_missing":  false,
+                        "github_topics_missing":  false
                     },
                     {
                         "repo":  "Riverbraid-Integration-Gold",
@@ -55,7 +58,8 @@
                         "missing_readme_topics":  [
 
                                                   ],
-                        "github_about_missing":  false
+                        "github_about_missing":  false,
+                        "github_topics_missing":  false
                     },
                     {
                         "repo":  "Riverbraid-Refusal-Gold",
@@ -68,7 +72,8 @@
                         "missing_readme_topics":  [
                                                       "license reference"
                                                   ],
-                        "github_about_missing":  false
+                        "github_about_missing":  false,
+                        "github_topics_missing":  false
                     },
                     {
                         "repo":  "Riverbraid-Safety-Gold",
@@ -81,7 +86,8 @@
                         "missing_readme_topics":  [
 
                                                   ],
-                        "github_about_missing":  false
+                        "github_about_missing":  false,
+                        "github_topics_missing":  false
                     },
                     {
                         "repo":  "Riverbraid-Identity-Gold",
@@ -95,7 +101,8 @@
                         "missing_readme_topics":  [
                                                       "license reference"
                                                   ],
-                        "github_about_missing":  true
+                        "github_about_missing":  true,
+                        "github_topics_missing":  false
                     },
                     {
                         "repo":  "Riverbraid-Cognition",
@@ -108,7 +115,8 @@
                         "missing_readme_topics":  [
 
                                                   ],
-                        "github_about_missing":  false
+                        "github_about_missing":  false,
+                        "github_topics_missing":  false
                     },
                     {
                         "repo":  "Riverbraid-Harness-Gold",
@@ -121,7 +129,8 @@
                         "missing_readme_topics":  [
                                                       "license reference"
                                                   ],
-                        "github_about_missing":  false
+                        "github_about_missing":  false,
+                        "github_topics_missing":  false
                     },
                     {
                         "repo":  "Riverbraid-Temporal-Gold",
@@ -136,7 +145,8 @@
                                                       "system role",
                                                       "license reference"
                                                   ],
-                        "github_about_missing":  false
+                        "github_about_missing":  false,
+                        "github_topics_missing":  false
                     },
                     {
                         "repo":  "Riverbraid-Action-Gold",
@@ -149,7 +159,8 @@
                         "missing_readme_topics":  [
 
                                                   ],
-                        "github_about_missing":  false
+                        "github_about_missing":  false,
+                        "github_topics_missing":  false
                     },
                     {
                         "repo":  "Riverbraid-Audio-Gold",
@@ -162,7 +173,8 @@
                         "missing_readme_topics":  [
 
                                                   ],
-                        "github_about_missing":  false
+                        "github_about_missing":  false,
+                        "github_topics_missing":  false
                     },
                     {
                         "repo":  "Riverbraid-Vision-Gold",
@@ -175,7 +187,8 @@
                         "missing_readme_topics":  [
 
                                                   ],
-                        "github_about_missing":  false
+                        "github_about_missing":  false,
+                        "github_topics_missing":  false
                     },
                     {
                         "repo":  "Riverbraid-Interface-Gold",
@@ -188,7 +201,8 @@
                         "missing_readme_topics":  [
 
                                                   ],
-                        "github_about_missing":  false
+                        "github_about_missing":  false,
+                        "github_topics_missing":  false
                     },
                     {
                         "repo":  "Riverbraid-Manifest-Gold",
@@ -201,7 +215,8 @@
                         "missing_readme_topics":  [
                                                       "license reference"
                                                   ],
-                        "github_about_missing":  false
+                        "github_about_missing":  false,
+                        "github_topics_missing":  false
                     },
                     {
                         "repo":  "Riverbraid-GPG-Gold",
@@ -215,7 +230,8 @@
                                                       "verification language",
                                                       "license reference"
                                                   ],
-                        "github_about_missing":  false
+                        "github_about_missing":  false,
+                        "github_topics_missing":  false
                     },
                     {
                         "repo":  "Riverbraid-Nexus-Gold",
@@ -229,7 +245,8 @@
                         "missing_readme_topics":  [
                                                       "license reference"
                                                   ],
-                        "github_about_missing":  true
+                        "github_about_missing":  true,
+                        "github_topics_missing":  false
                     },
                     {
                         "repo":  "Riverbraid-Pulse-Gold",
@@ -243,7 +260,8 @@
                         "missing_readme_topics":  [
                                                       "license reference"
                                                   ],
-                        "github_about_missing":  true
+                        "github_about_missing":  true,
+                        "github_topics_missing":  false
                     },
                     {
                         "repo":  "Riverbraid-Flow-Gold",
@@ -257,7 +275,8 @@
                         "missing_readme_topics":  [
 
                                                   ],
-                        "github_about_missing":  true
+                        "github_about_missing":  true,
+                        "github_topics_missing":  false
                     },
                     {
                         "repo":  "Riverbraid-Discovery-Gold",
@@ -271,7 +290,8 @@
                         "missing_readme_topics":  [
                                                       "license reference"
                                                   ],
-                        "github_about_missing":  true
+                        "github_about_missing":  true,
+                        "github_topics_missing":  false
                     },
                     {
                         "repo":  "Riverbraid-Bridge-Gold",
@@ -285,7 +305,8 @@
                         "missing_readme_topics":  [
 
                                                   ],
-                        "github_about_missing":  true
+                        "github_about_missing":  true,
+                        "github_topics_missing":  false
                     },
                     {
                         "repo":  "Riverbraid-Bio-Gold",
@@ -299,7 +320,8 @@
                         "missing_readme_topics":  [
 
                                                   ],
-                        "github_about_missing":  true
+                        "github_about_missing":  true,
+                        "github_topics_missing":  false
                     },
                     {
                         "repo":  "Riverbraid-Network-Gold",
@@ -313,7 +335,8 @@
                         "missing_readme_topics":  [
                                                       "license reference"
                                                   ],
-                        "github_about_missing":  true
+                        "github_about_missing":  true,
+                        "github_topics_missing":  false
                     },
                     {
                         "repo":  "Riverbraid-Storage-Gold",
@@ -327,7 +350,8 @@
                         "missing_readme_topics":  [
 
                                                   ],
-                        "github_about_missing":  true
+                        "github_about_missing":  true,
+                        "github_topics_missing":  false
                     },
                     {
                         "repo":  "Riverbraid-Spatial-Gold",
@@ -341,7 +365,8 @@
                         "missing_readme_topics":  [
                                                       "license reference"
                                                   ],
-                        "github_about_missing":  true
+                        "github_about_missing":  true,
+                        "github_topics_missing":  false
                     },
                     {
                         "repo":  "Riverbraid-Security-Gold",
@@ -355,7 +380,8 @@
                         "missing_readme_topics":  [
 
                                                   ],
-                        "github_about_missing":  true
+                        "github_about_missing":  true,
+                        "github_topics_missing":  false
                     },
                     {
                         "repo":  "Riverbraid-Resonance-Gold",
@@ -369,7 +395,8 @@
                         "missing_readme_topics":  [
 
                                                   ],
-                        "github_about_missing":  true
+                        "github_about_missing":  true,
+                        "github_topics_missing":  false
                     },
                     {
                         "repo":  "Riverbraid-Weave-Gold",
@@ -383,7 +410,8 @@
                         "missing_readme_topics":  [
                                                       "license reference"
                                                   ],
-                        "github_about_missing":  true
+                        "github_about_missing":  true,
+                        "github_topics_missing":  false
                     },
                     {
                         "repo":  "Riverbraid-Gold-V2",
@@ -396,7 +424,8 @@
                         "missing_readme_topics":  [
                                                       "license reference"
                                                   ],
-                        "github_about_missing":  false
+                        "github_about_missing":  false,
+                        "github_topics_missing":  false
                     }
                 ]
 }

@@ -1,0 +1,402 @@
+﻿{
+    "schema":  "riverbraid.phase24c.readme_metadata_patch_plan",
+    "version":  "1.0.0",
+    "proof_boundary":  "Plan only. No repository modification is performed by this file.",
+    "source_audit_commit":  "5add70b9f998175a774d2eb972f8444feb5e2a15",
+    "repo_count_with_actions":  29,
+    "actions":  [
+                    {
+                        "repo":  "Riverbraid-Crypto-Gold",
+                        "actions":  [
+                                        "CREATE_MINIMAL_README"
+                                    ],
+                        "missing_minimum_files":  [
+                                                      "README.md"
+                                                  ],
+                        "missing_readme_topics":  [
+
+                                                  ],
+                        "github_about_missing":  false
+                    },
+                    {
+                        "repo":  "Riverbraid-Judicial-Gold",
+                        "actions":  [
+                                        "CREATE_MINIMAL_README"
+                                    ],
+                        "missing_minimum_files":  [
+                                                      "README.md"
+                                                  ],
+                        "missing_readme_topics":  [
+
+                                                  ],
+                        "github_about_missing":  false
+                    },
+                    {
+                        "repo":  "Riverbraid-Memory-Gold",
+                        "actions":  [
+                                        "CREATE_MINIMAL_README"
+                                    ],
+                        "missing_minimum_files":  [
+                                                      "README.md"
+                                                  ],
+                        "missing_readme_topics":  [
+
+                                                  ],
+                        "github_about_missing":  false
+                    },
+                    {
+                        "repo":  "Riverbraid-Integration-Gold",
+                        "actions":  [
+                                        "CREATE_MINIMAL_README"
+                                    ],
+                        "missing_minimum_files":  [
+                                                      "README.md"
+                                                  ],
+                        "missing_readme_topics":  [
+
+                                                  ],
+                        "github_about_missing":  false
+                    },
+                    {
+                        "repo":  "Riverbraid-Refusal-Gold",
+                        "actions":  [
+                                        "ADD_LICENSE_REFERENCE_TO_README"
+                                    ],
+                        "missing_minimum_files":  [
+
+                                                  ],
+                        "missing_readme_topics":  [
+                                                      "license reference"
+                                                  ],
+                        "github_about_missing":  false
+                    },
+                    {
+                        "repo":  "Riverbraid-Safety-Gold",
+                        "actions":  [
+                                        "CREATE_MINIMAL_README"
+                                    ],
+                        "missing_minimum_files":  [
+                                                      "README.md"
+                                                  ],
+                        "missing_readme_topics":  [
+
+                                                  ],
+                        "github_about_missing":  false
+                    },
+                    {
+                        "repo":  "Riverbraid-Identity-Gold",
+                        "actions":  [
+                                        "ADD_LICENSE_REFERENCE_TO_README",
+                                        "SET_GITHUB_ABOUT_DESCRIPTION"
+                                    ],
+                        "missing_minimum_files":  [
+
+                                                  ],
+                        "missing_readme_topics":  [
+                                                      "license reference"
+                                                  ],
+                        "github_about_missing":  true
+                    },
+                    {
+                        "repo":  "Riverbraid-Cognition",
+                        "actions":  [
+                                        "CREATE_MINIMAL_README"
+                                    ],
+                        "missing_minimum_files":  [
+                                                      "README.md"
+                                                  ],
+                        "missing_readme_topics":  [
+
+                                                  ],
+                        "github_about_missing":  false
+                    },
+                    {
+                        "repo":  "Riverbraid-Harness-Gold",
+                        "actions":  [
+                                        "ADD_LICENSE_REFERENCE_TO_README"
+                                    ],
+                        "missing_minimum_files":  [
+
+                                                  ],
+                        "missing_readme_topics":  [
+                                                      "license reference"
+                                                  ],
+                        "github_about_missing":  false
+                    },
+                    {
+                        "repo":  "Riverbraid-Temporal-Gold",
+                        "actions":  [
+                                        "ADD_LICENSE_REFERENCE_TO_README"
+                                    ],
+                        "missing_minimum_files":  [
+
+                                                  ],
+                        "missing_readme_topics":  [
+                                                      "verification language",
+                                                      "system role",
+                                                      "license reference"
+                                                  ],
+                        "github_about_missing":  false
+                    },
+                    {
+                        "repo":  "Riverbraid-Action-Gold",
+                        "actions":  [
+                                        "CREATE_MINIMAL_README"
+                                    ],
+                        "missing_minimum_files":  [
+                                                      "README.md"
+                                                  ],
+                        "missing_readme_topics":  [
+
+                                                  ],
+                        "github_about_missing":  false
+                    },
+                    {
+                        "repo":  "Riverbraid-Audio-Gold",
+                        "actions":  [
+                                        "CREATE_MINIMAL_README"
+                                    ],
+                        "missing_minimum_files":  [
+                                                      "README.md"
+                                                  ],
+                        "missing_readme_topics":  [
+
+                                                  ],
+                        "github_about_missing":  false
+                    },
+                    {
+                        "repo":  "Riverbraid-Vision-Gold",
+                        "actions":  [
+                                        "CREATE_MINIMAL_README"
+                                    ],
+                        "missing_minimum_files":  [
+                                                      "README.md"
+                                                  ],
+                        "missing_readme_topics":  [
+
+                                                  ],
+                        "github_about_missing":  false
+                    },
+                    {
+                        "repo":  "Riverbraid-Interface-Gold",
+                        "actions":  [
+                                        "CREATE_MINIMAL_README"
+                                    ],
+                        "missing_minimum_files":  [
+                                                      "README.md"
+                                                  ],
+                        "missing_readme_topics":  [
+
+                                                  ],
+                        "github_about_missing":  false
+                    },
+                    {
+                        "repo":  "Riverbraid-Manifest-Gold",
+                        "actions":  [
+                                        "ADD_LICENSE_REFERENCE_TO_README"
+                                    ],
+                        "missing_minimum_files":  [
+
+                                                  ],
+                        "missing_readme_topics":  [
+                                                      "license reference"
+                                                  ],
+                        "github_about_missing":  false
+                    },
+                    {
+                        "repo":  "Riverbraid-GPG-Gold",
+                        "actions":  [
+                                        "ADD_LICENSE_REFERENCE_TO_README"
+                                    ],
+                        "missing_minimum_files":  [
+
+                                                  ],
+                        "missing_readme_topics":  [
+                                                      "verification language",
+                                                      "license reference"
+                                                  ],
+                        "github_about_missing":  false
+                    },
+                    {
+                        "repo":  "Riverbraid-Nexus-Gold",
+                        "actions":  [
+                                        "ADD_LICENSE_REFERENCE_TO_README",
+                                        "SET_GITHUB_ABOUT_DESCRIPTION"
+                                    ],
+                        "missing_minimum_files":  [
+
+                                                  ],
+                        "missing_readme_topics":  [
+                                                      "license reference"
+                                                  ],
+                        "github_about_missing":  true
+                    },
+                    {
+                        "repo":  "Riverbraid-Pulse-Gold",
+                        "actions":  [
+                                        "ADD_LICENSE_REFERENCE_TO_README",
+                                        "SET_GITHUB_ABOUT_DESCRIPTION"
+                                    ],
+                        "missing_minimum_files":  [
+
+                                                  ],
+                        "missing_readme_topics":  [
+                                                      "license reference"
+                                                  ],
+                        "github_about_missing":  true
+                    },
+                    {
+                        "repo":  "Riverbraid-Flow-Gold",
+                        "actions":  [
+                                        "CREATE_MINIMAL_README",
+                                        "SET_GITHUB_ABOUT_DESCRIPTION"
+                                    ],
+                        "missing_minimum_files":  [
+                                                      "README.md"
+                                                  ],
+                        "missing_readme_topics":  [
+
+                                                  ],
+                        "github_about_missing":  true
+                    },
+                    {
+                        "repo":  "Riverbraid-Discovery-Gold",
+                        "actions":  [
+                                        "ADD_LICENSE_REFERENCE_TO_README",
+                                        "SET_GITHUB_ABOUT_DESCRIPTION"
+                                    ],
+                        "missing_minimum_files":  [
+
+                                                  ],
+                        "missing_readme_topics":  [
+                                                      "license reference"
+                                                  ],
+                        "github_about_missing":  true
+                    },
+                    {
+                        "repo":  "Riverbraid-Bridge-Gold",
+                        "actions":  [
+                                        "CREATE_MINIMAL_README",
+                                        "SET_GITHUB_ABOUT_DESCRIPTION"
+                                    ],
+                        "missing_minimum_files":  [
+                                                      "README.md"
+                                                  ],
+                        "missing_readme_topics":  [
+
+                                                  ],
+                        "github_about_missing":  true
+                    },
+                    {
+                        "repo":  "Riverbraid-Bio-Gold",
+                        "actions":  [
+                                        "CREATE_MINIMAL_README",
+                                        "SET_GITHUB_ABOUT_DESCRIPTION"
+                                    ],
+                        "missing_minimum_files":  [
+                                                      "README.md"
+                                                  ],
+                        "missing_readme_topics":  [
+
+                                                  ],
+                        "github_about_missing":  true
+                    },
+                    {
+                        "repo":  "Riverbraid-Network-Gold",
+                        "actions":  [
+                                        "ADD_LICENSE_REFERENCE_TO_README",
+                                        "SET_GITHUB_ABOUT_DESCRIPTION"
+                                    ],
+                        "missing_minimum_files":  [
+
+                                                  ],
+                        "missing_readme_topics":  [
+                                                      "license reference"
+                                                  ],
+                        "github_about_missing":  true
+                    },
+                    {
+                        "repo":  "Riverbraid-Storage-Gold",
+                        "actions":  [
+                                        "CREATE_MINIMAL_README",
+                                        "SET_GITHUB_ABOUT_DESCRIPTION"
+                                    ],
+                        "missing_minimum_files":  [
+                                                      "README.md"
+                                                  ],
+                        "missing_readme_topics":  [
+
+                                                  ],
+                        "github_about_missing":  true
+                    },
+                    {
+                        "repo":  "Riverbraid-Spatial-Gold",
+                        "actions":  [
+                                        "ADD_LICENSE_REFERENCE_TO_README",
+                                        "SET_GITHUB_ABOUT_DESCRIPTION"
+                                    ],
+                        "missing_minimum_files":  [
+
+                                                  ],
+                        "missing_readme_topics":  [
+                                                      "license reference"
+                                                  ],
+                        "github_about_missing":  true
+                    },
+                    {
+                        "repo":  "Riverbraid-Security-Gold",
+                        "actions":  [
+                                        "CREATE_MINIMAL_README",
+                                        "SET_GITHUB_ABOUT_DESCRIPTION"
+                                    ],
+                        "missing_minimum_files":  [
+                                                      "README.md"
+                                                  ],
+                        "missing_readme_topics":  [
+
+                                                  ],
+                        "github_about_missing":  true
+                    },
+                    {
+                        "repo":  "Riverbraid-Resonance-Gold",
+                        "actions":  [
+                                        "CREATE_MINIMAL_README",
+                                        "SET_GITHUB_ABOUT_DESCRIPTION"
+                                    ],
+                        "missing_minimum_files":  [
+                                                      "README.md"
+                                                  ],
+                        "missing_readme_topics":  [
+
+                                                  ],
+                        "github_about_missing":  true
+                    },
+                    {
+                        "repo":  "Riverbraid-Weave-Gold",
+                        "actions":  [
+                                        "ADD_LICENSE_REFERENCE_TO_README",
+                                        "SET_GITHUB_ABOUT_DESCRIPTION"
+                                    ],
+                        "missing_minimum_files":  [
+
+                                                  ],
+                        "missing_readme_topics":  [
+                                                      "license reference"
+                                                  ],
+                        "github_about_missing":  true
+                    },
+                    {
+                        "repo":  "Riverbraid-Gold-V2",
+                        "actions":  [
+                                        "ADD_LICENSE_REFERENCE_TO_README"
+                                    ],
+                        "missing_minimum_files":  [
+
+                                                  ],
+                        "missing_readme_topics":  [
+                                                      "license reference"
+                                                  ],
+                        "github_about_missing":  false
+                    }
+                ]
+}

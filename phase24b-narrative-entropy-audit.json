@@ -1,0 +1,984 @@
+﻿{
+    "schema":  "riverbraid.phase24b.narrative_entropy_audit",
+    "version":  "1.1.0",
+    "totals":  {
+                   "dirty_or_unaligned":  0,
+                   "local_verify_not_pass":  0,
+                   "remote_workflow_not_pass":  30,
+                   "forbidden_narrative":  0,
+                   "secrets_found":  0,
+                   "transient_noise":  1
+               },
+    "repos":  [
+                  {
+                      "repo":  "Riverbraid-Core",
+                      "clean":  true,
+                      "aligned":  true,
+                      "extra_local_branches":  [
+
+                                               ],
+                      "missing_minimum_files":  [
+
+                                                ],
+                      "missing_readme_topics":  [
+
+                                                ],
+                      "forbidden_narrative_hits":  [
+
+                                                   ],
+                      "secret_or_sensitive_hits":  [
+
+                                                   ],
+                      "malformed_interpolation_hits":  [
+
+                                                       ],
+                      "transient_candidates":  [
+                                                   "phase21-final-workflow-audit.json",
+                                                   "phase21-Riverbraid-Gold-V2-failed-run.log",
+                                                   "phase21-Riverbraid-Refusal-Gold-failed-run.log",
+                                                   "phase21-workflow-repair-map.json",
+                                                   "phase22-gpg-gold-current-failure.log",
+                                                   "phase22-gpg-import-failure.log",
+                                                   "phase22-gpg-merkle-failure.log",
+                                                   "phase22-post-reset-failure.log"
+                                               ],
+                      "local_verify_status":  "LOCAL_VERIFY_PASS",
+                      "verify_output_status":  "VERIFIED",
+                      "remote_workflow_status":  "GH_WORKFLOW_QUERY_FAILED",
+                      "github_about_missing":  false,
+                      "github_topics_missing":  false,
+                      "github_default_branch_not_main":  false
+                  },
+                  {
+                      "repo":  "Riverbraid-Crypto-Gold",
+                      "clean":  true,
+                      "aligned":  true,
+                      "extra_local_branches":  [
+
+                                               ],
+                      "missing_minimum_files":  [
+                                                    "README.md"
+                                                ],
+                      "missing_readme_topics":  [
+
+                                                ],
+                      "forbidden_narrative_hits":  [
+
+                                                   ],
+                      "secret_or_sensitive_hits":  [
+
+                                                   ],
+                      "malformed_interpolation_hits":  [
+
+                                                       ],
+                      "transient_candidates":  [
+
+                                               ],
+                      "local_verify_status":  "LOCAL_VERIFY_PASS",
+                      "verify_output_status":  "VERIFIED",
+                      "remote_workflow_status":  "GH_WORKFLOW_QUERY_FAILED",
+                      "github_about_missing":  false,
+                      "github_topics_missing":  false,
+                      "github_default_branch_not_main":  false
+                  },
+                  {
+                      "repo":  "Riverbraid-Judicial-Gold",
+                      "clean":  true,
+                      "aligned":  true,
+                      "extra_local_branches":  [
+
+                                               ],
+                      "missing_minimum_files":  [
+                                                    "README.md"
+                                                ],
+                      "missing_readme_topics":  [
+
+                                                ],
+                      "forbidden_narrative_hits":  [
+
+                                                   ],
+                      "secret_or_sensitive_hits":  [
+
+                                                   ],
+                      "malformed_interpolation_hits":  [
+
+                                                       ],
+                      "transient_candidates":  [
+
+                                               ],
+                      "local_verify_status":  "LOCAL_VERIFY_PASS",
+                      "verify_output_status":  "VERIFIED",
+                      "remote_workflow_status":  "GH_WORKFLOW_QUERY_FAILED",
+                      "github_about_missing":  false,
+                      "github_topics_missing":  false,
+                      "github_default_branch_not_main":  false
+                  },
+                  {
+                      "repo":  "Riverbraid-Memory-Gold",
+                      "clean":  true,
+                      "aligned":  true,
+                      "extra_local_branches":  [
+
+                                               ],
+                      "missing_minimum_files":  [
+                                                    "README.md"
+                                                ],
+                      "missing_readme_topics":  [
+
+                                                ],
+                      "forbidden_narrative_hits":  [
+
+                                                   ],
+                      "secret_or_sensitive_hits":  [
+
+                                                   ],
+                      "malformed_interpolation_hits":  [
+
+                                                       ],
+                      "transient_candidates":  [
+
+                                               ],
+                      "local_verify_status":  "LOCAL_VERIFY_PASS",
+                      "verify_output_status":  "VERIFIED",
+                      "remote_workflow_status":  "GH_WORKFLOW_QUERY_FAILED",
+                      "github_about_missing":  false,
+                      "github_topics_missing":  false,
+                      "github_default_branch_not_main":  false
+                  },
+                  {
+                      "repo":  "Riverbraid-Integration-Gold",
+                      "clean":  true,
+                      "aligned":  true,
+                      "extra_local_branches":  [
+
+                                               ],
+                      "missing_minimum_files":  [
+                                                    "README.md"
+                                                ],
+                      "missing_readme_topics":  [
+
+                                                ],
+                      "forbidden_narrative_hits":  [
+
+                                                   ],
+                      "secret_or_sensitive_hits":  [
+
+                                                   ],
+                      "malformed_interpolation_hits":  [
+
+                                                       ],
+                      "transient_candidates":  [
+
+                                               ],
+                      "local_verify_status":  "LOCAL_VERIFY_PASS",
+                      "verify_output_status":  "VERIFIED",
+                      "remote_workflow_status":  "GH_WORKFLOW_QUERY_FAILED",
+                      "github_about_missing":  false,
+                      "github_topics_missing":  false,
+                      "github_default_branch_not_main":  false
+                  },
+                  {
+                      "repo":  "Riverbraid-Refusal-Gold",
+                      "clean":  true,
+                      "aligned":  true,
+                      "extra_local_branches":  [
+
+                                               ],
+                      "missing_minimum_files":  [
+
+                                                ],
+                      "missing_readme_topics":  [
+                                                    "license reference"
+                                                ],
+                      "forbidden_narrative_hits":  [
+
+                                                   ],
+                      "secret_or_sensitive_hits":  [
+
+                                                   ],
+                      "malformed_interpolation_hits":  [
+
+                                                       ],
+                      "transient_candidates":  [
+
+                                               ],
+                      "local_verify_status":  "LOCAL_VERIFY_PASS",
+                      "verify_output_status":  "VERIFIED",
+                      "remote_workflow_status":  "GH_WORKFLOW_QUERY_FAILED",
+                      "github_about_missing":  false,
+                      "github_topics_missing":  false,
+                      "github_default_branch_not_main":  false
+                  },
+                  {
+                      "repo":  "Riverbraid-Safety-Gold",
+                      "clean":  true,
+                      "aligned":  true,
+                      "extra_local_branches":  [
+
+                                               ],
+                      "missing_minimum_files":  [
+                                                    "README.md"
+                                                ],
+                      "missing_readme_topics":  [
+
+                                                ],
+                      "forbidden_narrative_hits":  [
+
+                                                   ],
+                      "secret_or_sensitive_hits":  [
+
+                                                   ],
+                      "malformed_interpolation_hits":  [
+
+                                                       ],
+                      "transient_candidates":  [
+
+                                               ],
+                      "local_verify_status":  "LOCAL_VERIFY_PASS",
+                      "verify_output_status":  "VERIFIED",
+                      "remote_workflow_status":  "GH_WORKFLOW_QUERY_FAILED",
+                      "github_about_missing":  false,
+                      "github_topics_missing":  false,
+                      "github_default_branch_not_main":  false
+                  },
+                  {
+                      "repo":  "Riverbraid-Identity-Gold",
+                      "clean":  true,
+                      "aligned":  true,
+                      "extra_local_branches":  [
+
+                                               ],
+                      "missing_minimum_files":  [
+
+                                                ],
+                      "missing_readme_topics":  [
+                                                    "license reference"
+                                                ],
+                      "forbidden_narrative_hits":  [
+
+                                                   ],
+                      "secret_or_sensitive_hits":  [
+
+                                                   ],
+                      "malformed_interpolation_hits":  [
+
+                                                       ],
+                      "transient_candidates":  [
+
+                                               ],
+                      "local_verify_status":  "LOCAL_VERIFY_PASS",
+                      "verify_output_status":  "VERIFIED",
+                      "remote_workflow_status":  "GH_WORKFLOW_QUERY_FAILED",
+                      "github_about_missing":  true,
+                      "github_topics_missing":  false,
+                      "github_default_branch_not_main":  false
+                  },
+                  {
+                      "repo":  "Riverbraid-Cognition",
+                      "clean":  true,
+                      "aligned":  true,
+                      "extra_local_branches":  [
+
+                                               ],
+                      "missing_minimum_files":  [
+                                                    "README.md"
+                                                ],
+                      "missing_readme_topics":  [
+
+                                                ],
+                      "forbidden_narrative_hits":  [
+
+                                                   ],
+                      "secret_or_sensitive_hits":  [
+
+                                                   ],
+                      "malformed_interpolation_hits":  [
+
+                                                       ],
+                      "transient_candidates":  [
+
+                                               ],
+                      "local_verify_status":  "LOCAL_VERIFY_PASS",
+                      "verify_output_status":  "VERIFIED",
+                      "remote_workflow_status":  "GH_WORKFLOW_QUERY_FAILED",
+                      "github_about_missing":  false,
+                      "github_topics_missing":  false,
+                      "github_default_branch_not_main":  false
+                  },
+                  {
+                      "repo":  "Riverbraid-Harness-Gold",
+                      "clean":  true,
+                      "aligned":  true,
+                      "extra_local_branches":  [
+
+                                               ],
+                      "missing_minimum_files":  [
+
+                                                ],
+                      "missing_readme_topics":  [
+                                                    "license reference"
+                                                ],
+                      "forbidden_narrative_hits":  [
+
+                                                   ],
+                      "secret_or_sensitive_hits":  [
+
+                                                   ],
+                      "malformed_interpolation_hits":  [
+
+                                                       ],
+                      "transient_candidates":  [
+
+                                               ],
+                      "local_verify_status":  "LOCAL_VERIFY_PASS",
+                      "verify_output_status":  "VERIFIED",
+                      "remote_workflow_status":  "GH_WORKFLOW_QUERY_FAILED",
+                      "github_about_missing":  false,
+                      "github_topics_missing":  false,
+                      "github_default_branch_not_main":  false
+                  },
+                  {
+                      "repo":  "Riverbraid-Temporal-Gold",
+                      "clean":  true,
+                      "aligned":  true,
+                      "extra_local_branches":  [
+
+                                               ],
+                      "missing_minimum_files":  [
+
+                                                ],
+                      "missing_readme_topics":  [
+                                                    "verification language",
+                                                    "system role",
+                                                    "license reference"
+                                                ],
+                      "forbidden_narrative_hits":  [
+
+                                                   ],
+                      "secret_or_sensitive_hits":  [
+
+                                                   ],
+                      "malformed_interpolation_hits":  [
+
+                                                       ],
+                      "transient_candidates":  [
+
+                                               ],
+                      "local_verify_status":  "LOCAL_VERIFY_PASS",
+                      "verify_output_status":  "VERIFIED",
+                      "remote_workflow_status":  "GH_WORKFLOW_QUERY_FAILED",
+                      "github_about_missing":  false,
+                      "github_topics_missing":  false,
+                      "github_default_branch_not_main":  false
+                  },
+                  {
+                      "repo":  "Riverbraid-Action-Gold",
+                      "clean":  true,
+                      "aligned":  true,
+                      "extra_local_branches":  [
+
+                                               ],
+                      "missing_minimum_files":  [
+                                                    "README.md"
+                                                ],
+                      "missing_readme_topics":  [
+
+                                                ],
+                      "forbidden_narrative_hits":  [
+
+                                                   ],
+                      "secret_or_sensitive_hits":  [
+
+                                                   ],
+                      "malformed_interpolation_hits":  [
+
+                                                       ],
+                      "transient_candidates":  [
+
+                                               ],
+                      "local_verify_status":  "LOCAL_VERIFY_PASS",
+                      "verify_output_status":  "VERIFIED",
+                      "remote_workflow_status":  "GH_WORKFLOW_QUERY_FAILED",
+                      "github_about_missing":  false,
+                      "github_topics_missing":  false,
+                      "github_default_branch_not_main":  false
+                  },
+                  {
+                      "repo":  "Riverbraid-Audio-Gold",
+                      "clean":  true,
+                      "aligned":  true,
+                      "extra_local_branches":  [
+
+                                               ],
+                      "missing_minimum_files":  [
+                                                    "README.md"
+                                                ],
+                      "missing_readme_topics":  [
+
+                                                ],
+                      "forbidden_narrative_hits":  [
+
+                                                   ],
+                      "secret_or_sensitive_hits":  [
+
+                                                   ],
+                      "malformed_interpolation_hits":  [
+
+                                                       ],
+                      "transient_candidates":  [
+
+                                               ],
+                      "local_verify_status":  "LOCAL_VERIFY_PASS",
+                      "verify_output_status":  "VERIFIED",
+                      "remote_workflow_status":  "GH_WORKFLOW_QUERY_FAILED",
+                      "github_about_missing":  false,
+                      "github_topics_missing":  false,
+                      "github_default_branch_not_main":  false
+                  },
+                  {
+                      "repo":  "Riverbraid-Vision-Gold",
+                      "clean":  true,
+                      "aligned":  true,
+                      "extra_local_branches":  [
+
+                                               ],
+                      "missing_minimum_files":  [
+                                                    "README.md"
+                                                ],
+                      "missing_readme_topics":  [
+
+                                                ],
+                      "forbidden_narrative_hits":  [
+
+                                                   ],
+                      "secret_or_sensitive_hits":  [
+
+                                                   ],
+                      "malformed_interpolation_hits":  [
+
+                                                       ],
+                      "transient_candidates":  [
+
+                                               ],
+                      "local_verify_status":  "LOCAL_VERIFY_PASS",
+                      "verify_output_status":  "VERIFIED",
+                      "remote_workflow_status":  "GH_WORKFLOW_QUERY_FAILED",
+                      "github_about_missing":  false,
+                      "github_topics_missing":  false,
+                      "github_default_branch_not_main":  false
+                  },
+                  {
+                      "repo":  "Riverbraid-Interface-Gold",
+                      "clean":  true,
+                      "aligned":  true,
+                      "extra_local_branches":  [
+
+                                               ],
+                      "missing_minimum_files":  [
+                                                    "README.md"
+                                                ],
+                      "missing_readme_topics":  [
+
+                                                ],
+                      "forbidden_narrative_hits":  [
+
+                                                   ],
+                      "secret_or_sensitive_hits":  [
+
+                                                   ],
+                      "malformed_interpolation_hits":  [
+
+                                                       ],
+                      "transient_candidates":  [
+
+                                               ],
+                      "local_verify_status":  "LOCAL_VERIFY_PASS",
+                      "verify_output_status":  "VERIFIED",
+                      "remote_workflow_status":  "GH_WORKFLOW_QUERY_FAILED",
+                      "github_about_missing":  false,
+                      "github_topics_missing":  false,
+                      "github_default_branch_not_main":  false
+                  },
+                  {
+                      "repo":  "Riverbraid-Manifest-Gold",
+                      "clean":  true,
+                      "aligned":  true,
+                      "extra_local_branches":  [
+
+                                               ],
+                      "missing_minimum_files":  [
+
+                                                ],
+                      "missing_readme_topics":  [
+                                                    "license reference"
+                                                ],
+                      "forbidden_narrative_hits":  [
+
+                                                   ],
+                      "secret_or_sensitive_hits":  [
+
+                                                   ],
+                      "malformed_interpolation_hits":  [
+
+                                                       ],
+                      "transient_candidates":  [
+
+                                               ],
+                      "local_verify_status":  "LOCAL_VERIFY_PASS",
+                      "verify_output_status":  "VERIFIED",
+                      "remote_workflow_status":  "GH_WORKFLOW_QUERY_FAILED",
+                      "github_about_missing":  false,
+                      "github_topics_missing":  false,
+                      "github_default_branch_not_main":  false
+                  },
+                  {
+                      "repo":  "Riverbraid-GPG-Gold",
+                      "clean":  true,
+                      "aligned":  true,
+                      "extra_local_branches":  [
+
+                                               ],
+                      "missing_minimum_files":  [
+
+                                                ],
+                      "missing_readme_topics":  [
+                                                    "verification language",
+                                                    "license reference"
+                                                ],
+                      "forbidden_narrative_hits":  [
+
+                                                   ],
+                      "secret_or_sensitive_hits":  [
+
+                                                   ],
+                      "malformed_interpolation_hits":  [
+
+                                                       ],
+                      "transient_candidates":  [
+
+                                               ],
+                      "local_verify_status":  "LOCAL_VERIFY_PASS",
+                      "verify_output_status":  "VERIFIED",
+                      "remote_workflow_status":  "GH_WORKFLOW_QUERY_FAILED",
+                      "github_about_missing":  false,
+                      "github_topics_missing":  false,
+                      "github_default_branch_not_main":  false
+                  },
+                  {
+                      "repo":  "Riverbraid-Nexus-Gold",
+                      "clean":  true,
+                      "aligned":  true,
+                      "extra_local_branches":  [
+
+                                               ],
+                      "missing_minimum_files":  [
+
+                                                ],
+                      "missing_readme_topics":  [
+                                                    "license reference"
+                                                ],
+                      "forbidden_narrative_hits":  [
+
+                                                   ],
+                      "secret_or_sensitive_hits":  [
+
+                                                   ],
+                      "malformed_interpolation_hits":  [
+
+                                                       ],
+                      "transient_candidates":  [
+
+                                               ],
+                      "local_verify_status":  "LOCAL_VERIFY_PASS",
+                      "verify_output_status":  "VERIFIED",
+                      "remote_workflow_status":  "GH_WORKFLOW_QUERY_FAILED",
+                      "github_about_missing":  true,
+                      "github_topics_missing":  false,
+                      "github_default_branch_not_main":  false
+                  },
+                  {
+                      "repo":  "Riverbraid-Pulse-Gold",
+                      "clean":  true,
+                      "aligned":  true,
+                      "extra_local_branches":  [
+
+                                               ],
+                      "missing_minimum_files":  [
+
+                                                ],
+                      "missing_readme_topics":  [
+                                                    "license reference"
+                                                ],
+                      "forbidden_narrative_hits":  [
+
+                                                   ],
+                      "secret_or_sensitive_hits":  [
+
+                                                   ],
+                      "malformed_interpolation_hits":  [
+
+                                                       ],
+                      "transient_candidates":  [
+
+                                               ],
+                      "local_verify_status":  "LOCAL_VERIFY_PASS",
+                      "verify_output_status":  "VERIFIED",
+                      "remote_workflow_status":  "GH_WORKFLOW_QUERY_FAILED",
+                      "github_about_missing":  true,
+                      "github_topics_missing":  false,
+                      "github_default_branch_not_main":  false
+                  },
+                  {
+                      "repo":  "Riverbraid-Flow-Gold",
+                      "clean":  true,
+                      "aligned":  true,
+                      "extra_local_branches":  [
+
+                                               ],
+                      "missing_minimum_files":  [
+                                                    "README.md"
+                                                ],
+                      "missing_readme_topics":  [
+
+                                                ],
+                      "forbidden_narrative_hits":  [
+
+                                                   ],
+                      "secret_or_sensitive_hits":  [
+
+                                                   ],
+                      "malformed_interpolation_hits":  [
+
+                                                       ],
+                      "transient_candidates":  [
+
+                                               ],
+                      "local_verify_status":  "LOCAL_VERIFY_PASS",
+                      "verify_output_status":  "VERIFIED",
+                      "remote_workflow_status":  "GH_WORKFLOW_QUERY_FAILED",
+                      "github_about_missing":  true,
+                      "github_topics_missing":  false,
+                      "github_default_branch_not_main":  false
+                  },
+                  {
+                      "repo":  "Riverbraid-Discovery-Gold",
+                      "clean":  true,
+                      "aligned":  true,
+                      "extra_local_branches":  [
+
+                                               ],
+                      "missing_minimum_files":  [
+
+                                                ],
+                      "missing_readme_topics":  [
+                                                    "license reference"
+                                                ],
+                      "forbidden_narrative_hits":  [
+
+                                                   ],
+                      "secret_or_sensitive_hits":  [
+
+                                                   ],
+                      "malformed_interpolation_hits":  [
+
+                                                       ],
+                      "transient_candidates":  [
+
+                                               ],
+                      "local_verify_status":  "LOCAL_VERIFY_PASS",
+                      "verify_output_status":  "VERIFIED",
+                      "remote_workflow_status":  "GH_WORKFLOW_QUERY_FAILED",
+                      "github_about_missing":  true,
+                      "github_topics_missing":  false,
+                      "github_default_branch_not_main":  false
+                  },
+                  {
+                      "repo":  "Riverbraid-Bridge-Gold",
+                      "clean":  true,
+                      "aligned":  true,
+                      "extra_local_branches":  [
+
+                                               ],
+                      "missing_minimum_files":  [
+                                                    "README.md"
+                                                ],
+                      "missing_readme_topics":  [
+
+                                                ],
+                      "forbidden_narrative_hits":  [
+
+                                                   ],
+                      "secret_or_sensitive_hits":  [
+
+                                                   ],
+                      "malformed_interpolation_hits":  [
+
+                                                       ],
+                      "transient_candidates":  [
+
+                                               ],
+                      "local_verify_status":  "LOCAL_VERIFY_PASS",
+                      "verify_output_status":  "VERIFIED",
+                      "remote_workflow_status":  "GH_WORKFLOW_QUERY_FAILED",
+                      "github_about_missing":  true,
+                      "github_topics_missing":  false,
+                      "github_default_branch_not_main":  false
+                  },
+                  {
+                      "repo":  "Riverbraid-Bio-Gold",
+                      "clean":  true,
+                      "aligned":  true,
+                      "extra_local_branches":  [
+
+                                               ],
+                      "missing_minimum_files":  [
+                                                    "README.md"
+                                                ],
+                      "missing_readme_topics":  [
+
+                                                ],
+                      "forbidden_narrative_hits":  [
+
+                                                   ],
+                      "secret_or_sensitive_hits":  [
+
+                                                   ],
+                      "malformed_interpolation_hits":  [
+
+                                                       ],
+                      "transient_candidates":  [
+
+                                               ],
+                      "local_verify_status":  "LOCAL_VERIFY_PASS",
+                      "verify_output_status":  "VERIFIED",
+                      "remote_workflow_status":  "GH_WORKFLOW_QUERY_FAILED",
+                      "github_about_missing":  true,
+                      "github_topics_missing":  false,
+                      "github_default_branch_not_main":  false
+                  },
+                  {
+                      "repo":  "Riverbraid-Network-Gold",
+                      "clean":  true,
+                      "aligned":  true,
+                      "extra_local_branches":  [
+
+                                               ],
+                      "missing_minimum_files":  [
+
+                                                ],
+                      "missing_readme_topics":  [
+                                                    "license reference"
+                                                ],
+                      "forbidden_narrative_hits":  [
+
+                                                   ],
+                      "secret_or_sensitive_hits":  [
+
+                                                   ],
+                      "malformed_interpolation_hits":  [
+
+                                                       ],
+                      "transient_candidates":  [
+
+                                               ],
+                      "local_verify_status":  "LOCAL_VERIFY_PASS",
+                      "verify_output_status":  "VERIFIED",
+                      "remote_workflow_status":  "GH_WORKFLOW_QUERY_FAILED",
+                      "github_about_missing":  true,
+                      "github_topics_missing":  false,
+                      "github_default_branch_not_main":  false
+                  },
+                  {
+                      "repo":  "Riverbraid-Storage-Gold",
+                      "clean":  true,
+                      "aligned":  true,
+                      "extra_local_branches":  [
+
+                                               ],
+                      "missing_minimum_files":  [
+                                                    "README.md"
+                                                ],
+                      "missing_readme_topics":  [
+
+                                                ],
+                      "forbidden_narrative_hits":  [
+
+                                                   ],
+                      "secret_or_sensitive_hits":  [
+
+                                                   ],
+                      "malformed_interpolation_hits":  [
+
+                                                       ],
+                      "transient_candidates":  [
+
+                                               ],
+                      "local_verify_status":  "LOCAL_VERIFY_PASS",
+                      "verify_output_status":  "VERIFIED",
+                      "remote_workflow_status":  "GH_WORKFLOW_QUERY_FAILED",
+                      "github_about_missing":  true,
+                      "github_topics_missing":  false,
+                      "github_default_branch_not_main":  false
+                  },
+                  {
+                      "repo":  "Riverbraid-Spatial-Gold",
+                      "clean":  true,
+                      "aligned":  true,
+                      "extra_local_branches":  [
+
+                                               ],
+                      "missing_minimum_files":  [
+
+                                                ],
+                      "missing_readme_topics":  [
+                                                    "license reference"
+                                                ],
+                      "forbidden_narrative_hits":  [
+
+                                                   ],
+                      "secret_or_sensitive_hits":  [
+
+                                                   ],
+                      "malformed_interpolation_hits":  [
+
+                                                       ],
+                      "transient_candidates":  [
+
+                                               ],
+                      "local_verify_status":  "LOCAL_VERIFY_PASS",
+                      "verify_output_status":  "VERIFIED",
+                      "remote_workflow_status":  "GH_WORKFLOW_QUERY_FAILED",
+                      "github_about_missing":  true,
+                      "github_topics_missing":  false,
+                      "github_default_branch_not_main":  false
+                  },
+                  {
+                      "repo":  "Riverbraid-Security-Gold",
+                      "clean":  true,
+                      "aligned":  true,
+                      "extra_local_branches":  [
+
+                                               ],
+                      "missing_minimum_files":  [
+                                                    "README.md"
+                                                ],
+                      "missing_readme_topics":  [
+
+                                                ],
+                      "forbidden_narrative_hits":  [
+
+                                                   ],
+                      "secret_or_sensitive_hits":  [
+
+                                                   ],
+                      "malformed_interpolation_hits":  [
+
+                                                       ],
+                      "transient_candidates":  [
+
+                                               ],
+                      "local_verify_status":  "LOCAL_VERIFY_PASS",
+                      "verify_output_status":  "VERIFIED",
+                      "remote_workflow_status":  "GH_WORKFLOW_QUERY_FAILED",
+                      "github_about_missing":  true,
+                      "github_topics_missing":  false,
+                      "github_default_branch_not_main":  false
+                  },
+                  {
+                      "repo":  "Riverbraid-Resonance-Gold",
+                      "clean":  true,
+                      "aligned":  true,
+                      "extra_local_branches":  [
+
+                                               ],
+                      "missing_minimum_files":  [
+                                                    "README.md"
+                                                ],
+                      "missing_readme_topics":  [
+
+                                                ],
+                      "forbidden_narrative_hits":  [
+
+                                                   ],
+                      "secret_or_sensitive_hits":  [
+
+                                                   ],
+                      "malformed_interpolation_hits":  [
+
+                                                       ],
+                      "transient_candidates":  [
+
+                                               ],
+                      "local_verify_status":  "LOCAL_VERIFY_PASS",
+                      "verify_output_status":  "VERIFIED",
+                      "remote_workflow_status":  "GH_WORKFLOW_QUERY_FAILED",
+                      "github_about_missing":  true,
+                      "github_topics_missing":  false,
+                      "github_default_branch_not_main":  false
+                  },
+                  {
+                      "repo":  "Riverbraid-Weave-Gold",
+                      "clean":  true,
+                      "aligned":  true,
+                      "extra_local_branches":  [
+
+                                               ],
+                      "missing_minimum_files":  [
+
+                                                ],
+                      "missing_readme_topics":  [
+                                                    "license reference"
+                                                ],
+                      "forbidden_narrative_hits":  [
+
+                                                   ],
+                      "secret_or_sensitive_hits":  [
+
+                                                   ],
+                      "malformed_interpolation_hits":  [
+
+                                                       ],
+                      "transient_candidates":  [
+
+                                               ],
+                      "local_verify_status":  "LOCAL_VERIFY_PASS",
+                      "verify_output_status":  "VERIFIED",
+                      "remote_workflow_status":  "GH_WORKFLOW_QUERY_FAILED",
+                      "github_about_missing":  true,
+                      "github_topics_missing":  false,
+                      "github_default_branch_not_main":  false
+                  },
+                  {
+                      "repo":  "Riverbraid-Gold-V2",
+                      "clean":  true,
+                      "aligned":  true,
+                      "extra_local_branches":  [
+
+                                               ],
+                      "missing_minimum_files":  [
+
+                                                ],
+                      "missing_readme_topics":  [
+                                                    "license reference"
+                                                ],
+                      "forbidden_narrative_hits":  [
+
+                                                   ],
+                      "secret_or_sensitive_hits":  [
+
+                                                   ],
+                      "malformed_interpolation_hits":  [
+
+                                                       ],
+                      "transient_candidates":  [
+
+                                               ],
+                      "local_verify_status":  "LOCAL_VERIFY_PASS",
+                      "verify_output_status":  "VERIFIED",
+                      "remote_workflow_status":  "GH_WORKFLOW_QUERY_FAILED",
+                      "github_about_missing":  false,
+                      "github_topics_missing":  false,
+                      "github_default_branch_not_main":  false
+                  }
+              ]
+}

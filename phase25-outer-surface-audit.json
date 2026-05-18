@@ -1,0 +1,154 @@
+{
+    "schema":  "riverbraid.phase25.outer_surface_audit",
+    "version":  "1.0.0",
+    "claim_level":  "LOCAL_INVENTORY_WITH_REMOTE_NAME_MATCH",
+    "scope_root":  "C:\\Riverbraid",
+    "registry_path":  "C:\\Riverbraid\\Riverbraid-Core\\phase20-cross-repo-anchor-registry.json",
+    "registry_count":  30,
+    "local_outer_directory_count":  22,
+    "org_repo_count_claim":  "NOT_ASSERTED_BY_THIS_ARTIFACT",
+    "remote_repo_count_observed":  51,
+    "local_outer_remote_name_match_count":  21,
+    "local_only_count":  1,
+    "non_inheritance_rule_enforced":  true,
+    "notes":  [
+                  "Outer entries do not inherit Phase 24 verified registry claims.",
+                  "Local directory presence is not proof of GitHub repository content equivalence.",
+                  "Remote name match is not proof of structural equivalence.",
+                  "Classifications remain surface-level pending repo content inspection."
+              ],
+    "inventory":  [
+                      {
+                          "name":  ".github",
+                          "local_path":  "C:\\Riverbraid\\.github",
+                          "registry_status":  "OUTSIDE_VERIFIED_30",
+                          "preliminary_classification":  "UNCLASSIFIED_REMOTE_MATCH"
+                      },
+                      {
+                          "name":  "Riverbraid-Build-V5",
+                          "local_path":  "C:\\Riverbraid\\Riverbraid-Build-V5",
+                          "registry_status":  "OUTSIDE_VERIFIED_30",
+                          "preliminary_classification":  "UNCLASSIFIED_REMOTE_MATCH"
+                      },
+                      {
+                          "name":  "Riverbraid-Documentation",
+                          "local_path":  "C:\\Riverbraid\\Riverbraid-Documentation",
+                          "registry_status":  "OUTSIDE_VERIFIED_30",
+                          "preliminary_classification":  "UNCLASSIFIED_REMOTE_MATCH"
+                      },
+                      {
+                          "name":  "Riverbraid-Downstream-Bridge",
+                          "local_path":  "C:\\Riverbraid\\Riverbraid-Downstream-Bridge",
+                          "registry_status":  "OUTSIDE_VERIFIED_30",
+                          "preliminary_classification":  "UNCLASSIFIED_LOCAL_ONLY"
+                      },
+                      {
+                          "name":  "Riverbraid-Golds",
+                          "local_path":  "C:\\Riverbraid\\Riverbraid-Golds",
+                          "registry_status":  "OUTSIDE_VERIFIED_30",
+                          "preliminary_classification":  "UNCLASSIFIED_REMOTE_MATCH"
+                      },
+                      {
+                          "name":  "Riverbraid-Gold-UI",
+                          "local_path":  "C:\\Riverbraid\\Riverbraid-Gold-UI",
+                          "registry_status":  "OUTSIDE_VERIFIED_30",
+                          "preliminary_classification":  "UNCLASSIFIED_REMOTE_MATCH"
+                      },
+                      {
+                          "name":  "Riverbraid-Governance",
+                          "local_path":  "C:\\Riverbraid\\Riverbraid-Governance",
+                          "registry_status":  "OUTSIDE_VERIFIED_30",
+                          "preliminary_classification":  "UNCLASSIFIED_REMOTE_MATCH"
+                      },
+                      {
+                          "name":  "Riverbraid-Governance-Gold",
+                          "local_path":  "C:\\Riverbraid\\Riverbraid-Governance-Gold",
+                          "registry_status":  "OUTSIDE_VERIFIED_30",
+                          "preliminary_classification":  "UNCLASSIFIED_REMOTE_MATCH"
+                      },
+                      {
+                          "name":  "Riverbraid-Hydra",
+                          "local_path":  "C:\\Riverbraid\\Riverbraid-Hydra",
+                          "registry_status":  "OUTSIDE_VERIFIED_30",
+                          "preliminary_classification":  "UNCLASSIFIED_REMOTE_MATCH"
+                      },
+                      {
+                          "name":  "Riverbraid-Integrity-Floors",
+                          "local_path":  "C:\\Riverbraid\\Riverbraid-Integrity-Floors",
+                          "registry_status":  "OUTSIDE_VERIFIED_30",
+                          "preliminary_classification":  "UNCLASSIFIED_REMOTE_MATCH"
+                      },
+                      {
+                          "name":  "Riverbraid-Lang",
+                          "local_path":  "C:\\Riverbraid\\Riverbraid-Lang",
+                          "registry_status":  "OUTSIDE_VERIFIED_30",
+                          "preliminary_classification":  "UNCLASSIFIED_REMOTE_MATCH"
+                      },
+                      {
+                          "name":  "Riverbraid-Liminal-Monitoring",
+                          "local_path":  "C:\\Riverbraid\\Riverbraid-Liminal-Monitoring",
+                          "registry_status":  "OUTSIDE_VERIFIED_30",
+                          "preliminary_classification":  "UNCLASSIFIED_REMOTE_MATCH"
+                      },
+                      {
+                          "name":  "Riverbraid-Lite",
+                          "local_path":  "C:\\Riverbraid\\Riverbraid-Lite",
+                          "registry_status":  "OUTSIDE_VERIFIED_30",
+                          "preliminary_classification":  "UNCLASSIFIED_REMOTE_MATCH"
+                      },
+                      {
+                          "name":  "Riverbraid-p5",
+                          "local_path":  "C:\\Riverbraid\\Riverbraid-p5",
+                          "registry_status":  "OUTSIDE_VERIFIED_30",
+                          "preliminary_classification":  "UNCLASSIFIED_REMOTE_MATCH"
+                      },
+                      {
+                          "name":  "Riverbraid-RDK",
+                          "local_path":  "C:\\Riverbraid\\Riverbraid-RDK",
+                          "registry_status":  "OUTSIDE_VERIFIED_30",
+                          "preliminary_classification":  "UNCLASSIFIED_REMOTE_MATCH"
+                      },
+                      {
+                          "name":  "Riverbraid-Secrets-Safe",
+                          "local_path":  "C:\\Riverbraid\\Riverbraid-Secrets-Safe",
+                          "registry_status":  "OUTSIDE_VERIFIED_30",
+                          "preliminary_classification":  "UNCLASSIFIED_REMOTE_MATCH"
+                      },
+                      {
+                          "name":  "riverbraid-ssg",
+                          "local_path":  "C:\\Riverbraid\\riverbraid-ssg",
+                          "registry_status":  "OUTSIDE_VERIFIED_30",
+                          "preliminary_classification":  "UNCLASSIFIED_REMOTE_MATCH"
+                      },
+                      {
+                          "name":  "Riverbraid-Standard-IO",
+                          "local_path":  "C:\\Riverbraid\\Riverbraid-Standard-IO",
+                          "registry_status":  "OUTSIDE_VERIFIED_30",
+                          "preliminary_classification":  "UNCLASSIFIED_REMOTE_MATCH"
+                      },
+                      {
+                          "name":  "riverbraid-tsh",
+                          "local_path":  "C:\\Riverbraid\\riverbraid-tsh",
+                          "registry_status":  "OUTSIDE_VERIFIED_30",
+                          "preliminary_classification":  "UNCLASSIFIED_REMOTE_MATCH"
+                      },
+                      {
+                          "name":  "Riverbraid-Types",
+                          "local_path":  "C:\\Riverbraid\\Riverbraid-Types",
+                          "registry_status":  "OUTSIDE_VERIFIED_30",
+                          "preliminary_classification":  "UNCLASSIFIED_REMOTE_MATCH"
+                      },
+                      {
+                          "name":  "Riverbraid-Verification-Suite",
+                          "local_path":  "C:\\Riverbraid\\Riverbraid-Verification-Suite",
+                          "registry_status":  "OUTSIDE_VERIFIED_30",
+                          "preliminary_classification":  "UNCLASSIFIED_REMOTE_MATCH"
+                      },
+                      {
+                          "name":  "Riverbraid-Wasm-Bridge",
+                          "local_path":  "C:\\Riverbraid\\Riverbraid-Wasm-Bridge",
+                          "registry_status":  "OUTSIDE_VERIFIED_30",
+                          "preliminary_classification":  "UNCLASSIFIED_REMOTE_MATCH"
+                      }
+                  ]
+}

@@ -1,0 +1,96 @@
+{
+    "$schema":  "https://riverbraid.org/schemas/repair-plan-v1.json",
+    "phase":  "25C",
+    "scope":  "Phase 25B Local Outer Surface Alignment",
+    "proven_matrix_totals":  {
+                                 "total_local_outer_entries":  22,
+                                 "active_remote_match":  12,
+                                 "active_remote_lag":  8,
+                                 "dirty_worktree_untracked_only":  1,
+                                 "local_only_archival_evidence":  1
+                             },
+    "operations":  [
+                       {
+                           "group":  "NO_ACTION",
+                           "classification":  "ACTIVE_REMOTE_MATCH",
+                           "targets":  [
+                                           ".github",
+                                           "Riverbraid-Build-V5",
+                                           "Riverbraid-Documentation",
+                                           "Riverbraid-Governance",
+                                           "Riverbraid-Governance-Gold",
+                                           "Riverbraid-Integrity-Floors",
+                                           "Riverbraid-Liminal-Monitoring",
+                                           "Riverbraid-Secrets-Safe",
+                                           "Riverbraid-Standard-IO",
+                                           "riverbraid-ssg",
+                                           "Riverbraid-Types",
+                                           "Riverbraid-Verification-Suite"
+                                       ],
+                           "actions":  [
+
+                                       ]
+                       },
+                       {
+                           "group":  "PRESERVE",
+                           "classification":  "LOCAL_ONLY_ARCHIVAL_EVIDENCE",
+                           "targets":  [
+                                           "Riverbraid-Downstream-Bridge"
+                                       ],
+                           "actions":  [
+                                           {
+                                               "type":  "RETAIN_LOCAL_WORKSPACE_AS_IS",
+                                               "rationale":  "Preserve local archival evidence capsule outside public remote surface"
+                                           }
+                                       ]
+                       },
+                       {
+                           "group":  "CLEAN_UNTRACKED_ONLY",
+                           "classification":  "DIRTY_WORKTREE_UNTRACKED_ONLY",
+                           "targets":  [
+                                           "Riverbraid-Golds"
+                                       ],
+                           "actions":  [
+                                           {
+                                               "type":  "FILE_REMOVE_EXPLICIT",
+                                               "path":  "C:\\Riverbraid\\Riverbraid-Golds\\phase19-gold-audit.txt"
+                                           },
+                                           {
+                                               "type":  "FILE_REMOVE_EXPLICIT",
+                                               "path":  "C:\\Riverbraid\\Riverbraid-Golds\\phase19-one-gold.mjs"
+                                           }
+                                       ],
+                           "safety_constraints":  {
+                                                      "git_diff_stat_must_be_empty":  true,
+                                                      "prevent_broad_git_clean":  true
+                                                  }
+                       },
+                       {
+                           "group":  "FAST_FORWARD_ONLY",
+                           "classification":  "ACTIVE_REMOTE_LAG",
+                           "targets":  [
+                                           "Riverbraid-Wasm-Bridge",
+                                           "Riverbraid-Gold-UI",
+                                           "Riverbraid-Hydra",
+                                           "Riverbraid-Lang",
+                                           "Riverbraid-Lite",
+                                           "Riverbraid-p5",
+                                           "Riverbraid-RDK",
+                                           "riverbraid-tsh"
+                                       ],
+                           "actions":  [
+                                           {
+                                               "type":  "GIT_MERGE_FAST_FORWARD_ONLY",
+                                               "source_ref":  "origin/main",
+                                               "target_ref":  "refs/heads/main"
+                                           }
+                                       ],
+                           "safety_constraints":  {
+                                                      "require_ancestor_verification":  true,
+                                                      "prevent_dirty_worktree_execution":  true,
+                                                      "prevent_local_ahead_execution":  true,
+                                                      "no_pull_command":  true
+                                                  }
+                       }
+                   ]
+}

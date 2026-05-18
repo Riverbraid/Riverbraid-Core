@@ -1,0 +1,30 @@
+{
+    "schema":  "riverbraid.phase25e.post_alignment_verification",
+    "phase":  "25E",
+    "claim_level":  "LOCAL_OUTER_SURFACE_POST_ALIGNMENT_VERIFIED",
+    "source_gate":  "PHASE_25E_POST_ALIGNMENT_VERIFY_RETRY",
+    "verified_local_outer_surfaces":  23,
+    "structural_invariants":  {
+                                  "dirty_count":  0,
+                                  "lagging_count":  0,
+                                  "ahead_count":  0,
+                                  "total_remaining_untracked":  0,
+                                  "total_tracked_diff_entries":  0
+                              },
+    "downstream_bridge_exception":  {
+                                        "repository":  "Riverbraid-Downstream-Bridge",
+                                        "active_branch":  "master",
+                                        "worktree_clean":  true,
+                                        "untracked_files":  0,
+                                        "tracked_diffs":  0,
+                                        "upstream":  "NOT_SET",
+                                        "classification":  "LOCAL_ONLY_ARCHIVAL_EVIDENCE"
+                                    },
+    "explicit_non_claims":  [
+                                "Does not claim external reproduction",
+                                "Does not claim all outer repositories are part of the Phase 24 verified 30 registry",
+                                "Does not claim third-party certification",
+                                "Does not claim absence of defects",
+                                "Does not claim domain maturity for every repository"
+                            ]
+}

@@ -7,6 +7,18 @@ Riverbraid-Core is the deterministic integrity floor for the Riverbraid architec
 
 It defines the minimum governance substrate used to make structure, authority, and drift visible before trust is granted. It does not claim to implement the full experimental Riverbraid research surface. Outer repositories may extend, visualize, adapt, or experiment, but Riverbraid-Core remains the canonical reference for protocol authority and audit behavior.
 
+## Role in Riverbraid
+
+Riverbraid-Core is a canonical protocol authority surface within Riverbraid.
+
+## Public verification boundary
+
+This repository is part of the current Evaluation Kit canonical verification registry and defines core protocol authority and audit behavior for Riverbraid.
+
+## Evidence boundary
+
+This repository does not claim certification, legal approval, production readiness, absolute security, external audit, complete AI safety, adoption, or absence of defects.
+
 ## Canonical One-Liner
 Riverbraid is an open-source deterministic integrity floor for AI governance: a fail-closed, byte-auditable architecture that makes structure, authority, and drift visible. Its broader research directions, including mathematical physics of cognition, memory-flow-truth braiding, and intent-aware compute, remain experimental surfaces built on top of this verified floor.
 

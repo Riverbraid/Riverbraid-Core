@@ -8,8 +8,8 @@
   },
   "scripts": {
     "test": "jest",
-    "verify": "node constellation-audit.mjs --ring 0 && node byte-audit.mjs --ring 0",
-    "verify:compatibility": "node constellation-audit.mjs --ring 2 && node byte-audit.mjs --ring 2",
+    "verify": "node audit_final.js && node constellation-audit.mjs --ring 0 && node byte-audit.mjs --ring 0",
+    "verify:compatibility": "node audit_final.js && node constellation-audit.mjs --ring 2 && node byte-audit.mjs --ring 2",
     "test:riverbraid": "node verify-vector.cjs",
     "audit:ring2": "node byte-audit.mjs --ring 2",
     "audit:all": "node byte-audit.mjs"

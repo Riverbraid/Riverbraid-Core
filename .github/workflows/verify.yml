@@ -1,4 +1,5 @@
-name: Riverbraid Verification Suite
+name: Riverbraid Core Live Compatibility Check
+
 on:
   push:
     branches:
@@ -7,19 +8,23 @@ on:
     branches:
       - main
   workflow_dispatch:
+
 permissions:
   contents: read
+
 jobs:
-  verify-core:
+  verify-core-live-compatibility:
     runs-on: ubuntu-24.04
     steps:
       - name: Checkout Riverbraid-Core
         uses: actions/checkout@v4
+
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
           node-version: '20.11.0'
-      - name: Clone Ring 0 sibling repositories
+
+      - name: Clone current Ring 0 sibling default branches
         shell: bash
         run: |
           set -euo pipefail
@@ -30,15 +35,19 @@ jobs:
             Riverbraid-Integrity-Floors \
             Riverbraid-Types
           do
-            echo "Cloning $repo"
+            echo "Cloning current default branch for live compatibility: $repo"
             git clone --depth 1 "https://github.com/Riverbraid/${repo}.git" "$repo"
           done
-          echo "RING0_SIBLINGS_CLONED"
-      - name: Run compatibility audit
+          echo "RING0_LIVE_COMPATIBILITY_SIBLINGS_CLONED"
+
+      - name: Run live compatibility audit
         shell: bash
         run: |
           set -euo pipefail
           node audit_final.js
           node constellation-audit.mjs --ring 0
-      - name: Final status
-        run: echo "RIVERBRAID_CORE_RING0_CI_OK"
+
+      - name: Final bounded status
+        run: |
+          echo "RIVERBRAID_CORE_LIVE_COMPATIBILITY_OK"
+          echo "This workflow is a mutable-default-branch compatibility check, not the pinned Evaluation Kit reproduction surface."

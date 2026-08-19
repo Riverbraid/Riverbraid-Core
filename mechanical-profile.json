@@ -1,0 +1,58 @@
+{
+  "build_control_separation": "F0_F4_AUTHORIZATION_CUSTODY_AND_IMPLEMENTATION_GATES_ARE_PROJECT_BUILD_CONTROLS_NOT_PROTOCOL_PRIMITIVES",
+  "forbidden_current_legacy_paths": [
+    "cluster-manifest-v2.json",
+    "constellation-audit.mjs",
+    "cluster-verify.mjs",
+    "byte-audit.mjs",
+    "audit_final.js",
+    "audit-output.json",
+    "AUDIT-MANIFEST.sha256",
+    "AUDIT-TRAIL.ndjson",
+    "integrity-floor.json"
+  ],
+  "historical_phase15_blobs": {
+    "historical/phase15/AUDIT-MANIFEST.sha256": "add6b7a48662ecbe0c3a7d4cc5591682bfbfa20f",
+    "historical/phase15/AUDIT-TRAIL.ndjson": "925b57447298d44aea94852919c5ecbb69f31e66",
+    "historical/phase15/AUTHORITY.md": "75b33fc13123fdce73b83e20185c037995ee2f67",
+    "historical/phase15/PUBLIC_EVIDENCE.md": "4d59eda5669590b390233d645b3f4bd3e24511e3",
+    "historical/phase15/RING.md": "a74c0b317962986b14d0ed44bd840feb09f5b508",
+    "historical/phase15/VOCABULARY_LOCK.md": "6b4e3fc149cf2e4bdf2f1bd50c105ff5e8af51f9",
+    "historical/phase15/audit-output.json": "95ae4ddbcaf9596bb8bd1e2450120b025bc2633d",
+    "historical/phase15/audit_final.js": "a8df74421247d495ea41ea19176a61ac7102d612",
+    "historical/phase15/byte-audit.mjs": "5e1de1bdc27ed08529f841a1988bf27209d395ed",
+    "historical/phase15/cluster-manifest-v2.json": "39c47069de2b0e4fbde4ea7d44a5750ad5f75be0",
+    "historical/phase15/cluster-verify.mjs": "1f98e6f8f669db4ecf739074c7dcacdc2b8188da",
+    "historical/phase15/constellation-audit.mjs": "dc90b4e9dc6d16cb98564ded3b8c6a163099b5bf",
+    "historical/phase15/integrity-floor.json": "786365fbb07c10d638b2d73d07d817e903c687e9"
+  },
+  "non_authorities": [
+    "TRUTH",
+    "TRUST",
+    "EVIDENTIARY_WEIGHT",
+    "INTERPRETATION",
+    "LEGITIMACY",
+    "MEANING",
+    "MORAL_PRIORITY",
+    "RISK_RANKING",
+    "READINESS",
+    "CERTIFICATION",
+    "ADOPTION_JUDGMENT"
+  ],
+  "profile_id": "urn:riverbraid:core:mechanical-profile:v0.1",
+  "relationship_policy": {
+    "assertion_envelope": "MECHANICAL",
+    "mapping_semantics": "ATTRIBUTED_SCOPED_ASSERTION_NOT_AUTOMATIC_EQUIVALENCE",
+    "predicate_meaning": "OUTSIDE_CORE_IN_DECLARED_NAMESPACED_VOCABULARY_OR_PROFILE"
+  },
+  "required_current_files": [
+    "README.md",
+    "PROTOCOL-BOUNDARY.md",
+    "mechanical-profile.json",
+    "mechanical-verify.mjs"
+  ],
+  "schema_ref": "urn:riverbraid:core:mechanical-profile-manifest:v0.1",
+  "scope": "STRUCTURAL_MECHANICAL_INTEROPERABILITY_ONLY",
+  "status": "R3_CANDIDATE_NOT_RELEASED",
+  "unknown_extension_policy": "PRESERVE_OPAQUELY_NO_NETWORK_DEREFERENCE_FOR_STRUCTURAL_VALIDATION"
+}

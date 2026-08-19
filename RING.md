@@ -1,18 +1,9 @@
-# Riverbraid-Core Ring Declaration
-repo: Riverbraid-Core
-ring: 0
-ring_name: Trust Anchors
-phase: Phase 15
-promotion_state: CLASSIFIED
-## Membership Basis
-Ring membership is assigned by Riverbraid-Core/cluster-manifest-v2.json.
-Ring membership does not mean verification.
-Ring membership does not mean custodian signature.
-Ring membership does not mean the gate has been evaluated.
-## Promotion States
-UNAUDITED
-CLASSIFIED
-FILES_PRESENT_UNVERIFIED
-VERIFIED
-## Claim Boundary
-This repository remains within declared conditions only.
+# Historical Ring ontology notice
+
+The prior Riverbraid Ring / constellation ontology is **historical** and is not a current Core classification system.
+
+The exact prior `RING.md` bytes are preserved at:
+
+`historical/phase15/RING.md`
+
+Current Riverbraid-Core does not assign a trust-anchor ring, promotion rank, or semantic authority through this file. See `PROTOCOL-BOUNDARY.md` and `mechanical-profile.json` for the current mechanical boundary.

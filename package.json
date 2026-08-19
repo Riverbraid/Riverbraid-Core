@@ -1,16 +1,15 @@
 {
-  "name": "riverbraid-core",
-  "version": "1.0.0",
-  "scripts": {
-    "test": "jest",
-    "test:riverbraid": "node verify-vector.cjs",
-    "audit:ring2": "node byte-audit.mjs --ring 2",
-    "audit:all": "node byte-audit.mjs"
-  },
   "devDependencies": {
     "jest": "^29.0.0"
   },
+  "name": "riverbraid-core",
   "riverbraid": {
-    "role": "spine"
-  }
+    "authority": "mechanical-grammar-only",
+    "role": "mechanical-protocol"
+  },
+  "scripts": {
+    "test": "node mechanical-verify.mjs",
+    "verify:mechanical": "node mechanical-verify.mjs"
+  },
+  "version": "1.0.0"
 }

@@ -1,57 +1,17 @@
-# Riverbraid Public Evidence Manifest
+# Riverbraid-Core public evidence boundary
 
-This document records the current public evidence surface for Riverbraid.
-It is intended for external review of the repository system's structural and workflow evidence. It does not claim third party certification, absolute security, absence of bugs, or universal correctness.
+The current Core evidence surface is intentionally narrow.
 
-## Verification Summary
+`mechanical-verify.mjs` evaluates only the declared R3 mechanical boundary in `mechanical-profile.json`. A scoped PASS means that the named checks satisfied that named mechanical profile for the exact checked-out Core commit.
 
-| Evidence Layer | Status | Result |
-|---|---:|---:|
-| Registry size | Verified | 30 repositories |
-| Phase 20 stationarity | Pass | 30 stationary, 0 failed or incomplete |
-| Phase 21 workflows | Pass | 30 remote passing, 0 failed |
-| Third party certification | Not asserted | Pending external process |
+It does not establish truth, trustworthiness, evidentiary weight, safety, compliance, readiness, maturity, certification, adoption, external audit, or downstream AI behavior.
 
-## Evidence Anchors
+## Historical evidence
 
-| Artifact | Status |
-|---|---|
-| phase20-cross-repo-anchor-registry.json | present |
-| phase20-cluster-verification.json | present |
-| phase21-final-workflow-audit.json | present |
-| phase22-evidence-inventory.json | anchored |
+Earlier 30-repository, Ring, constellation, stationarity, and workflow evidence remains preserved as historical Riverbraid evidence. It is not rewritten as proof of the lean R3 topology.
 
-## Core Anchors
+Exact Phase 15 machine/prose surfaces detached by R3 are preserved under `historical/phase15/`.
 
-- Phase 21 workflow evidence commit: e207787873fb1a7351d1320f56eec6605a9c58ec
-- Phase 22 evidence inventory commit: fadcb1c14affcaeafe12ecc3a50eded3987c9a9d
-- Core repository: https://github.com/Riverbraid/Riverbraid-Core
+## Public reproduction
 
-## Verified Scope
-
-Riverbraid currently verifies:
-
-1. The registry contains exactly 30 repositories.
-2. Phase 20 recorded the registry as stationary.
-3. Phase 21 recorded all 30 repositories as having completed successful GitHub Actions runs on their current remote heads.
-4. The evidence inventory explicitly does not assert third party certification.
-
-## Not Claimed
-
-Riverbraid does not claim:
-
-1. Third party certification.
-2. Absolute security.
-3. Absence of defects.
-4. Legal, compliance, SOC 2, ISO, or formal audit approval.
-5. That workflow success proves all future behavior.
-
-## External Reproduction
-
-The intended reproduction path is:
-
-    git clone https://github.com/Riverbraid/Riverbraid-Core.git
-    cd Riverbraid-Core
-    node cluster-verify.mjs
-
-The verifier requires sibling local checkouts of the 30 registry repositories and GitHub CLI access through gh.
+The current cross-repository mechanical reproduction owner is `Riverbraid-Evaluation-Kit`. It records exact evaluator, profile, subject commit, environment, check outcomes, evidence references, and nonclaims.

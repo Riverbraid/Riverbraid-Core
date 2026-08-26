@@ -1,23 +1,19 @@
-# VOCABULARY_LOCK.md
-# Version: 1.0.0
-# Authority: Normative (Riverbraid-Core)
+# Riverbraid-Core vocabulary boundary
 
-## 1. System States
-- **Active**: Behavior is proven via deterministic vectors.
-- **Parked**: Non-behavior and boundary integrity are proven.
-- **Experimental**: Explicitly excluded from the trusted floor.
-- **Deprecated**: Authority is scheduled for removal.
-- **Archived**: Authority is removed; preserved for historical audit only.
+Core identifiers for record types, predicates, profiles, checks, authorities, and extensions are structural references.
 
-## 2. Core Integrity Terms
-- **Verified**: A state confirmed by a passing vector test.
-- **Fail-Closed**: A safety state where any ambiguity results in a refusal or "Fail" status.
-- **Stationary**: A state where the system is stable and reproducible.
-- **Reconstructable**: The ability for a stranger to reproduce the system from the manifest.
-- **Claim Boundary**: The declared limit of what a repository is authorized to verify.
+Core does **not** define a universal semantic vocabulary for truth, trust, legitimacy, evidentiary weight, risk, readiness, maturity, certification, or interpretation.
 
-## 3. Structural Roles
-- **Normative**: Defines meaning and rules for the constellation.
-- **Verifier**: Executes tests to prove claims.
-- **Support**: Provides shared logic or structures.
-- **Informative**: Provides human-legible context without machine authority.
+## Predicate rule
+
+A relationship predicate must be namespaced or otherwise stably identified. Its meaning belongs to the declared vocabulary, profile, or authority that defines it.
+
+A mapping between two vocabularies is itself an attributed, scoped assertion. Core must not infer semantic equivalence merely because two labels are similar.
+
+## Unknown-extension rule
+
+Unknown namespaced types, predicates, and extension members must be preservable opaquely during structural processing. Structural validation must not require network dereferencing.
+
+## Historical vocabulary
+
+The exact former `VOCABULARY_LOCK.md` is preserved at `historical/phase15/VOCABULARY_LOCK.md`. Its former Ring/constellation meanings are not current Core semantics.

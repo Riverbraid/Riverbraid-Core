@@ -1,19 +1,14 @@
-# Riverbraid-Core Authority
-Ring: 0
-Role: Proposed Phase 15 trust anchor
-Status: CLASSIFIED
-## Claim Boundary
-This repository participates in the proposed Phase 15 Ring 0 trust anchor layer.
-This file does not claim full constellation verification.
-This repository may only claim VERIFIED after its local verifier produces verify-output.json with status VERIFIED.
-## Refused Claims
-This repository does not claim:
-- production readiness
-- legal compliance
-- universal safety
-- absolute truth
-- full constellation verification
-- downstream ring verification
-## Mechanical Honesty Rule
-File presence is not verification.
-Verification requires a real verifier output.
+# Riverbraid-Core authority boundary
+
+**Lifecycle:** ACTIVE_ARCHITECTURAL_SURFACE  
+**Role:** MECHANICAL_PROTOCOL  
+**Protocol authority:** MECHANICAL_GRAMMAR_ONLY  
+**Project authority:** NONE
+
+Riverbraid-Core controls only Riverbraid's mechanical interoperability grammar: how records and attributed assertions are identified, serialized, referenced, preserved, structurally validated, and transported.
+
+Its authority terminates before truth, trust, evidentiary weight, interpretation, legitimacy, meaning, moral priority, risk ranking, readiness, certification, adoption judgment, or the correct resolution of disagreement.
+
+A Riverbraid project decision may select a Core version for the Riverbraid project. That does not make an external interpretation true or universally authoritative.
+
+Historical Ring/constellation and trust-anchor material is preserved under `historical/phase15/` and is not current Core authority.

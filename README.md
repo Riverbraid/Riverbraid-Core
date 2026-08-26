@@ -1,116 +1,41 @@
 # Riverbraid-Core
 
-> Status: CORE_AUDIT_SURFACE
-> Ring Role: Core / normative protocol authority
-> Claim Boundary: deterministic integrity floor, byte audit, and ring governance only
+> Lifecycle: ACTIVE_ARCHITECTURAL_SURFACE  
+> Role: MECHANICAL_PROTOCOL  
+> Protocol authority: MECHANICAL_GRAMMAR_ONLY  
+> Project authority: NONE  
+> Current reproduction profile role: MECHANICAL_SUBJECT
 
-Riverbraid-Core is a deterministic integrity floor for the Riverbraid architecture.
+Riverbraid-Core is the controlling specification for Riverbraid's **mechanical interoperability grammar**.
 
-It defines the minimum governance substrate used to make structure, authority, and drift visible before trust is granted. It does not claim to implement the full experimental Riverbraid research surface. Outer repositories may extend, visualize, adapt, or experiment, but Riverbraid-Core remains the canonical reference for protocol authority and audit behavior.
+It defines only the shared mechanics necessary to identify, serialize, preserve, reference, validate, and transport Riverbraid records and attributed assertions. Its authority terminates before interpretation.
 
-## Role in Riverbraid
+Riverbraid does not decide truth, trust, evidentiary weight, legitimacy, risk, readiness, certification, moral priority, or the correct interpretation of evidence.
 
-Riverbraid-Core is a canonical protocol authority surface within Riverbraid.
+## Mechanical boundary
 
-## Public verification boundary
+Core may standardize:
 
-This repository is part of the current Evaluation Kit canonical verification registry and defines core protocol authority and audit behavior for Riverbraid.
+- record and assertion identity;
+- deterministic serialization and digest contracts once separately adopted;
+- references to subjects, sources, agents, scopes, conditions, evidence, profiles, and challenges;
+- structural validator behavior and scoped result transport;
+- preservation of unknown namespaced types, predicates, and extensions;
+- recording of lifecycle and supersession events without rewriting history.
 
-## Evidence boundary
+Core must not standardize:
 
-This repository does not claim certification, legal approval, production readiness, absolute security, external audit, complete AI safety, adoption, registry freshness, or absence of defects.
+- which assertion or interpretation is correct;
+- universal meanings for relationship predicates;
+- a root of trust or universal trust score;
+- evidentiary weight, relevance, legitimacy, causality, safety, compliance, readiness, maturity, certification, or adoption judgment.
 
-## Canonical One-Liner
+Relationship predicate meanings belong to declared, namespaced vocabularies or profiles. A vocabulary mapping is an attributed assertion; it is not a hidden Riverbraid equivalence.
 
-Riverbraid is an open-source deterministic integrity floor for AI governance: a fail-closed, byte-auditable architecture that makes structure, authority, and drift visible. Its broader research directions, including mathematical physics of cognition, memory-flow-truth braiding, and intent-aware compute, remain experimental surfaces built on top of this bounded floor.
+## Historical machine surfaces
 
-## Core Function
+Earlier ring/constellation and “Trust Anchors” machinery is preserved as Riverbraid history and is not inherited as current Core semantics. The R3 migration must preserve its exact historical bytes while detaching it from the active mechanical verifier.
 
-Riverbraid-Core provides:
-* Ring classification and constellation audit
-* Required file surface verification
-* Byte-level audit of tracked repository files
-* BOM detection for text surfaces
-* Dirty worktree detection
-* Verification output validation
-* Audit manifest generation
-* Append-only audit trail recording
+## Reproduction
 
-## Authority Boundary
-
-Riverbraid-Core is normative for Riverbraid protocol governance.
-
-It defines the audit substrate and verification rules. It does not implement domain-specific behavior for runtime forks, UI layers, signing tools, embedded ports, language surfaces, or experimental cognition layers.
-
-Any repository outside Core must not redefine Riverbraid protocol semantics. It may only declare its role, expose its verification surface, and pass the applicable ring gates.
-
-## Coupling Test
-
-Any change to these files requires a full Ring 2 verification pass before being treated as valid:
-* constellation-audit.mjs
-* byte-audit.mjs
-* cluster-manifest-v2.json
-* verify-output.json
-* audit-output.json
-* AUDIT-MANIFEST.sha256
-* AUDIT-TRAIL.ndjson
-
-Required checks:
-
-```bash
-node constellation-audit.mjs --ring 2
-node byte-audit.mjs --ring 2
-```
-
-Expected verified states:
-* RING_GATE_PASS_VERIFIED
-* BYTE_GATE_PASS_VERIFIED
-
-## Scale Separation Gate
-
-Core owns protocol authority and audit rules.
-
-Outer rings own implementation surfaces, runtime experiments, bridges, tools, visualization, and communication layers.
-
-Core must remain small enough to audit directly. New experimental behavior belongs outside Core unless it is required for the integrity floor itself.
-
-## Linear vs Nonlinear Boundary
-
-The Core audit path is linear:
-1. Declare manifest
-2. Check required files
-3. Read verifier outputs
-4. Hash tracked bytes
-5. Reject BOM
-6. Reject dirty worktrees
-7. Emit audit manifest
-8. Record audit trail
-
-The broader Riverbraid research surface may remain nonlinear, experimental, expressive, or exploratory. That layer does not override Core verification.
-
-## Stationary State Invariant
-
-Riverbraid-Core is stationary when all of the following are true:
-* Local worktree is clean
-* Required files are present
-* Verifier outputs parse successfully
-* Ring 2 returns RING_GATE_PASS_VERIFIED
-* Ring 2 returns BYTE_GATE_PASS_VERIFIED
-* Audit manifest exists
-* Audit trail records the verification event
-* No UTF-8 BOM is present in tracked text files
-
-## Verification
-
-Run:
-
-```bash
-node constellation-audit.mjs --ring 2
-node byte-audit.mjs --ring 2
-```
-
-## Claim Hygiene
-
-Riverbraid-Core supports the bounded claim that Riverbraid has a working open-source deterministic integrity floor and governance artifact.
-
-The broader claims around True AI, mathematical physics of cognition, memory-flow-truth braiding, resonance, and intent-aware compute remain active experimental directions unless implemented, tested, and verified in dedicated repositories.
+The current public reproduction owner is [Riverbraid-Evaluation-Kit](https://github.com/Riverbraid/Riverbraid-Evaluation-Kit). A result is meaningful only with its exact subject, profile/check contract, evaluator, environment, evidence, and nonclaims.

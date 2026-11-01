@@ -91,6 +91,18 @@ test("a tracked file absent from the worktree blocks byte coverage", (t) => {
   assert.deepEqual(repo.unhashed_tracked_files, ["README.md"]);
 });
 
+test("a dangling tracked symlink cannot disappear from byte coverage", (t) => {
+  const f = fixture(t);
+  const link = path.join(f.repoDir, "linked.json");
+  fs.symlinkSync(path.join(f.base, "absent.json"), link);
+  git(f.repoDir, ["init", "-q"]);
+  commit(f.repoDir, ["README.md", "verify-output.json", "linked.json"]);
+  const { run, repo } = audit(f.auditDir);
+  assert.equal(run.status, 1);
+  assert.ok(repo.failure_codes.includes("TRACKED_FILES_INCOMPLETE"));
+  assert.deepEqual(repo.unhashed_tracked_files, ["linked.json"]);
+});
+
 test("detached HEAD retains a valid commit identity", (t) => {
   const f = fixture(t);
   git(f.repoDir, ["init", "-q"]);

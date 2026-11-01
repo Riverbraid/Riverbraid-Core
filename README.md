@@ -102,6 +102,12 @@ Riverbraid-Core is stationary when all of the following are true:
 
 ## Verification
 
+The byte auditor blocks a verified result when Git observations fail, the
+repository root does not match the manifest entry, no tracked files are
+observed, or a tracked path cannot be hashed as a regular file. A detached
+HEAD is valid when its commit identity resolves. Run the focused regression
+cases with `node --test tests/byte-audit.test.mjs`.
+
 Run:
 
 ```bash

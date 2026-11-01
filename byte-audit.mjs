@@ -47,7 +47,7 @@ function stable(value) {
   return "{" + keys.map((key) => JSON.stringify(key) + ":" + stable(value[key])).join(",") + "}";
 }
 
-function runGit(repoPath, args, allowFailure = false) {
+function runGit(repoPath, args) {
   try {
     return execFileSync("git", args, {
       cwd: repoPath,
@@ -55,10 +55,7 @@ function runGit(repoPath, args, allowFailure = false) {
       stdio: ["ignore", "pipe", "pipe"]
     });
   } catch (error) {
-    if (allowFailure) {
-      return "";
-    }
-    throw error;
+    return null;
   }
 }
 
@@ -76,7 +73,8 @@ function parseGitStatus(raw) {
 }
 
 function gitTrackedFiles(repoPath) {
-  const raw = runGit(repoPath, ["ls-files", "-z"], true);
+  const raw = runGit(repoPath, ["ls-files", "-z"]);
+  if (raw === null) return null;
   return raw
     .split("\0")
     .filter(Boolean)
@@ -135,6 +133,7 @@ function auditRepo(repo, rootDir) {
     class: repo.class || null,
     repo_path: repoPath,
     repo_exists: exists,
+    git_root: null,
     git_branch: null,
     git_commit: null,
     dirty: false,
@@ -144,6 +143,7 @@ function auditRepo(repo, rootDir) {
     verify_output: null,
     tracked_file_count: 0,
     tracked_files: [],
+    unhashed_tracked_files: [],
     bom_failures: [],
     byte_status: "UNAUDITED"
   };
@@ -153,10 +153,38 @@ function auditRepo(repo, rootDir) {
     return result;
   }
 
-  result.git_branch = runGit(repoPath, ["branch", "--show-current"], true).trim() || null;
-  result.git_commit = runGit(repoPath, ["rev-parse", "HEAD"], true).trim() || null;
-  result.dirty_entries = parseGitStatus(runGit(repoPath, ["status", "--porcelain=v1"], true));
-  result.dirty = result.dirty_entries.length > 0;
+  const gitFailures = [];
+  const root = runGit(repoPath, ["rev-parse", "--show-toplevel"]);
+  if (root === null || !root.trim()) {
+    gitFailures.push("GIT_ROOT_UNAVAILABLE");
+  } else {
+    result.git_root = root.trim();
+    try {
+      if (fs.realpathSync(result.git_root) !== fs.realpathSync(repoPath)) {
+        gitFailures.push("GIT_ROOT_MISMATCH");
+      }
+    } catch (error) {
+      gitFailures.push("GIT_ROOT_UNAVAILABLE");
+    }
+  }
+
+  const branch = runGit(repoPath, ["branch", "--show-current"]);
+  if (branch === null) gitFailures.push("GIT_BRANCH_UNAVAILABLE");
+  else result.git_branch = branch.trim() || null; // A detached HEAD is valid.
+
+  const commit = runGit(repoPath, ["rev-parse", "HEAD"]);
+  if (commit === null || !/^(?:[0-9a-f]{40}|[0-9a-f]{64})$/.test(commit.trim())) {
+    gitFailures.push("GIT_COMMIT_UNAVAILABLE");
+  } else {
+    result.git_commit = commit.trim();
+  }
+
+  const status = runGit(repoPath, ["status", "--porcelain=v1"]);
+  if (status === null) gitFailures.push("GIT_STATUS_UNAVAILABLE");
+  else {
+    result.dirty_entries = parseGitStatus(status);
+    result.dirty = result.dirty_entries.length > 0;
+  }
 
   result.missing_required_files = result.required_files.filter((file) => {
     return !fs.existsSync(path.join(repoPath, file));
@@ -165,28 +193,39 @@ function auditRepo(repo, rootDir) {
   result.verify_output = safeVerifyOutput(repoPath);
 
   const tracked = gitTrackedFiles(repoPath);
-  result.tracked_file_count = tracked.length;
+  if (tracked === null) gitFailures.push("GIT_TRACKED_FILES_UNAVAILABLE");
+  else {
+    result.tracked_file_count = tracked.length;
+    if (tracked.length === 0) gitFailures.push("TRACKED_FILES_EMPTY");
+  }
 
-  for (const relPath of tracked) {
+  for (const relPath of tracked || []) {
     const absolutePath = path.join(repoPath, relPath);
-    if (!fs.existsSync(absolutePath) || !fs.statSync(absolutePath).isFile()) {
+    try {
+      if (!fs.lstatSync(absolutePath).isFile()) {
+        result.unhashed_tracked_files.push(relPath);
+        continue;
+      }
+      const bytes = readBytes(absolutePath);
+      const bomPresent = hasBom(bytes);
+      const fileRecord = {
+        path: relPath,
+        size_bytes: bytes.length,
+        sha256: sha256Bytes(bytes),
+        bom_present: bomPresent
+      };
+      result.tracked_files.push(fileRecord);
+      if (bomPresent && isTextCandidate(relPath)) {
+        result.bom_failures.push(relPath);
+      }
+    } catch (error) {
+      result.unhashed_tracked_files.push(relPath);
       continue;
-    }
-    const bytes = readBytes(absolutePath);
-    const bomPresent = hasBom(bytes);
-    const fileRecord = {
-      path: relPath,
-      size_bytes: bytes.length,
-      sha256: sha256Bytes(bytes),
-      bom_present: bomPresent
-    };
-    result.tracked_files.push(fileRecord);
-    if (bomPresent && isTextCandidate(relPath)) {
-      result.bom_failures.push(relPath);
     }
   }
 
-  const failures = [];
+  const failures = gitFailures;
+  if (result.unhashed_tracked_files.length > 0) failures.push("TRACKED_FILES_INCOMPLETE");
   if (result.missing_required_files.length > 0) failures.push("REQUIRED_FILES_MISSING");
   if (!result.verify_output.present) failures.push("VERIFY_OUTPUT_MISSING");
   if (result.verify_output.present && !result.verify_output.parse_ok) failures.push("VERIFY_OUTPUT_PARSE_FAILED");
@@ -233,7 +272,7 @@ const summary = {
 
 const report = {
   auditor: "Riverbraid Byte Floor Auditor",
-  report_version: "1.0.0",
+  report_version: "1.1.0",
   claim_boundary: "byte-level-local-audit-trail",
   manifest: {
     path: "cluster-manifest-v2.json",

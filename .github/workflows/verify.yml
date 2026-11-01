@@ -19,6 +19,8 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: '20.11.0'
+      - name: Byte audit regression cases
+        run: node --test tests/byte-audit.test.mjs
       - name: Clone Ring 0 sibling repositories
         shell: bash
         run: |
@@ -40,5 +42,33 @@ jobs:
           set -euo pipefail
           node audit_final.js
           node constellation-audit.mjs --ring 0
+      - name: Clone Ring 2 sibling repositories
+        shell: bash
+        run: |
+          set -euo pipefail
+          cd ..
+          for repo in \
+            Riverbraid-RDK \
+            Riverbraid-Gold-UI \
+            Riverbraid-Wasm-Bridge \
+            riverbraid-tsh \
+            Riverbraid-Lite \
+            Riverbraid-Lang \
+            Riverbraid-p5 \
+            Riverbraid-Hydra
+          do
+            git clone --depth 1 "https://github.com/Riverbraid/${repo}.git" "$repo"
+          done
+      - name: Run Ring 2 coupling audit
+        shell: bash
+        run: |
+          set -euo pipefail
+          node -e 'const {execFileSync}=require("node:child_process");const r=JSON.parse(execFileSync(process.execPath,["constellation-audit.mjs","--ring","2"],{encoding:"utf8"}));console.log(JSON.stringify(r));if(r.rings[0].gate_status!=="RING_GATE_PASS_VERIFIED")process.exit(1)'
+          if [[ -f audit-output.json ]]; then mv audit-output.json "$RUNNER_TEMP/previous-core-audit-output.json"; fi
+          audit_exit=0
+          node byte-audit.mjs --ring 2 || audit_exit=$?
+          if [[ ! -f audit-output.json ]]; then echo "BYTE_AUDIT_REPORT_NOT_EMITTED"; exit 1; fi
+          node -e 'const a=require("./audit-output.json");console.log(JSON.stringify({summary:a.summary,repos:a.repos.map(r=>({name:r.name,git_commit:r.git_commit,byte_status:r.byte_status,failure_codes:r.failure_codes,bom_failures:r.bom_failures,unhashed_tracked_files:r.unhashed_tracked_files}))}))'
+          exit "$audit_exit"
       - name: Final status
-        run: echo "RIVERBRAID_CORE_RING0_CI_OK"
+        run: echo "RIVERBRAID_CORE_RING0_AND_RING2_CI_OK"

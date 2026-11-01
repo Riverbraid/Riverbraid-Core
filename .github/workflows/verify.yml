@@ -19,6 +19,8 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: '20.11.0'
+      - name: Byte audit regression cases
+        run: node --test tests/byte-audit.test.mjs
       - name: Clone Ring 0 sibling repositories
         shell: bash
         run: |
